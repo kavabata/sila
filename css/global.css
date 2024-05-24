@@ -10,6 +10,7 @@
   --color-black: #000;
 
   --font-main: "Poppins", sans-serif;
+  --max-width: 1200px;
   --menu-height: 64px;
   --padding-half: 8px;
   --padding: 16px;
@@ -17,6 +18,7 @@
   --font-size-md: 15px;
   --font-size-lg: 18px;
   --font-size-xl: 22px;
+  --font-size-xxl: 32px;
 }
 
 /* Global Styles */
@@ -44,21 +46,24 @@ p {
   line-height: 2;
 }
 
-button {
-  background-color: var(--theme-red);
+button, a.button {
+  background-color: var(--color-red);
   border: none;
+  border-radius: 4px;
   outline: none;
   color: var(--color-white);
   padding: var(--padding-half) var(--padding);
   margin-top: var(--padding);
   font-size: var(--font-size-sm);
-  border-radius: 3px;
+  
   font-weight: 600;
   transition: 1.5s;
   cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
 }
 
-button:hover {
+button:hover, a.button:hover {
   box-shadow: 0 12px var(--padding) 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -69,15 +74,18 @@ header {
   height: var(--menu-height);
   background-color: rgba(0, 0, 0, 0.6);
 
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 2;
+}
 
+.headerContainer {
+  max-width: var(--max-width);
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .headerLogo {
   display: block;
   height: var(--menu-height);
@@ -166,6 +174,11 @@ header nav ul li a:hover {
 
 .content {
   margin-top: var(--menu-height);
+  position: relative;
+}
+
+.center {
+  text-align: center;
 }
 
 /* Footer */
@@ -173,10 +186,16 @@ footer {
   background-color: var(--color-dark-gray);
   color: var(--color-white);
   padding: calc(var(--padding) * 2) 0;
+  width: 100%;
+}
+footer .footerContainer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 100%;
+
 }
 
 footer .footerMain {
@@ -208,7 +227,7 @@ footer .footerMainLogo img {
 }
 
 footer .footerSide {
-  min-width: 300px;
+  min-width: 500px;
   width: 50%;
   display: flex;
   flex-wrap: wrap;
@@ -216,7 +235,8 @@ footer .footerSide {
 
 footer .footerSideBlock {
   padding: var(--padding);
-  min-width: 300px;
+  min-width: 250px;
+  width: 50%;
 }
 
 .footerSideTitle {

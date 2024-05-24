@@ -1,4 +1,5 @@
 <footer>
+<div class="footerContainer">
   <div class="footerMain">
     <div class="footerMainLogoContainer">
       <a class="footerMainLogo" href="index.php" title="<?=$site_name;?>">
@@ -53,6 +54,7 @@
       </p>
     </div>
   </div>
+</div>
 </footer>
 </body>
 </html>

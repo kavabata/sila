@@ -11,32 +11,35 @@ return [
     ],
     'header' => [
         'donate' => 'Donate',
+        'title' => 'Foundation',
+        'description' => 'A charitable fund aimed at helping Ukrainian women abroad',
+        'donate_button' => 'Donate Now',
     ],
     'sections' => [
-        'home' => [
-            'title' => 'Foundation "Siła Kobiety"',
-            'description' => 'A charitable fund aimed at helping Ukrainian women abroad',
-            'donate_button' => 'Donate Now',
-        ],
+
         'about' => [
-            'title' => 'About Us',
-            'description' => [
-                'paragraph1' => 'Since February 24, 2022, the most important projects have been organizing volunteer movements to help refugees from Ukraine.',
-                'paragraph2' => 'The first project was the creation of an open pierogarnia, where more than 100 women participated, Ukrainians and Poles and women of other nationalities who came from Ukraine. The products for making pierogi were provided free of charge by Wrocław entrepreneurs, and all proceeds from the sale of Ukrainian pierogi were allocated to help refugees from Ukraine.',
-                'paragraph3' => 'The second project is providing social assistance to women with children who came from Ukraine during the adaptation period in another country in a stressful situation, namely: psychological help, information assistance, medical advice, legal advice, help in finding housing, humanitarian aid sent to Ukraine.',
-                'paragraph4' => 'The third is to provide support for people aged 40+. Integration meetings are aimed at a group of people aged 40+, with an emphasis on seniors. Each meeting, once a month, combined with a guest performance by musicians representing different musical styles, referring in their work to Polish and Ukrainian traditions. Each time, 15 to 40 people participate in the meetings.',
-                'paragraph5' => 'The fourth project is the organization of the annual international Wyszywanki festival in an open area, involving about 200 people from national minorities. At the festival, we present costumes, songs, and folk dances, and handicraft workshops.',
-            ],
+          'title' => 'About Us',
+          'description' => [
+            'paragraph1' => 'Since February 24, 2022, the most important projects have been organizing volunteer movements to help refugees from Ukraine.',
+            'paragraph2' => 'The first project was the creation of an open pierogarnia, where more than 100 women participated, Ukrainians and Poles and women of other nationalities who came from Ukraine. The products for making pierogi were provided free of charge by Wrocław entrepreneurs, and all proceeds from the sale of Ukrainian pierogi were allocated to help refugees from Ukraine.',
+            'paragraph3' => 'The second project is providing social assistance to women with children who came from Ukraine during the adaptation period in another country in a stressful situation, namely: psychological help, information assistance, medical advice, legal advice, help in finding housing, humanitarian aid sent to Ukraine.',
+            'paragraph4' => 'The third is to provide support for people aged 40+. Integration meetings are aimed at a group of people aged 40+, with an emphasis on seniors. Each meeting, once a month, combined with a guest performance by musicians representing different musical styles, referring in their work to Polish and Ukrainian traditions. Each time, 15 to 40 people participate in the meetings.',
+            'paragraph5' => 'The fourth project is the organization of the annual international Wyszywanki festival in an open area, involving about 200 people from national minorities. At the festival, we present costumes, songs, and folk dances, and handicraft workshops.',
+          ],
+          'cards' => [
             'documents' => [
-                'title' => 'Documents',
-                'reports' => 'Reports',
-                'view_button' => 'View',
+              'title' => 'Documents',
+              'description' => 'Reports',
+              'button' => 'View',
+              'link' => 'l'
             ],
             'support' => [
-                'title' => 'Donate Support',
-                'description' => 'Your contribution matters',
-                'details_button' => 'Details',
+              'title' => 'Donate Support',
+              'description' => 'Your contribution matters',
+              'button' => 'Details',
+              'link' => 'l'
             ],
+          ]
         ],
         'programs' => [
             'title' => 'Projects',

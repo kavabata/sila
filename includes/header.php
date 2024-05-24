@@ -4,9 +4,11 @@
   <meta charset="UTF-8" />
   <title><?php echo $title; ?></title>
   <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/sections.css" />
 </head>
 <body>
   <header>
+    <div class="headerContainer">
     <a href="/" title="<?=$site_name;?>" class="headerLogo">
       <img src="img/logo-black-trans.webp" alt="<?=$site_name;?>">
     </a>
@@ -22,4 +24,5 @@
         <?php endforeach; ?>
       </ul>
     </nav>
+    </div>
   </header>

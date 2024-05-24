@@ -1,0 +1,136 @@
+
+section {
+  position: relative;
+  max-width: 1200px;
+  margin: calc(var(--padding) * 6) auto;
+  padding: var(--padding);
+}
+.sectionTitle {
+  max-width: 300px;
+  border-bottom: 3px solid var(--color-red);
+  text-align: center;
+  font-size: var(--font-size-xxl);
+  font-weight: 200;
+  margin: 0 auto calc(var(--padding) * 3);
+  position: relative;
+  padding: var(--padding) 0;
+  text-transform: uppercase;
+}
+.sectionTitle::after {
+  display: inline-block;
+  content: "";
+  height: var(--padding);
+  width: var(--padding);
+  background-color: var(--color-red);
+  position: absolute;
+  left: calc(50% - 10px);
+  bottom: 4px;
+  transform: rotate(45deg) translate(50%, 50%);
+  border: 3px solid #fff;
+}
+
+
+.homeHead {
+  min-height: calc(100vh - var(--menu-height));
+  height: calc(100vh - var(--menu-height));
+  width: 100%;
+  background-image: url(../img/banner.avif);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.homeHeadContainer {
+  max-width: var(--max-width);
+  padding: 15vh var(--padding) 0; 
+  margin: 0 auto;
+}
+.homeHeadBlock {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: var(--padding);
+  padding: var(--padding);
+  max-width: 50%;
+}
+.homeHead h1 {
+  display: inline-block;
+  font-size: 3.5rem;
+  text-shadow: 0 0 2px #000;
+  line-height: 4.2rem;
+  font-weight: 100;
+}
+.homeHead h1 span {
+  background-color: var(--color-red);
+  display: inline-block;
+  line-height: 3.5rem;
+  padding: 0 var(--padding);
+  white-space: nowrap;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.homeHead p {
+  text-shadow: 0 0 2px #000;
+  font-size: var(--font-size-lg);
+}
+.homeHead .button {
+  color: var(--color-black);
+  text-shadow: none;
+  font-size: var(--font-size-lg);
+}
+
+
+#aboutSection p {
+  text-align: center;
+}
+
+#aboutSection .aboutCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: calc(var(--padding) * 3);
+  position: relative;
+  height: 245px;
+}
+
+#aboutSection .aboutCards .card {
+  width: 350px;
+  height: 215px;
+  background-color: var(--color-light-gray);
+  padding: calc(var(--padding) * 2);
+  color: var(--color-dark-gray);
+  text-align: center;
+  border-radius: var(--padding-half);
+  border: 1px solid #ccc;
+  transition: 0.6s;
+}
+
+#aboutSection .aboutCards .card:hover {
+  width: 380px;
+  margin-top: -20px;
+  border-color: var(--color-red);
+  padding: 55px;
+  height: auto;
+}
+
+#aboutSection .aboutCards div.card .title {
+  font-size: var(--font-lg);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#aboutSection .aboutCards div.card p {
+  font-size: var(--font-md);
+  margin-top: var(--padding);
+}
+
+#aboutSection .aboutCards div.card .button {
+  border: 1px solid var(--color-red);
+  font-size: var(--font-md);
+}
+
+#aboutSection .aboutCards div.card:hover .button {
+  background-color: var(--color-red);
+  color: var(--color-white);
+}
+
+#aboutSection .cards button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+

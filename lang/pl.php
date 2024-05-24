@@ -11,13 +11,11 @@ return [
     ],
     'header' => [
         'donate' => 'Przekaż darowiznę',
+        'title' => 'Fundacja',
+        'description' => 'Jest to fundusz charytatywny mający na celu pomoc Ukrainkom za granicą',
+        'donate_button' => 'Przekaż darowiznę',
     ],
     'sections' => [
-        'home' => [
-            'title' => 'Fundacja "Siła Kobiety"',
-            'description' => 'Jest to fundusz charytatywny mający na celu pomoc Ukrainkom za granicą',
-            'donate_button' => 'Przekaż darowiznę',
-        ],
         'about' => [
             'title' => 'O nas',
             'description' => [
@@ -27,16 +25,20 @@ return [
                 'paragraph4' => 'Trzecim jest stworzenie wsparcia osobom w wieku 40+. Spotkania integracyjne skierowane są do grupy osób w wieku 40+ z naciskiem na seniorów. Każde spotkanie, raz na miesiąc, połączone z gościnnym występem muzyków reprezentujących różne style muzyczne, nawiązujących w swojej twórczości do tradycji polskich i ukraińskich. Każdorazowo w spotkaniach bierze udział od 15 do 40 osób.',
                 'paragraph5' => 'Czwarty projekt to organizacja corocznego międzynarodowego festiwalu Wyszywanki na otwartym terenie, który obejmuje około 200 osób z mniejszości narodowych. Na festiwalu przedstawiamy stroje, pieśni i tańce ludowe, warsztaty rękodzieła.',
             ],
-            'documents' => [
-                'title' => 'Dokumenty',
-                'reports' => 'Sprawozdania',
-                'view_button' => 'Zobacz',
-            ],
-            'support' => [
-                'title' => 'Przekaż wsparcie',
-                'description' => 'Twój wkład ma znaczenie',
-                'details_button' => 'Szczegóły',
-            ],
+            'cards' => [
+                'documents' => [
+                    'title' => 'Dokumenty',
+                    'description' => 'Sprawozdania',
+                    'button' => 'Zobacz',
+                    'link' => ''
+                ],
+                'support' => [
+                    'title' => 'Przekaż wsparcie',
+                    'description' => 'Twój wkład ma znaczenie',
+                    'button' => 'Szczegóły',
+                    'link' => ''
+                ],
+            ]
         ],
         'programs' => [
             'title' => 'Projekty',
