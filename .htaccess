@@ -1,3 +1,3 @@
-#RewriteEngine On
-#RewriteRule ^events/handcraft$ /events/handcraft.php [L]
+RewriteEngine On
+RewriteRule ^donate$ /page.php?page=donate [L]
 # Add more rules as needed for different routes

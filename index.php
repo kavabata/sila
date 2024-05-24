@@ -1,23 +1,11 @@
 <?php
 
 include('includes/section.php');
-
-$title = "Sila Kobiety";
-$site_name = "Sila Kobiety";
-$site_account = "22 1020 5242 0000 2002 0560 3370";
+include('includes/config.php');
 
 $lang = isset($_GET['lang']) && $_GET['lang'] == 'en' ? 'en' : 'pl';
 $translations = include "lang/{$lang}.php";
 
-$sections = $translations['sections'];
-
-$menuItems = [];
-foreach ($translations['sections'] as $sectionKey => $sectionDetails) {
-    $menuItems[] = [
-        'title' => $translations['menu'][$sectionKey] ?? $sectionDetails['title'],
-        'url' => '#' . $sectionKey . 'Section'
-    ];
-}
 include('includes/header.php');
 ?>
 <div class="content">
@@ -31,7 +19,7 @@ include('includes/header.php');
         </h1>
         <p><?=$translations['header']['description'];?></p>
         <p>
-          <a href="support.html" class="button">
+          <a href="/donate" class="button">
             <?=$translations['header']['donate'];?>
           </a>
         </p>
@@ -40,13 +28,11 @@ include('includes/header.php');
   </div>
   <!-- homeSection end hear -->
 
-
-
   <?php foreach($sections as $key => $section):
     if (!isset($section['template'])):
       default_section($key, $section);
     else:
-
+      include("templates/{$section['template']}.php");
     endif;
   endforeach;?>
 </div>

@@ -71,16 +71,29 @@ return [
 
         ],
         'military' => [
+            'template' => 'zsu',
             'title' => 'Pomoc dla SZU',
+            'headline' => 'Bronią nas przed <br><strong>DZIKIMI HORDAMI BARBARZYŃCÓW</strong>',
             'description' => [
-                'headline' => 'Bronią nas przed <br><strong>DZIKIMI HORDAMI BARBARZYŃCÓW</strong>',
                 'paragraph' => 'Siły Zbrojne Ukrainy stoją na pierwszej linii frontu w obronie wolności narodu ukraińskiego, suwerenności i prawa do pokojowej przyszłości. Potrzebują teraz naszego wsparcia bardziej niż kiedykolwiek.',
             ],
-            'learn_more_button' => 'Dowiedz się więcej',
+            'button' => 'Dowiedz się więcej',
+            'link' => '/zsu'
         ],
         'gallery' => [
+            'template' => 'gallery',
             'title' => 'Galeria',
-            'photo_title' => 'Tytuł Zdjęcia',
+            'images' => [
+                '01' => 'Tytuł 1Zdjęcia',
+                '05' => 'Tytuł 2Zdjęcia',
+                '06' => 'Tytuł 3Zdjęcia',
+                '07' => 'Tytuł 4Zdjęcia',
+                '08' => 'Tytuł 5Zdjęcia',
+                '09' => 'Tytuł 6Zdjęcia',
+                '10' => 'Tytuł 7Zdjęcia',
+                '11' => 'Tytuł 8Zdjęcia',
+                '12' => 'Tytuł 9Zdjęcia'               
+            ]
         ],
         'join' => [
             'title' => 'PRZYŁĄCZ SIĘ DO <span>NAS</span>',
@@ -88,6 +101,23 @@ return [
             'join_button' => 'Zapisz się',
             'donate_button' => 'Przekaż darowiznę',
         ],
+    ],
+    'pages' => [
+        'donate' => [
+            'title' => 'Darowizna',
+            'intro' => [
+                'paragraph1' => 'Każda darowizna pieniężna wpłacona na konto naszej fundacji, pomaga nam w realizacji celów statutowych.',
+                'paragraph2' => 'Przez cały rok możesz wpłacić darowiznę bezpośrednio na konto Fundacji w Banku <br>PKO BP nr konta: <b>22 1020 5242 0000 2002 0560 3370</b><br>tytułem: <b>“Darowizna na cele statutowe”</b>',
+            ],
+            'advice' => [
+                'paragraph1' => 'Czy wiesz, że wszystkie darowizny podlegają odpisom podatkowym: dla osób fizycznych limit do 6% od dochodu, dla osób prawnych limit do 10% od dochodu.',
+                'paragraph2' => 'Dokonanie wpłaty bezpośrednio na konto Fundacji pozwala na skorzystanie z „ulgi za darowizny” przy rozliczaniu PIT. W tytule przelewu należy wpisać „Darowizna na cele statutowe”. Następnie, podczas rozliczania się z urzędem skarbowym, wystarczy wypełnić odpowiednie rubryki w formularzu PIT-37, PIT-36 lub PIT-28 i dodać załącznik PIT/O. Prosimy zachować dowód wpłaty.',
+                'paragraph3' => 'Dziękujemy, że nas wspierasz Zgodnie z założeniami Fundacji “Siła kobiety”, wszystkie darowizny idą na cele statutowe. Chciałbyś dowiedzieć się na jakie konkretne działania Fundacji przeznaczona jest Twoja darowizna? <a class="underConstraction" href="#">Napisz do nas!</a>'
+            ],
+            'outro' => [
+                'paragraph3' => 'Przekazując darowiznę, przekazujesz nadzieję i wsparcie dla tych, którzy jej najbardziej potrzebują. Razem możemy osiągnąć wiele!'
+            ]
+        ]
     ],
     'footer' => [
         'quote' => 'Podejmując Wyjątkowe Wyzwania,<br> Tworzymy Wyjątkową Przyszłość',

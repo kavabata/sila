@@ -1,3 +1,14 @@
+<?php 
+$sections = $translations['sections'];
+
+$menuItems = [];
+foreach ($translations['sections'] as $sectionKey => $sectionDetails) {
+    $menuItems[] = [
+        'title' => $translations['menu'][$sectionKey] ?? $sectionDetails['title'],
+        'url' => '/#' . $sectionKey . 'Section'
+    ];
+}
+?>
 <!DOCTYPE html>
 <html lang="pl-PL">
 <head>

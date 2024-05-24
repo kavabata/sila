@@ -89,6 +89,23 @@ return [
           'donate_button' => 'Donate',
       ],
     ],
+    'pages' => [
+      'donate' => [
+        'title' => 'Donation',
+        'intro' => [
+          0 => 'Every monetary donation made to our foundation\'s account helps us achieve our statutory goals.',
+          1 => 'Throughout the year, you can make a donation directly to the Foundation\'s account at Bank PKO BP<br>account number: <b>22 1020 5242 0000 2002 0560 3370</b><br>with the title: <b>“Donation for statutory purposes”</b>'
+        ],
+        'advice' => [
+            'paragraph1' => 'Did you know that all donations are tax-deductible: for individuals up to 6% of income, for legal entities up to 10% of income.',
+            'paragraph2' => 'Making a payment directly to the Foundation\'s account allows you to benefit from the "donation relief" when settling PIT. In the transfer title, please write "Donation for statutory purposes". Then, when settling with the tax office, just fill in the appropriate fields in the PIT-37, PIT-36, or PIT-28 form and add the PIT/O attachment. Please keep the proof of payment.',
+            'paragraph3' => 'Thank you for supporting us. According to the Foundation\'s "Women\'s Power" assumptions, all donations go to statutory purposes. Would you like to know which specific Foundation activities your donation is allocated to? <a class="underConstraction" href="#">Write to us!</a>'
+        ],
+        'outro' => [
+          'paragraph3' => 'By making a donation, you are providing hope and support to those who need it most. Together we can achieve a lot!'
+        ]
+      ]
+    ],
     'footer' => [
         'quote' => 'Taking on Extraordinary Challenges,<br> We Create an Extraordinary Future',
         'account_number' => 'Account Number:',
