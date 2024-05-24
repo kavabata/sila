@@ -1,0 +1,255 @@
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+/* Variables */
+:root {
+  --color-red: #e43a47;
+  --color-white: #fff;
+  --color-light-gray: #efefef;
+  --color-dark-gray: #2c2c2c;
+  --color-black: #000;
+
+  --font-main: "Poppins", sans-serif;
+  --menu-height: 64px;
+  --padding-half: 8px;
+  --padding: 16px;
+  --font-size-sm: 13px;
+  --font-size-md: 15px;
+  --font-size-lg: 18px;
+  --font-size-xl: 22px;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: block;
+  font-family: var(--font-main);
+}
+
+button {
+  font-family: var(--font-main);  
+}
+
+p {
+  font-size: var(--font-size-md);
+  line-height: 2;
+}
+
+button {
+  background-color: var(--theme-red);
+  border: none;
+  outline: none;
+  color: var(--color-white);
+  padding: var(--padding-half) var(--padding);
+  margin-top: var(--padding);
+  font-size: var(--font-size-sm);
+  border-radius: 3px;
+  font-weight: 600;
+  transition: 1.5s;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 12px var(--padding) 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/** Header */
+
+header {
+  width: 100%;
+  height: var(--menu-height);
+  background-color: rgba(0, 0, 0, 0.6);
+
+  position: absolute;
+  top: 0;
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerLogo {
+  display: block;
+  height: var(--menu-height);
+}
+
+.headerLogo img{
+  height: var(--menu-height);
+  margin-left: 13px;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+header nav ul li a {
+  display: inline-block;
+  height: var(--menu-height);
+  line-height: var(--menu-height);
+  padding: 0 var(--padding);
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: var(--font-size-md);
+  color: var(--color-white);
+  transition: 0.5s;
+}
+
+header nav ul li a:hover {
+  background-color: var(--color-red);
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+    position: relative;
+    border: 2px solid #fff;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    margin-right: var(--padding);
+    cursor: pointer;
+  }
+
+  header nav:after {
+    top: var(--padding-half);
+  }
+
+  header nav:before {
+    bottom: var(--padding-half);
+  }
+
+  header nav:after, header nav:before {
+    content: "";
+    height: 3px;
+    width: 17px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    left: 5px;
+  }
+
+  header nav ul {
+    position: absolute;
+    right: -400px;
+    top: 45px;
+    right: -18px;
+    transition: 0.5s;
+    width: 300px;
+    flex-wrap: wrap;
+    width: 0;
+  }
+
+  header nav:hover ul {
+    right: 0;
+    width: 230px;
+  }
+
+  header nav ul li {
+    display: block;
+  }
+
+  header nav ul li a {
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.content {
+  margin-top: var(--menu-height);
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-dark-gray);
+  color: var(--color-white);
+  padding: calc(var(--padding) * 2) 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+footer .footerMain {
+  padding: var(--padding);
+  min-width: 500px;
+  width: 50%;
+}
+
+footer .footerMainLogoContainer {
+  display: flex;
+}
+
+footer .footerMainLogoContainer p {
+  font-size: 35px;
+}
+
+footer .footerMainLogo {
+  width: 70px;
+  display: block;
+  margin-right: var(--padding);
+}
+footer .footerMainLogo img {
+  width: 100%;
+}
+
+.footerMainQuote {
+  font-size: var(--font-size-xl);
+  font-style: italic;
+}
+
+footer .footerSide {
+  min-width: 300px;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .footerSideBlock {
+  padding: var(--padding);
+  min-width: 300px;
+}
+
+.footerSideTitle {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: var(--padding);
+}
+
+.accountNumber {
+  white-space: nowrap;
+}
+
+footer .footerSide ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer .footerSide ul li {
+  margin: var(--padding-half) 0;
+}
+
+footer .footerSide p {
+  margin-bottom: var(--padding);
+}
+
+footer .footerSide ul li a,
+footer .footerSide a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+footer .footerSide ul li a:hover,
+footer .footerSide a:hover {
+  text-decoration: underline;
+}
