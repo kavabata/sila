@@ -67,6 +67,16 @@ button:hover, a.button:hover {
   box-shadow: 0 12px var(--padding) 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
+a {
+  text-decoration: none;
+  color: brown;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 /** Header */
 
 header {
@@ -94,6 +104,14 @@ header {
 .headerLogo img{
   height: var(--menu-height);
   margin-left: 13px;
+}
+
+.headerLang a {
+  text-decoration: none;
+  opacity: 0.5;
+}
+.headerLang a:hover {
+  opacity: 1;
 }
 
 header nav ul {
