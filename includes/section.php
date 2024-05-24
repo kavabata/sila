@@ -18,8 +18,11 @@ function default_section($key, $section, $before = '', $after = '') {
     echo '<div class="' . $key .'Cards">';
     foreach($section['cards'] as $card):
       echo '<div class="card">';
+      if (isset($card['img'])) echo '<div class="cardImageContainer"><img src="' . $card['img'] . '" class="cardImage" /></div>';
+      
       echo '<div class="title">' . $card['title'] . '</div>';
-      echo '<p>' . $card['description'] . '</p>';
+      if (isset($card['description'])) echo '<p>' . $card['description'] . '</p>';
+      
       echo '<a href="' . $card['link'] . '" class="button">' . $card['button'] . '</a>';
       echo '</div>';
     endforeach;

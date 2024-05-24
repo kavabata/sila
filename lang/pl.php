@@ -42,13 +42,33 @@ return [
         ],
         'programs' => [
             'title' => 'Projekty',
-            'items' => [
-                'polish_language' => 'Język Polski',
-                'art_therapy' => 'Art-terapia dla dzieci i dorosłych',
-                'literary_club' => '„Klub Literacki”',
-                'concerts' => 'Koncerty',
+            'cards' => [
+                'polish' => [
+                  'img' => 'img/jezyk_polski.webp',
+                  'title' => "Język Polski",
+                  'button' => 'Pokaż',
+                  'link' => 'l'
+                ],
+                'art' => [
+                  'img' => 'img/art2.webp',
+                  'title' => 'Art-terapia dla dzieci i dorosłych',
+                  'button' => 'Pokaż',
+                  'link' => 'l'
+                ],
+                'club' => [
+                  'img' => 'img/klub_literacki.webp',
+                  'title' => '„Klub Literacki”',
+                  'button' => 'Pokaż',
+                  'link' => 'l'
+                ],
+                'concerts' => [
+                  'img' => 'img/koncerty_main_foto.webp',
+                  'title' => 'Koncerty',
+                  'button' => 'Pokaż',
+                  'link' => 'l'
+                ],
             ],
-            'show_button' => 'Pokaż',
+
         ],
         'military' => [
             'title' => 'Pomoc dla SZU',
