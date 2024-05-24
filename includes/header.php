@@ -12,12 +12,14 @@
     </a>
     <nav>
       <ul>
-        <li><a href="#homeSection">Start</a></li>
-        <li><a href="#aboutSection">O nas</a></li>
-        <li><a href="#programsSection">Projekty</a></li>
-        <li><a href="#militarySection">Pomoc Siłą Zbrojnym</a></li>
-        <li><a href="#gallerySection">Galeria</a></li>
-        <li><a href="#joinSection">Kontakt</a></li>
+        <?php foreach ($menuItems as $item): ?>
+          <li>
+            <a href="<?=$item['url'];?>">
+              <?=!empty($item['icon']) ? '<i class="' . $item['icon'] . '"></i> ': '';?>
+              <?=$item['title'];?>
+            </a>
+          </li>
+        <?php endforeach; ?>
       </ul>
     </nav>
   </header>

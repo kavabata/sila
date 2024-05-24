@@ -7,10 +7,10 @@
       <p>Siła Kobiety</p>
     </div>
     <p class="footerMainQuote">
-      "Podejmując Wyjątkowe Wyzwania, Tworzymy Wyjątkową Przyszłość"
+      "<?=$translations['footer']['quote'];?>"
     </p>
     <p>
-      Numer konta:
+      <?=$translations['footer']['account_number'];?>
       <strong class="accountNumber">
         <?=$site_account;?>
       </strong>
@@ -19,19 +19,23 @@
 
   <div class="footerSide">
     <div class="footerSideBlock">
-      <div class="footerSideTitle">Przydatne linki</div>
+      <div class="footerSideTitle">
+        <?=$translations['footer']['useful_links'];?>
+      </div>
       <ul>
-        <li><a href="#homeSection">Start</a></li>
-        <li><a href="#aboutSection">O nas</a></li>
-        <li><a href="#programsSection">Projekty</a></li>
-        <li><a href="#militarySection">Pomoc Siłą Zbrojnym</a></li>
-        <li><a href="#gallerySection">Galeria</a></li>
-        <li><a href="#joinSection">Kontakt</a></li>
+        <?php foreach ($menuItems as $item): ?>
+          <li>
+            <a href="<?=$item['url'];?>">
+              <?=!empty($item['icon']) ? '<i class="' . $item['icon'] . '"></i> ': '';?>
+              <?=$item['title'];?>
+            </a>
+          </li>
+        <?php endforeach; ?>
       </ul>
     </div>
 
     <div class="footerSideBlock">
-      <div class="footerSideTitle">Bądźmy w kontakcie</div>
+      <div class="footerSideTitle"><?=$translations['footer']['contact'];?></div>
       <p>
         <a href="tel:+48510345436" title="zadzwoń">+48 510 345 436</a>
         <br />
