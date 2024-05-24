@@ -23,6 +23,34 @@ foreach ($translations['sections'] as $sectionKey => $sectionDetails) {
     <a href="/" title="<?=$site_name;?>" class="headerLogo">
       <img src="img/logo-black-trans.webp" alt="<?=$site_name;?>">
     </a>
+    <div class="headerLang">
+      <a href="?lang=pl" title="Polski">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="0 0 60 30">
+          <rect width="60" height="15" fill="#fff"/>
+          <rect width="60" height="15" y="15" fill="#dc143c"/>
+        </svg>
+      </a>
+      <a href="?lang=ua" title="Українська">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="0 0 60 30">
+          <rect width="60" height="15" fill="#0057b7"/>
+          <rect width="60" height="15" y="15" fill="#ffd700"/>
+        </svg>
+      </a>
+      <a href="?lang=en" title="English">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="30" height="20">
+          <clipPath id="t">
+            <path d="M30,15v15h15zv15H15zV15H0zV0h15zV0h15zV0H30z"/>
+          </clipPath>
+          <path d="M0,0v30h60V0z" fill="#012169"/>
+          <path d="M0,0L60,30m0-30L0,30" stroke="#fff" stroke-width="6"/>
+          <path d="M0,0L60,30m0-30L0,30" stroke="#C8102E" stroke-width="4"/>
+          <path d="M30,0v30M0,15h60" stroke="#fff" stroke-width="10"/>
+          <path d="M30,0v30M0,15h60" stroke="#C8102E" stroke-width="6"/>
+          <path d="M0,0L60,30m0-30L0,30" stroke="#fff" stroke-width="6" clip-path="url(#t)"/>
+          <path d="M0,0L60,30m0-30L0,30" stroke="#C8102E" stroke-width="4" clip-path="url(#t)"/>
+        </svg>
+      </a>
+    </div>
     <nav>
       <ul>
         <?php foreach ($menuItems as $item): ?>

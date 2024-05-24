@@ -1,15 +1,21 @@
 <?php
-
 include('includes/section.php');
 include('includes/config.php');
 
-$lang = isset($_GET['lang']) && $_GET['lang'] == 'en' ? 'en' : 'pl';
+session_start();
+if (isset($_GET['lang'])) {
+  $lang = $_GET['lang'];
+  if (in_array($lang, ['en', 'pl', 'ua'])) {
+    $_SESSION['lang'] = $lang;
+  }
+}
+
+$lang = $_SESSION['lang'] ?? 'pl';
 $translations = include "lang/{$lang}.php";
 
 include('includes/header.php');
 ?>
 <div class="content">
-
   <div class="homeHead">
     <div class="homeHeadContainer">
       <div class="homeHeadBlock">

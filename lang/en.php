@@ -81,6 +81,17 @@ return [
       'gallery' => [
           'title' => 'Gallery',
           'photo_title' => 'Photo Title',
+          'images' => [
+            '01' => 'Photo Title',
+            '05' => 'Photo Title',
+            '06' => 'Photo Title',
+            '07' => 'Photo Title',
+            '08' => 'Photo Title',
+            '09' => 'Photo Title',
+            '10' => 'Photo Title',
+            '11' => 'Photo Title',
+            '12' => 'Photo Title'               
+        ]
       ],
       'join' => [
           'title' => 'JOIN <span>US</span>',
