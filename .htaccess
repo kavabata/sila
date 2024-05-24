@@ -1,0 +1,3 @@
+#RewriteEngine On
+#RewriteRule ^events/handcraft$ /events/handcraft.php [L]
+# Add more rules as needed for different routes
