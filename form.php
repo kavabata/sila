@@ -7,6 +7,8 @@ $page = $translations['pages'][$pageName];
 include('includes/header.php');
 ?>
 <div class="content">
-  FORM
+  FORM <?= $page['title']; ?>
+
+  <?= $page['field']['name']; ?>
 </div>
 <?php include('includes/footer.php'); ?>
