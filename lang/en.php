@@ -191,6 +191,12 @@ return [
         'koncerty5' => 'Tytuł Zdjęcia',
         'koncerty6' => 'Tytuł Zdjęcia'
       ]
+    ],
+    'form' => [
+      'title' => 'New',
+      'fields' => [
+        'name' => 'Your Name'
+      ]
     ]
   ],
   'footer' => [

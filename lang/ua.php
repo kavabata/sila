@@ -192,7 +192,13 @@ return [
         'koncerty5' => 'Tytuł Zdjęcia',
         'koncerty6' => 'Tytuł Zdjęcia'
       ]
-    ]
+      ], 
+      'form' => [
+        'title' => 'Novyj',
+        'fields' => [
+          'name' => 'Tvoje imia'
+        ]
+      ]
   ],
   'footer' => [
     'quote' => 'Беру на себе незвичайні виклики,<br> Ми створюємо незвичайне майбутнє',

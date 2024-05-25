@@ -104,8 +104,8 @@ $site_config = [
         'military_1' => 'Hi',
         'military_2' => 'Hi',
       ]
-    ]
-
+    ],
+    'form' => []
   ],
   'footer' => [
     'address' => 'ul. Łaciarska 32<br> 50-146 Wrocław',

@@ -215,7 +215,13 @@ return [
         'military_1' => 'Hi',
         'military_2' => 'Hi',
       ]
-    ]
+      ],
+      'form' => [
+        'title' => 'Nowy',
+        'fields' => [
+          'name' => 'Twoje imię'
+        ]
+      ]
   ],
   'footer' => [
     'quote' => 'Podejmując Wyjątkowe Wyzwania,<br> Tworzymy Wyjątkową Przyszłość',
