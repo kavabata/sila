@@ -1,56 +1,65 @@
 <?php
-session_start();
-
-include('includes/section.php');
 include('includes/config.php');
+include('includes/section.php');
 
-if (isset($_GET['lang'])) {
-  $lang = $_GET['lang'];
-  if (in_array($lang, ['en', 'pl', 'ua'])) {
-    $_SESSION['lang'] = $lang;
-  }
-}
-$lang = $_SESSION['lang'] ?? 'pl';
-$translations = include "lang/{$lang}.php";
+$page = $translations['pages'][$pageName];
 
 include('includes/header.php');
-
-$page = $_GET['page'];
 ?>
 <div class="content">
-  <section id="<?=$page;?>Page" class="section">
-    <h2 class="sectionTitle"><?=$translations['pages'][$page]['title'];?></h2>
-    
+  <section id="<?= $pageName; ?>Page" class="section">
+    <h2 class="sectionTitle"><?= $page['title']; ?></h2>
 
-    <?php if (isset($translations['pages'][$page]['intro'])): ?>
-    <div class="intro">
-      <?php foreach($translations['pages'][$page]['intro'] as $p):
-        echo '<p>'.$p.'</p>';
-      endforeach; ?>
-    </div>
-    <?php endif;
+    <div class="pageContainer">
+      <div class="pageLeft">
+        <?php if (isset($page['intro'])) : ?>
+          <div class="intro">
+            <?php foreach ($page['intro'] as $p) :
+              echo '<p>' . $p . '</p>';
+            endforeach; ?>
+          </div>
+        <?php endif;
 
-    if (isset($translations['pages'][$page]['advice'])):?>
-    <div class="advice">
-      <?php foreach($translations['pages'][$page]['advice'] as $p):
-          echo '<p>'.$p.'</p>';
-        endforeach;?>
-    </div>
-    <?php endif;
-    
-    if (isset($translations['pages'][$page]['gallery'])): ?>
-    <div class="gallery">
-      Gallery goes here
-    </div>
-    <?php 
-    endif;
+        if (isset($page['links'])) : ?>
+          <div class="links">
+            <?php foreach ($page['links'] as $link) :
+              echo '<a href="' . $link['url'] . '" title="' . $link['text'] . '" class="pageLink" target="_blank">
+              ' . $link['text'] . '</a>';
+            endforeach; ?>
+          </div>
+        <?php endif;
 
-    if (isset($translations['pages'][$page]['outro'])):
-      foreach($translations['pages'][$page]['outro'] as $p):
-        echo '<p>'.$p.'</p>';
-      endforeach;
-    endif;
-    ?>
+        if (isset($page['advice'])) : ?>
+          <div class="advice">
+            <?php foreach ($page['advice'] as $p) :
+              echo '<p>' . $p . '</p>';
+            endforeach; ?>
+          </div>
+        <?php endif; ?>
+
+        <?php if (isset($page['outro'])) : ?>
+          <div class="intro">
+            <?php foreach ($page['outro'] as $p) :
+              echo '<p>' . $p . '</p>';
+            endforeach; ?>
+          </div>
+        <?php endif; ?>
+      </div>
+      <div class="pageRight">
+        <?php if (isset($page['gallery'])) : ?>
+          <div class="pageGallery">
+            <?php foreach ($page['gallery'] as $key => $title) : ?>
+              <div class="item">
+                <?php if (!empty($title)) : ?>
+                  <span class="title"><?= $title; ?></span>
+                <?php endif; ?>
+                <img src="/img/gallery/<?= $key; ?>.webp" alt="<?= $title; ?>">
+              </div>
+            <?php endforeach; ?>
+          </div>
+        <?php endif; ?>
+      </div>
+    </div>
   </section>
 </div>
 

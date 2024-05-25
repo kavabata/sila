@@ -1,67 +1,69 @@
-<?php 
+<?php
 $sections = $translations['sections'];
 
 $menuItems = [];
 foreach ($translations['sections'] as $sectionKey => $sectionDetails) {
-    $menuItems[] = [
-        'title' => $translations['menu'][$sectionKey] ?? $sectionDetails['title'],
-        'url' => '/#' . $sectionKey . 'Section'
-    ];
+  $menuItems[] = [
+    'title' => $translations['menu'][$sectionKey] ?? $sectionDetails['title'],
+    'url' => build_url('#' . $sectionKey . 'Section')
+  ];
 }
 ?>
 <!DOCTYPE html>
 <html lang="pl-PL">
+
 <head>
   <meta charset="UTF-8" />
   <title><?php echo $title; ?></title>
-  <link rel="stylesheet" href="css/global.css" />
-  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="/css/global.css" />
+  <link rel="stylesheet" href="/css/sections.css" />
 </head>
+
 <body>
   <header>
     <div class="headerContainer">
-    <a href="/" title="<?=$site_name;?>" class="headerLogo">
-      <img src="img/logo-black-trans.webp" alt="<?=$site_name;?>">
-    </a>
-    <div class="headerLang">
-      <a href="?lang=pl" title="Polski">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="0 0 60 30">
-          <rect width="60" height="15" fill="#fff"/>
-          <rect width="60" height="15" y="15" fill="#dc143c"/>
-        </svg>
+      <a href="<?= build_url(); ?>" title="<?= $site_name; ?>" class="headerLogo">
+        <img src="/img/logo-black-trans.webp" alt="<?= $site_name; ?>">
       </a>
-      <a href="?lang=ua" title="Українська">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="0 0 60 30">
-          <rect width="60" height="15" fill="#0057b7"/>
-          <rect width="60" height="15" y="15" fill="#ffd700"/>
-        </svg>
-      </a>
-      <a href="?lang=en" title="English">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="30" height="20">
-          <clipPath id="t">
-            <path d="M30,15v15h15zv15H15zV15H0zV0h15zV0h15zV0H30z"/>
-          </clipPath>
-          <path d="M0,0v30h60V0z" fill="#012169"/>
-          <path d="M0,0L60,30m0-30L0,30" stroke="#fff" stroke-width="6"/>
-          <path d="M0,0L60,30m0-30L0,30" stroke="#C8102E" stroke-width="4"/>
-          <path d="M30,0v30M0,15h60" stroke="#fff" stroke-width="10"/>
-          <path d="M30,0v30M0,15h60" stroke="#C8102E" stroke-width="6"/>
-          <path d="M0,0L60,30m0-30L0,30" stroke="#fff" stroke-width="6" clip-path="url(#t)"/>
-          <path d="M0,0L60,30m0-30L0,30" stroke="#C8102E" stroke-width="4" clip-path="url(#t)"/>
-        </svg>
-      </a>
-    </div>
-    <nav>
-      <ul>
-        <?php foreach ($menuItems as $item): ?>
-          <li>
-            <a href="<?=$item['url'];?>">
-              <?=!empty($item['icon']) ? '<i class="' . $item['icon'] . '"></i> ': '';?>
-              <?=$item['title'];?>
-            </a>
-          </li>
-        <?php endforeach; ?>
-      </ul>
-    </nav>
+      <div class="headerLang">
+        <a href="<?= !empty($pageName) ? "/{$pageName}" : '/'; ?>" title="Polski">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="0 0 60 30">
+            <rect width="60" height="15" fill="#fff" />
+            <rect width="60" height="15" y="15" fill="#dc143c" />
+          </svg>
+        </a>
+        <a href="/ua<?= !empty($pageName) ? "/{$pageName}" : ''; ?>" title="Українська">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="0 0 60 30">
+            <rect width="60" height="15" fill="#0057b7" />
+            <rect width="60" height="15" y="15" fill="#ffd700" />
+          </svg>
+        </a>
+        <a href="/en<?= !empty($pageName) ? "/{$pageName}" : ''; ?>" title="English">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="30" height="20">
+            <clipPath id="t">
+              <path d="M30,15v15h15zv15H15zV15H0zV0h15zV0h15zV0H30z" />
+            </clipPath>
+            <path d="M0,0v30h60V0z" fill="#012169" />
+            <path d="M0,0L60,30m0-30L0,30" stroke="#fff" stroke-width="6" />
+            <path d="M0,0L60,30m0-30L0,30" stroke="#C8102E" stroke-width="4" />
+            <path d="M30,0v30M0,15h60" stroke="#fff" stroke-width="10" />
+            <path d="M30,0v30M0,15h60" stroke="#C8102E" stroke-width="6" />
+            <path d="M0,0L60,30m0-30L0,30" stroke="#fff" stroke-width="6" clip-path="url(#t)" />
+            <path d="M0,0L60,30m0-30L0,30" stroke="#C8102E" stroke-width="4" clip-path="url(#t)" />
+          </svg>
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <?php foreach ($menuItems as $item) : ?>
+            <li>
+              <a href="<?= $item['url']; ?>">
+                <?= !empty($item['icon']) ? '<i class="' . $item['icon'] . '"></i> ' : ''; ?>
+                <?= $item['title']; ?>
+              </a>
+            </li>
+          <?php endforeach; ?>
+        </ul>
+      </nav>
     </div>
   </header>
