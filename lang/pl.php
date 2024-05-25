@@ -229,4 +229,9 @@ return [
     'nip' => 'NIP 8943186703',
     'regon' => 'REGON 522005281',
   ],
+  '404' => [
+    'title' => 'Strona nie znaleziona',
+    'description' => 'Przepraszamy, ale żądana strona jest niedostępna lub nie istnieje. Być może potrzebujesz wrócić na stronę główną?',
+    'button' => 'Przejdź do strony głównej',
+  ]
 ];

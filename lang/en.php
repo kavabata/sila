@@ -205,4 +205,9 @@ return [
     'nip' => 'NIP 8943186703',
     'regon' => 'REGON 522005281',
   ],
+  '404' => [
+    'title' => 'Page Not Found',
+    'description' => 'Sorry, but the requested page is unavailable or does not exist. Perhaps you would like to return home?',
+    'button' => 'Go to Home',
+  ]
 ];

@@ -4,7 +4,7 @@
     <?php foreach ($section['images'] as $key => $title) : ?>
       <div class="item">
         <span class="title"><?= $title; ?></span>
-        <img src="img/gallery/<?= $key; ?>.webp" alt="<?= $title; ?>">
+        <img src="/img/gallery/<?= $key; ?>.webp" alt="<?= $title; ?>">
       </div>
     <?php endforeach; ?>
   </div>
