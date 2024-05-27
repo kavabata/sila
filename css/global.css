@@ -1,5 +1,5 @@
 /* Import Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 /* Variables */
 :root {
@@ -9,7 +9,7 @@
   --color-dark-gray: #2c2c2c;
   --color-black: #000;
 
-  --font-main: "Poppins", sans-serif;
+  --font-main: 'Poppins', sans-serif;
   --max-width: 1200px;
   --menu-height: 64px;
   --padding-half: 8px;
@@ -38,7 +38,7 @@ body {
 }
 
 button {
-  font-family: var(--font-main);  
+  font-family: var(--font-main);
 }
 
 p {
@@ -46,7 +46,8 @@ p {
   line-height: 2;
 }
 
-button, a.button {
+button,
+a.button {
   background-color: var(--color-red);
   border: none;
   border-radius: 4px;
@@ -55,7 +56,7 @@ button, a.button {
   padding: var(--padding-half) var(--padding);
   margin-top: var(--padding);
   font-size: var(--font-size-sm);
-  
+
   font-weight: 600;
   transition: 1.5s;
   cursor: pointer;
@@ -63,8 +64,10 @@ button, a.button {
   text-decoration: none;
 }
 
-button:hover, a.button:hover {
-  box-shadow: 0 12px var(--padding) 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+button:hover,
+a.button:hover {
+  box-shadow: 0 12px var(--padding) 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 a {
@@ -101,7 +104,7 @@ header {
   height: var(--menu-height);
 }
 
-.headerLogo img{
+.headerLogo img {
   height: var(--menu-height);
   margin-left: 13px;
 }
@@ -154,8 +157,9 @@ header nav ul li a:hover {
     bottom: var(--padding-half);
   }
 
-  header nav:after, header nav:before {
-    content: "";
+  header nav:after,
+  header nav:before {
+    content: '';
     height: 3px;
     width: 17px;
     background-color: #fff;
@@ -213,7 +217,6 @@ footer .footerContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 
 footer .footerMain {
@@ -290,4 +293,9 @@ footer .footerSide a {
 footer .footerSide ul li a:hover,
 footer .footerSide a:hover {
   text-decoration: underline;
+}
+
+footer .footerCopyright {
+  text-align: center;
+  margin: var(--padding);
 }

@@ -25,12 +25,12 @@
         </div>
         <ul>
           <?php foreach ($menuItems as $item) : ?>
-            <li>
-              <a href="<?= $item['url']; ?>">
-                <?= !empty($item['icon']) ? '<i class="' . $item['icon'] . '"></i> ' : ''; ?>
-                <?= $item['title']; ?>
-              </a>
-            </li>
+          <li>
+            <a href="<?= $item['url']; ?>">
+              <?= !empty($item['icon']) ? '<i class="' . $item['icon'] . '"></i> ' : ''; ?>
+              <?= $item['title']; ?>
+            </a>
+          </li>
           <?php endforeach; ?>
         </ul>
       </div>
@@ -55,6 +55,8 @@
       </div>
     </div>
   </div>
+  <div class="footerCopyright">
+    &copy; 2022-<?=date("Y");?> <?= $site_name; ?>
 </footer>
 </body>
 

@@ -92,8 +92,13 @@ return [
     'join' => [
       'title' => 'JOIN <span>US</span>',
       'description' => 'Your contribution can make a huge impact on others\' lives. By helping, you become part of the change and give a chance for a better tomorrow.',
-      'join_button' => 'Sign Up',
-      'donate_button' => 'Donate',
+      'cards' => [
+        'join' => [
+          'title' => 'Contact with us',
+          'description' => 'Contact with us!',
+          'button' => 'Contact us'
+        ],
+      ]
     ],
   ],
   'pages' => [
@@ -155,7 +160,7 @@ return [
         'paragraph3' => 'The language school operates in an open format, which means that anyone can join at any time. The language barrier is a significant obstacle in the integration of people from Ukraine with the new environment, but as international organizations dealing with immigrants and refugees report, language support is crucial in the process of integration and assimilation of new citizens. Through the organization of language classes, we aim to support the integration of participants into the Polish community, and we want them to feel that they are taming the surrounding reality and are less lost in a foreign country.',
         'paragraph4' => 'We entrust the facilitation of meetings to a Ukrainian person who has several years of experience in teaching Polish, as well as many years of experience living in Poland, knowing what situations newcomers to Poland most often find themselves in and what vocabulary they need to cope.',
         'paragraph5' => 'The language school will operate in an open format, which means that anyone can join at any time.',
-        'paragraph6' => 'Classes are held every Tuesday at 5:00 PM.'
+        'paragraph6' => 'Registration can be done by phone.'
       ],
       'gallery' => [
         'jezyk_polski' => 'Img title',
@@ -248,9 +253,24 @@ return [
       ]
     ],
     'form' => [
-      'title' => 'New',
+      'seo' => [
+        'keywords' => 'contact us, join us',
+        'description' => 'Contact us for inquiries or to join our community.'
+      ],
+      'title' => 'Contact Us',
       'fields' => [
-        'name' => 'Your Name'
+        'name' => 'Your Name',
+        'email' => 'Your Email',
+        'message' => 'Message',
+        'captcha' => 'What is 3 + 4?', // Added captcha label
+        'submit' => 'Submit'
+      ],
+      'messages' => [
+        'captcha' => 'Incorrect CAPTCHA!',
+        'email' => 'Invalid email format.',
+        'fail' => 'Sorry, there was an error sending your message. Please try again later. Or <a href="mailto:silakobietywro@gmail.com" class="button">Write a letter</a>',
+        'success' => 'Thank you for contacting us. We will get back to you shortly.',
+        'home' => 'Back to Home!'
       ]
     ]
   ],

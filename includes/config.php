@@ -1,4 +1,6 @@
 <?php
+include('functions.php');
+loadEnv('.env');
 session_start();
 
 if (isset($_GET['lang'])) {
@@ -16,8 +18,8 @@ function build_url($url = '')
   return $lang != 'pl' ? "/{$lang}/{$url}" : "/{$url}";
 }
 
-$title = "Sila Kobiety";
-$site_name = "Sila Kobiety";
+$title = "Siła Kobiety";
+$site_name = "Siła Kobiety";
 $site_account = "22 1020 5242 0000 2002 0560 3370";
 
 $site_config = [
@@ -69,6 +71,13 @@ $site_config = [
         '12' => 'Tytuł 9Zdjęcia'
       ]
     ],
+    'join' => [
+      'cards' => [
+        'join' => [
+          'link' => build_url('form')
+        ]
+      ]
+    ]
   ],
   'pages' => [
     'regulations' => [
