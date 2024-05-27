@@ -3,6 +3,7 @@ include('includes/config.php');
 include('includes/section.php');
 
 $page = $translations['pages'][$pageName];
+$page['seo']['keywords'] = $page['seo']['keywords'] . ',' . $translations['seo']['generic_keywords'];
 
 include('includes/header.php');
 ?>

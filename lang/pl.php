@@ -15,6 +15,12 @@ return [
     'description' => 'Jest to fundusz charytatywny mający na celu pomoc Ukrainkom za granicą',
     'donate_button' => 'Przekaż darowiznę',
   ],
+  'seo' =>
+  [
+    'generic_keywords' => 'Wspieranie kobiet, Fundacja Siła Kobiety',
+    'keywords' => 'Wspieranie kobiet, Fundacja Siła Kobiety, Grupa wsparcia dla seniorów, Klub Literacki dla seniorów, Wydarzenia artystyczne i kulturalne, Koncerty Mix Friday, Wsparcie dla Sił Zbrojnych Ukrainy, Społeczność dla seniorów, Spotkania zdrowotne i literackie, Zbiórka funduszy dla seniorów, Aktywności społeczności seniorów, Integracja społeczna osób starszych, Fundacja charytatywna Siła Kobiety, Programy wellness dla seniorów, Wydarzenia Siła Kobiety',
+    'description' => 'Fundacja „Siła Kobiety” wspiera kobiety i seniorów, oferując różnorodne programy i wydarzenia, takie jak Klub Literacki, koncerty Mix Friday oraz wsparcie dla Sił Zbrojnych Ukrainy. Dołącz do nas, aby wspólnie budować silną i zintegrowaną społeczność.'
+  ],
   'sections' => [
     'about' => [
       'title' => 'O nas',
@@ -96,6 +102,10 @@ return [
   'pages' => [
     'donate' => [
       'title' => 'Darowizna',
+      'seo' => [
+        'keywords' => 'darowizna, wsparcie, fundacja, pomoc, bezpłatny, cele statutowe, podatek, ulga podatkowa, PIT, darowizny, filantropia',
+        'description' => 'Wsparcie naszych statutowych celów fundacji poprzez dokonanie darowizny. Dowiedz się, jak twoja pieniężna darowizna może zmienić życie i przyczynić się zarówno do twojego dobra, jak i naszej sprawy.'
+      ],
       'intro' => [
         'paragraph1' => 'Każda darowizna pieniężna wpłacona na konto naszej fundacji, pomaga nam w realizacji celów statutowych.',
         'paragraph2' => 'Przez cały rok możesz wpłacić darowiznę bezpośrednio na konto Fundacji w Banku <br>PKO BP nr konta: <b>' . $site_account . '</b><br>tytułem: <b>“Darowizna na cele statutowe”</b>',
@@ -111,6 +121,10 @@ return [
     ],
     'regulations' => [
       'title' => 'Regulacje/Oświadczenia',
+      'seo' => [
+        'keywords' => 'regulacje, oświadczenia, statut, rejestr sądowy, uchwała, sprawozdanie finansowe, podsumowanie, fundacja, organizacja, dokumenty prawne',
+        'description' => 'Dostęp do ważnych dokumentów prawnych i oświadczeń Fundacji "SIŁA KOBIETY", w tym statutu, wyciągu z rejestru sądowego, uchwały zarządu, wprowadzenia do sprawozdania finansowego, dodatkowych informacji i podsumowania działań.'
+      ],
       'links' => [
         'statute' => [
           'text' => 'Statut FUNDACJI „SIŁA KOBIETY”'
@@ -134,6 +148,10 @@ return [
     ],
     'language' => [
       'title' => 'Język Polski',
+      'seo' => [
+        'keywords' => 'język polski, szkoła językowa, integracja, wymiana kulturowa, kultura polska, kursy językowe, obcokrajowcy, imigranci, uchodźcy, integracja społeczna',
+        'description' => 'Odkryj korzyści płynące z nauki języka polskiego i dołącz do naszej szkoły językowej. Nasze zajęcia w otwartym formacie ułatwiają integrację, wymianę kulturową i komunikację z polską społecznością.'
+      ],
       'intro' => [
         'paragraph1' => 'Znajomość języka polskiego umożliwia obcokrajowcom pełniejsze uczestnictwo w życiu społecznym, budowanie relacji i integrację z lokalną społecznością. Dzięki umiejętności komunikacji w języku ojczystym obcokrajowiec może lepiej zrozumieć kulturę, tradycje i zwyczaje polskie.',
         'paragraph2' => 'Znajomość języka polskiego daje obcokrajowcom większą niezależność i pewność siebie w codziennych sytuacjach życiowych, takich jak zakupy, korzystanie z usług publicznych czy poszukiwanie mieszkania. Dzięki temu mogą oni łatwiej osiedlić się i prowadzić satysfakcjonujące życie w Polsce.',
@@ -150,6 +168,11 @@ return [
     ],
     'art' => [
       'title' => 'Art-Terapia',
+      'seo' =>
+      [
+        'keywords' => 'terapia sztuki, terapia dla dzieci, terapia dla dorosłych, terapia kreatywna, rozwój emocjonalny, jakość życia, wsparcie emocjonalne, integracja międzypokoleniowa',
+        'description' => 'Zapoznaj się z terapeutycznymi korzyściami sztuki dla dzieci i dorosłych. Nasze warsztaty sztuki wspierają rozwój emocjonalny, dobre samopoczucie i jakość życia poprzez kreatywny proces twórczy.'
+      ],
       'intro' => [
         'paragraph1' => '<b>Dla dzieci i dorosłych</b>',
         'paragraph2' => 'Jedną z kluczowych zalet art-terapii dla dzieci i dorosłych jest jej uniwersalność i dostępność. Niezależnie od wieku, doświadczenia czy umiejętności artystycznych, każdy może skorzystać z korzyści płynących z twórczego procesu terapeutycznego. Art-terapia jest także formą terapii niewerbalnej, co oznacza, że pozwala na wyrażanie się w sposób niemieszczący się w ramach słów.',
@@ -167,6 +190,10 @@ return [
     ],
     'club' => [
       'title' => 'Klub Literacki',
+      'seo' => [
+        'keywords' => 'klub literacki, spotkania kulturalne, integracja społeczna, wsparcie dla seniorów, kultura literacka, wymiana doświadczeń, rozmowy, muzyka, historie życia',
+        'description' => 'Dołącz do naszego klubu literackiego, gdzie seniorzy mogą spotkać się, rozmawiać, dzielić się swoimi historiami życia i cieszyć się towarzystwem innych osób.'
+      ],
       'intro' => [
         'paragraph1' => 'Grupa skierowana jest w szczególności do seniorów, którzy niezwykle potrzebują wspierających relacji w obliczu utraty wszystkiego, na czym im zależało, za czym stali murem.',
         'paragraph2' => 'Teraz często samotni, potrzebują wspierającej społeczności, w ramach której mogą podzielić się swoimi historiami, opowiedzieć o tym, za czym tęsknią, zintegrować i zrelaksować przy muzyce.',
@@ -180,6 +207,10 @@ return [
     ],
     'concerts' => [
       'title' => 'Koncerty',
+      'seo' => [
+        'keywords' => 'koncerty, muzyczne spotkania, relaks, kultura, muzyka na żywo, wydarzenia kulturalne, aktywności społeczne, integracja społeczna',
+        'description' => 'Zapraszamy na nasze koncerty i muzyczne spotkania w ramach projektu "Mix Friday". Odkryj radość i relaks podczas koncertów o różnorodnym repertuarze.'
+      ],
       'intro' => [
         'paragraph1' => 'Muzyczne spotkania „Mix Friday”',
         'paragraph2' => 'Zapraszamy na koncerty w ramach projektu „Mix Friday”. <br /> Czekamy na wszystkich, którzy chcą u nas odpocząć na ul. Łaciarskiej 32 <br /> w Art-cafe Świetlica o godzinie 18.00 w każdy piątek.'
@@ -196,6 +227,11 @@ return [
     ],
     'military' => [
       'title' => 'Wsparcie dla Sił Zbrojnych Ukrainy',
+      'seo' =>
+      [
+        'keywords' => 'wsparcie, Siły Zbrojne Ukrainy, pomoc medyczna, wsparcie wojskowe, wsparcie psychologiczne, pomoc humanitarna, weterani wojenni, konflikt na Ukrainie',
+        'description' => 'Zapoznaj się z możliwościami wsparcia Sił Zbrojnych Ukrainy. Fundacja "Siła Kobiet" oferuje pomoc medyczną, wsparcie wojskowe, psychologiczne i humanitarne dla żołnierzy oraz ich rodzin.'
+      ],
       'intro' => [
         'paragraph1' => 'Oni nas bronią przed <br><strong>DZIKIMI HORDAMI BARBARZYŃCÓW</strong>',
         'paragraph2' => 'Siły Zbrojne Ukrainy stoją na pierwszej linii frontu, broniąc wolności ukraińskiego narodu, suwerenności oraz prawa do spokojnej przyszłości. Potrzebują naszego wsparcia bardziej niż kiedykolwiek.',
@@ -215,13 +251,13 @@ return [
         'military_1' => 'Hi',
         'military_2' => 'Hi',
       ]
-      ],
-      'form' => [
-        'title' => 'Nowy',
-        'fields' => [
-          'name' => 'Twoje imię'
-        ]
+    ],
+    'form' => [
+      'title' => 'Nowy',
+      'fields' => [
+        'name' => 'Twoje imię'
       ]
+    ]
   ],
   'footer' => [
     'quote' => 'Podejmując Wyjątkowe Wyzwania,<br> Tworzymy Wyjątkową Przyszłość',

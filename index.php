@@ -1,6 +1,8 @@
 <?php
 include('includes/config.php');
 include('includes/section.php');
+
+$page = $translations; // for seo
 include('includes/header.php');
 ?>
 <div class="content">

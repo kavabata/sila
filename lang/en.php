@@ -15,6 +15,11 @@ return [
     'description' => 'A charitable fund aimed at helping Ukrainian women abroad',
     'donate_button' => 'Donate Now',
   ],
+  'seo' => [
+    'generic_keywords' => 'Women\'s Empowerment, Siła Kobiety Foundation, Siła Kobiety Charity',
+    'keywords' => 'Women\'s Empowerment, Siła Kobiety Foundation, Senior Support Group, Literary Club for Seniors, Art and Culture Events, Mix Friday Concerts, Support for Ukrainian Armed Forces, Community for Seniors, Health and Literature Meetings, Fundraising for Seniors, Senior Community Activities, Elderly Social Integration, Siła Kobiety Charity, Senior Wellness Programs, Siła Kobiety Events',
+    'description' => 'The "Siła Kobiety" Foundation supports women and seniors by offering various programs and events such as the Literary Club, Mix Friday concerts, and support for the Ukrainian Armed Forces. Join us to build a strong and integrated community together.'
+  ],
   'sections' => [
     'about' => [
       'title' => 'About Us',
@@ -94,6 +99,10 @@ return [
   'pages' => [
     'donate' => [
       'title' => 'Donation',
+      'seo' => [
+        'keywords' => 'donate, donation, charitable giving, support, nonprofit, foundation, help, contribution, charity, philanthropy',
+        'description' => 'Support our foundation\'s statutory goals by making a donation. Learn how your monetary donation can make a difference and benefit both you and our cause.'
+      ],
       'intro' => [
         0 => 'Every monetary donation made to our foundation\'s account helps us achieve our statutory goals.',
         1 => 'Throughout the year, you can make a donation directly to the Foundation\'s account at Bank PKO BP<br>account number: <b>' . $site_account . '</b><br>with the title: <b>“Donation for statutory purposes”</b>'
@@ -109,6 +118,10 @@ return [
     ],
     'regulations' => [
       'title' => 'Regulations/Statements',
+      'seo' => [
+        'keywords' => 'regulations, statements, statute, court register, resolution, financial statement, summary, foundation, organization, legal documents',
+        'description' => 'Access important legal documents and statements of the "WOMAN\'S POWER" FOUNDATION, including the statute, court register excerpt, board resolution, financial statement introduction, additional information, and summary of activities.'
+      ],
       'links' => [
         'statute' => [
           'text' => 'Statute of the "WOMAN\'S POWER" FOUNDATION',
@@ -132,6 +145,10 @@ return [
     ],
     'language' => [
       'title' => 'Polish Language',
+      'seo' => [
+        'keywords' => 'Polish language, language school, integration, cultural exchange, Polish culture, language classes, foreigners, immigrants, refugees, social integration',
+        'description' => 'Discover the benefits of learning the Polish language and join our language school. Our open-format classes facilitate integration, cultural exchange, and communication with the Polish community.'
+      ],
       'intro' => [
         'paragraph1' => 'Knowledge of the Polish language allows foreigners to participate more fully in social life, build relationships, and integrate with the local community. The ability to communicate in the native language enables a foreigner to better understand Polish culture, traditions, and customs.',
         'paragraph2' => 'Knowledge of the Polish language gives foreigners greater independence and confidence in everyday life situations, such as shopping, using public services, or finding accommodation. This makes it easier for them to settle and lead a fulfilling life in Poland.',
@@ -148,6 +165,10 @@ return [
     ],
     'art' => [
       'title' => 'Art Therapy',
+      'seo' => [
+        'keywords' => 'art therapy, therapeutic art, creative expression, emotional development, well-being, quality of life, intergenerational, coping with emotions, workshops',
+        'description' => 'Explore the therapeutic benefits of art therapy for children and adults. Our workshops focus on emotional development, coping with emotions related to the war in Ukraine, and fostering intergenerational relationships.'
+      ],
       'intro' => [
         'paragraph1' => '<b>For children and adults</b>',
         'paragraph2' => 'One of the key advantages of art therapy for children and adults is its universality and accessibility. Regardless of age, experience, or artistic skills, everyone can benefit from the therapeutic creative process. Art therapy is also a form of non-verbal therapy, which means it allows expression in ways that words cannot convey.',
@@ -165,6 +186,10 @@ return [
     ],
     'club' => [
       'title' => 'Literary Club',
+      'seo' => [
+        'keywords' => 'literary club, seniors, supportive relationships, community, storytelling, cultural discussions, literature, socialization, integration, relaxation',
+        'description' => 'Join our literary club for seniors and enjoy supportive relationships, cultural discussions, and relaxation. Our meetings cover topics such as health, history, culture, and literature, fostering socialization and integration.'
+      ],
       'intro' => [
         'paragraph1' => 'The group is especially aimed at seniors who are in great need of supportive relationships in the face of losing everything they cared about and stood by.',
         'paragraph2' => 'Now often alone, they need a supportive community where they can share their stories, talk about what they miss, integrate, and relax with music.',
@@ -178,6 +203,10 @@ return [
     ],
     'concerts' => [
       'title' => 'Concerts',
+      'seo' => [
+        'keywords' => 'concerts, musical meetings, music events, relaxation, entertainment, cultural activities, community, social gatherings',
+        'description' => 'Attend our musical meetings "Mix Friday" and enjoy concerts, relaxation, and socialization. Join us every Friday for a musical experience at Art-cafe Świetlica.'
+      ],
       'intro' => [
         'paragraph1' => 'Musical Meetings "Mix Friday"',
         'paragraph2' => 'We invite you to concerts as part of the "Mix Friday" project. <br /> We are waiting for everyone who wants to relax with us at 32 Łaciarska Street <br /> in the Art-cafe Świetlica at 6:00 PM every Friday.'
@@ -190,6 +219,32 @@ return [
         'koncerty4' => 'Tytuł Zdjęcia',
         'koncerty5' => 'Tytuł Zdjęcia',
         'koncerty6' => 'Tytuł Zdjęcia'
+      ]
+    ],
+    'military' => [
+      'title' => 'Support for the Ukrainian Armed Forces',
+      'seo' => [
+        'keywords' => 'support, Ukrainian Armed Forces, medical aid, military support, psychological support, humanitarian aid, war veterans, conflict in Ukraine',
+        'description' => 'Explore ways to support the Ukrainian Armed Forces. The "Women\'s Power" Foundation offers medical, military, psychological, and humanitarian aid for soldiers and their families.'
+      ],
+      'intro' => [
+        'paragraph1' => 'They defend us against <br><strong>WILD HORDES OF BARBARIANS</strong>',
+        'paragraph2' => 'The Ukrainian Armed Forces stand on the front lines, defending the freedom of the Ukrainian people, sovereignty, and the right to a peaceful future. They need our support more than ever.'
+      ],
+      'advice' => [
+        'paragraph3' => 'The "Women\'s Power" Foundation strongly supports the Ukrainian Armed Forces in their fight for sovereignty and freedom. Here are a few ways our foundation helps:',
+        'paragraph4' => '<ul>
+            <li>Fundraising for medical support for injured Ukrainian soldiers.</li>
+            <li>Purchasing and delivering military equipment and medicines for units on the front line.</li>
+            <li>Organizing charity events for the families of fallen and injured soldiers.</li>
+            <li>Psychological support for war veterans and their families.</li>
+            <li>Distribution of humanitarian aid in conflict-affected regions.</li>
+            <li>Promoting social awareness about the situation in Ukraine and the needs of its armed forces.</li>
+        </ul>'
+      ],
+      'gallery' => [
+        'military_1' => 'Hi',
+        'military_2' => 'Hi',
       ]
     ],
     'form' => [
