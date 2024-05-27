@@ -11,7 +11,7 @@ include('includes/header.php');
       <p><?= $translations['404']['description']; ?></p>
       <p>
         <a href="<?= build_url(); ?>" class="button">
-          <?= $translations['404']['button']; ?>
+          <?= $translations['404']['button']; ?> 😇
         </a>
       </p>
     </div>

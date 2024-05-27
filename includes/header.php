@@ -26,7 +26,7 @@ foreach ($translations['sections'] as $sectionKey => $sectionDetails) {
         <img src="/img/logo-black-trans.webp" alt="<?= $site_name; ?>">
       </a>
       <div class="headerLang">
-        <a href="<?= !empty($pageName) ? "/{$pageName}" : '/'; ?>" title="Polski">
+        <a href="<?= !empty($pageName) ? "/pl/{$pageName}" : '/pl'; ?>" title="Polski">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="0 0 60 30">
             <rect width="60" height="15" fill="#fff" />
             <rect width="60" height="15" y="15" fill="#dc143c" />
