@@ -72,7 +72,7 @@ section {
   min-height: calc(100vh - var(--menu-height));
   height: calc(100vh - var(--menu-height));
   width: 100%;
-  background-image: url(../img/banner.avif);
+  background-image: url(/img/banner.avif);
   background-size: cover;
   background-attachment: fixed;
 }
