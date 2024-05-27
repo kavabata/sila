@@ -14,8 +14,8 @@ jobs:
         server: s22.cyber-folks.pl
         username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_GITHUB }}
-        port: 222
-        protocol: ftps
+        port: 21
+        protocol: ftp
         server-dir: ./public_html/
         log-level: verbose
         exclude: |
