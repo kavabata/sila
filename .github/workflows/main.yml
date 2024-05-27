@@ -15,7 +15,7 @@ jobs:
         username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_GITHUB }}
         port: 222
-        protocol: ftps-legacy
+        protocol: ftps
         server-dir: ./public_html/
         log-level: verbose
         exclude: |
