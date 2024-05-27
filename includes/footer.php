@@ -56,7 +56,7 @@
     </div>
   </div>
   <div class="footerCopyright">
-    &copy; Copyright <?= $site_name; ?> 2022 - <?=date("Y");?>
+    &copy; 2022-<?=date("Y");?> <?= $site_name; ?>
 </footer>
 </body>
 
