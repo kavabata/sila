@@ -14,7 +14,7 @@ jobs:
         server: s22.cyber-folks.pl
         username: github@silakobiety.pl
         password: ${{ secrets.FTP_GITHUB }}
-        local-dir: ./public_html/
+        local-dir: ./public_html
         exclude: |
           **/.git*
           **/.git*/**
