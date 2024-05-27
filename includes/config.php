@@ -16,8 +16,8 @@ function build_url($url = '')
   return $lang != 'pl' ? "/{$lang}/{$url}" : "/{$url}";
 }
 
-$title = "Sila Kobiety";
-$site_name = "Sila Kobiety";
+$title = "Siła Kobiety";
+$site_name = "Siła Kobiety";
 $site_account = "22 1020 5242 0000 2002 0560 3370";
 
 $site_config = [
