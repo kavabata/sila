@@ -74,7 +74,18 @@ section {
   width: 100%;
   background-image: url(/img/banner.avif);
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
+}
+@supports (-webkit-touch-callout: none) {
+  .homeHead {
+    background-attachment: scroll;
+  }
+}
+
+@supports not (-webkit-touch-callout: none) {
+  .homeHead {
+    background-attachment: fixed;
+  }
 }
 .homeHeadContainer {
   max-width: var(--max-width);
