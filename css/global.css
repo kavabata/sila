@@ -294,3 +294,8 @@ footer .footerSide ul li a:hover,
 footer .footerSide a:hover {
   text-decoration: underline;
 }
+
+footer .footerCopyright {
+  text-align: center;
+  margin: var(--padding);
+}
