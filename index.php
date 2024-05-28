@@ -5,17 +5,6 @@ include('includes/section.php');
 $page = $translations; // for seo
 include('includes/header.php');
 
-function getTitleClass($title) {
-  $titleLenght = strlen($title);
-  if ($titleLenght > 30) {
-    return 'very-long-title';
-  } else if ($titleLenght > 20) {
-    return 'long-title';
-  } else if ($titleLenght > 15) {
-    return 'medium-title';
-  }
-  return '';
-}
 ?>
 <div class="content">
   <div class="homeHead">
@@ -36,19 +25,13 @@ function getTitleClass($title) {
   </div>
   <!-- homeSection end hear -->
 
-  <?php foreach ($sections as $key => $section) : ?>
-  <section id="<?= $key; ?>Section" class="section">
-    <h2 class="sectionTitle <?= getTitleClass($section['title']); ?>">
-      <?= $section['title']; ?>
-      <?php if (isset($section['subtitle'])) : ?>
-      <span><?= $section['subtitle']; ?></span>
-      <?php endif; ?>
-    </h2>
-    <?php if (isset($section['description'])) : ?>
-    <p><?= $section['description']; ?></p>
-    <?php endif; ?>
-  </section>
-  <?php endforeach; ?>
+  <?php foreach ($sections as $key => $section) :
+    if (!isset($section['template'])) :
+      default_section($key, $section);
+    else :
+      include("templates/{$section['template']}.php");
+    endif;
+  endforeach; ?>
 </div>
 
 <?php include('includes/footer.php'); ?>

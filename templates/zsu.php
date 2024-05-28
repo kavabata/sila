@@ -4,7 +4,7 @@
     your browser does not support HTML5 video
   </video>
 
-  <div class="sectionTitle"><?= $section['title']; ?></div>
+  <div class="sectionTitle <?= getTitleClass($section['title']);?>"><?= $section['title']; ?></div>
 
   <div class="militaryContainer">
     <h3>

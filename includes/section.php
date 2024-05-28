@@ -1,9 +1,23 @@
 <?php
 
+function getTitleClass($title)
+{
+  $titleLenght = strlen($title);
+  if ($titleLenght > 30) {
+    return 'very-long-title';
+  } else if ($titleLenght > 20) {
+    return 'long-title';
+  } else if ($titleLenght > 15) {
+    return 'medium-title';
+  }
+  return '';
+}
+
 function default_section($key, $section, $before = '', $after = '')
 {
   echo '<section id="' . $key . 'Section" class="section">
-    <h2 class="sectionTitle">' . $section['title'] . '</h2>';
+    <h2 class="sectionTitle ' . getTitleClass($section['title']) . '">
+    ' . $section['title'] . '</h2>';
   echo $before;
   if (isset($section['description'])) :
     if (is_array($section['description'])) :
