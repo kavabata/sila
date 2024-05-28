@@ -28,6 +28,18 @@ section {
   border: 3px solid #fff;
 }
 
+.very-long-title {
+  max-width: 600px;
+}
+
+.long-title {
+  max-width: 500px;
+}
+
+.medium-title {
+  max-width: 400px;
+}
+
 .pageContainer {
   padding: var(--padding);
 }

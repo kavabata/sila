@@ -24,13 +24,19 @@ include('templates/header.php');
   </div>
   <!-- homeSection end hear -->
 
-  <?php foreach ($sections as $key => $section) :
-    if (!isset($section['template'])) :
-      default_section($key, $section);
-    else :
-      include("templates/{$section['template']}.php");
-    endif;
-  endforeach; ?>
+  <?php foreach ($sections as $key => $section) : ?>
+  <section id="<?= $key; ?>Section" class="section">
+    <h2 class="sectionTitle <?= getTitleClass($section['title']); ?>">
+      <?= $section['title']; ?>
+      <?php if (isset($section['subtitle'])) : ?>
+      <span><?= $section['subtitle']; ?></span>
+      <?php endif; ?>
+    </h2>
+    <?php if (isset($section['description'])) : ?>
+    <p><?= $section['description']; ?></p>
+    <?php endif; ?>
+  </section>
+  <?php endforeach; ?>
 </div>
 
 <?php include('templates/footer.php'); ?>
