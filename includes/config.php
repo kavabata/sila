@@ -66,27 +66,21 @@ $site_config = [
     'regulations' => [
       'links' => [
         'statute' => [
-          'text' => 'Statute of the "WOMAN\'S POWER" FOUNDATION',
           'url' => 'https://drive.google.com/file/d/1tn709drCz6A9eibIuZcKUZlaKaNB7kZj/view?usp=drive_link'
         ],
         'excerpt' => [
-          'text' => 'Excerpt from the NATIONAL COURT REGISTER',
           'url' => 'https://drive.google.com/file/d/1yMWBct_2X3yRRrC54jRdRZU4DGtgHOA8/view?usp=drive_link'
         ],
         'resolution' => [
-          'text' => 'Resolution of the Board of the "WOMAN\'S POWER" FOUNDATION',
           'url' => 'https://drive.google.com/file/d/1yP9r6VLdKJ-xjxxCCHYZxUNZwAh9eTKX/view?usp=sharing'
         ],
         'introduction' => [
-          'text' => 'Introduction to the financial statement',
           'url' => 'https://drive.google.com/file/d/1FloRl-1ZCy7cyFQIdtJO7hg2fR12WEm6/view?usp=drive_link'
         ],
         'additional' => [
-          'text' => 'Additional information to the financial statement',
           'url' => 'https://drive.google.com/file/d/1bRNusiQWcQP6dXG_g4l5-VbBEaCCewN2/view?usp=drive_link'
         ],
         'summary' => [
-          'text' => 'Summary of 2023',
           'url' => 'https://drive.google.com/file/d/1rILPhtDQsMu_EC0n43p9_QdYA90qjqDF/view?usp=drive_link'
         ],
       ]

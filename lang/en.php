@@ -84,8 +84,8 @@ return [
       'description' => 'Your contribution can make a huge impact on others\' lives. By helping, you become part of the change and give a chance for a better tomorrow.',
       'cards' => [
         'join' => [
-          'title' => 'Contact with us',
-          'description' => 'Contact with us!',
+          'title' => '',
+          'description' => '',
           'button' => 'Contact us'
         ],
       ]
