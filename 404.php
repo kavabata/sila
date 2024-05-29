@@ -5,7 +5,7 @@ include('includes/header.php');
 ?>
 <div class="content">
   <section id="404Page" class="section">
-    <h2 class="sectionTitle"><?= $translations['404']['title']; ?></h2>
+    <?= getSectionHeading($translations['404']['title'], 'h1'); ?>
 
     <div class="page404">
       <p><?= $translations['404']['description']; ?></p>

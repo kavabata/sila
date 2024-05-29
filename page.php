@@ -9,7 +9,7 @@ include('includes/header.php');
 ?>
 <div class="content">
   <section id="<?= $pageName; ?>Page" class="section">
-    <h2 class="sectionTitle"><?= $page['title']; ?></h2>
+    <?=getSectionHeading($page['title'], 'h1');?>
 
     <div class="pageContainer">
       <div class="pageLeft">

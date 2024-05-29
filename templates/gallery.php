@@ -1,5 +1,5 @@
 <section class="gallery" id="gallerySection">
-  <div class="sectionTitle"><?= $section['title']; ?></div>
+  <?= getSectionHeading($section['title']); ?>
   <div class="galleryContainer">
     <?php foreach ($section['images'] as $key => $title) : ?>
       <div class="item">

@@ -74,8 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </script>
 <div class="content">
   <section class="form" id="formSection">
-    <div class="sectionTitle"><?= $page['title']; ?></div>
-
+    <?= getSectionHeading($page['title'], 'h1'); ?>
     <?php if ($sent) : ?>
       <div class="formSuccess">
         <?= $page['messages']['success']; ?>

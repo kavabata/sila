@@ -95,8 +95,13 @@ return [
     'join' => [
       'title' => 'PRZYŁĄCZ SIĘ DO <span>NAS</span>',
       'description' => 'Twój wkład może mieć ogromny wpływ na życie innych. Pomagając, stajesz się częścią zmiany i dajesz szansę na lepsze jutro.',
-      'join_button' => 'Zapisz się',
-      'donate_button' => 'Przekaż darowiznę',
+      'cards' => [
+        'join' => [
+          'title' => '',
+          'description' => '',
+          'button' => 'PRZYŁĄCZ SIĘ!'
+        ],
+      ]
     ],
   ],
   'pages' => [
