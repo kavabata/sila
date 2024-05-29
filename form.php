@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   function onSubmit(e) {
     e.preventDefault();
     grecaptcha.enterprise.ready(async () => {
-      const token = await grecaptcha.enterprise.execute('<?= $_ENV['RECAPTHA_PUBLIC'];?>', {
+      const token = await grecaptcha.enterprise.execute('<?= $_ENV['RECAPTHA_PUBLIC']; ?>', {
         action: 'SUBMIT'
       });
       console.log({
@@ -79,6 +79,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <?php if ($sent) : ?>
       <div class="formSuccess">
         <?= $page['messages']['success']; ?>
+        <br />
+        <br />
         <a href="<?= build_url(); ?>" class="button">
           <?= $page['messages']['home']; ?>
         </a>

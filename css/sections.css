@@ -397,6 +397,7 @@ section {
   border-radius: var(--padding);
   border: 1px solid green;
   background: #6be93952;
+  text-align: center;
 }
 .form .formError {
   padding: var(--padding);
