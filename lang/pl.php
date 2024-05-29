@@ -12,7 +12,7 @@ return [
   'header' => [
     'donate' => 'Przekaż darowiznę',
     'title' => 'Fundacja',
-    'description' => 'Jest to fundusz charytatywny mający na celu pomoc Ukrainkom za granicą',
+    'description' => 'Jest to fundusz charytatywny mający na celu wsparcie Ukraińców za granicą',
     'donate_button' => 'Przekaż darowiznę',
   ],
   'seo' =>
@@ -158,7 +158,7 @@ return [
         'paragraph3' => 'Szkoła językowa działa w formule otwartej, co oznacza, że w każdej chwili można do niej dołączyć. Bariera językowa stanowi wysoką poprzeczkę w integracji osób z Ukrainy z nowym środowiskiem, ale jak wynika z raportów międzynarodowych organizacji zajmujących się imigrantami i uchodźcami, wsparcie językowe jest niezwykle ważne w procesie integracji i asymilacji nowych obywateli. Poprzez organizację zajęć językowych chcemy wesprzeć włączanie uczestników w społeczność polską, zależy nam na tym, by poczuli, że oswajają otaczającą ich rzeczywistość i byli jak najmniej zagubieni w obcym kraju.',
         'paragraph4' => 'Facylitację spotkań powierzamy osobie z Ukrainy, która ma kilkuletnie doświadczenie w prowadzeniu zajęć z języka polskiego, ale też wieloletnie doświadczenie życia w Polsce, wie w jakich sytuacjach najczęściej znajdują się osoby, które przybywają do Polski i jakiego słownictwa potrzebują, by móc sobie poradzić.',
         'paragraph5' => 'Szkoła językowa działać będzie w formule otwartej, co oznacza, że w każdej chwili można do niej dołączyć.',
-        'paragraph6' => 'Zajęcia odbywają się w każdy wtorek o godzinie 17:00.'
+        'paragraph6' => 'Zapisy można dokonać telefonicznie.'
       ],
       'gallery' => [
         'jezyk_polski' => 'Tytuł zdjęcia',
@@ -237,7 +237,7 @@ return [
         'paragraph2' => 'Siły Zbrojne Ukrainy stoją na pierwszej linii frontu, broniąc wolności ukraińskiego narodu, suwerenności oraz prawa do spokojnej przyszłości. Potrzebują naszego wsparcia bardziej niż kiedykolwiek.',
       ],
       'advice' => [
-        'paragraph3' => 'Fundacja "Siła Kobiet" zdecydowanie popiera siły zbrojne Ukrainy w ich walce o suwerenność i wolność. Oto kilka sposobów, w jaki nasza fundacja pomaga:',
+        'paragraph3' => 'Fundacja "Siła Kobiety" zdecydowanie popiera siły zbrojne Ukrainy w ich walce o suwerenność i wolność. Oto kilka sposobów, w jaki nasza fundacja pomaga:',
         'paragraph4' => '<ul>
           <li>Zbiórka funduszy na wsparcie medyczne dla rannych ukraińskich żołnierzy.</li>
           <li>Zakup i dostarczanie sprzętu wojskowego oraz lekarstw dla jednostek na froncie.</li>
