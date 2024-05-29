@@ -13,15 +13,16 @@ $email = '';
 $message = '';
 $sent = false;
 
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // Get form data
   $name = htmlspecialchars(trim($_POST["name"]));
   $email = htmlspecialchars(trim($_POST["email"]));
   $message = htmlspecialchars(trim($_POST["message"]));
-  $captcha = htmlspecialchars(trim($_POST["g-recaptcha-response"]));
+  $captcha = $_POST['recaptchaToken'];
 
   // Verify CAPTCHA
-  $secret = '6Lc3kuspAAAAABi3VSW0PgORtTM0SZu80laGsFqE';
+  $secret = $_ENV['RECAPTHA_PRIVATE'];
   $response = $captcha;
   $remoteip = $_SERVER['REMOTE_ADDR'];
 
@@ -35,7 +36,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   // Validate email
   if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    echo "Invalid email format.";
     $errors[] = $page['messages']['email'];
   }
 
@@ -50,13 +50,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $email_body .= "Message:\n$message\n";
 
   // Send email
-  if (mail($to, $subject, $email_body, $headers)) {
+  if (empty($errors) && mail($to, $subject, $email_body, $headers)) {
     $sent = true;
   } else {
     $errors[] = $page['messages']['fail'];
   }
 }
 ?>
+<script>
+  function onSubmit(e) {
+    e.preventDefault();
+    grecaptcha.enterprise.ready(async () => {
+      const token = await grecaptcha.enterprise.execute('<?= $_ENV['RECAPTHA_PUBLIC'];?>', {
+        action: 'SUBMIT'
+      });
+      console.log({
+        token
+      }, document.getElementById('recaptchaToken'));
+      document.getElementById('recaptchaToken').value = token;
+      document.forms[0].submit();
+    });
+  }
+</script>
 <div class="content">
   <section class="form" id="formSection">
     <div class="sectionTitle"><?= $page['title']; ?></div>
@@ -70,12 +85,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       </div>
     <?php else : ?>
 
-      <form action="<?= build_url('form'); ?>" method="POST">
+      <form action="<?= build_url('form'); ?>" method="POST" onsubmit="onSubmit(event)">
         <?php if (!empty($errors)) :
           foreach ($errors as $error) : ?>
             <div class="formError"><?= $error; ?></div>
         <?php endforeach;
         endif; ?>
+
+        <input type="hidden" name="recaptchaToken" id="recaptchaToken" value="" />
 
         <label for="name"><?= $page['fields']['name']; ?>:</label>
         <input type="text" id="name" name="name" required value="<?= $name; ?>"><br><br>
@@ -85,9 +102,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <label for="message"><?= $page['fields']['message']; ?>:</label><br>
         <textarea id="message" name="message" rows="4" cols="50" required><?= $message; ?></textarea><br><br>
-
-
-        <div class="g-recaptcha" data-sitekey="6Lc3kuspAAAAAJ8_7QWZ6q-K1p7bteM2nril3XD8"></div><br><br>
 
         <input type="submit" value="Submit" class="button">
       </form>

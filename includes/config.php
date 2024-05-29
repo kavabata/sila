@@ -1,4 +1,6 @@
 <?php
+include('functions.php');
+loadEnv('.env');
 session_start();
 
 if (isset($_GET['lang'])) {
