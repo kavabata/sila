@@ -20,4 +20,3 @@ function loadEnv($path)
     }
   }
 }
-
