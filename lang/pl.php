@@ -83,7 +83,7 @@ return [
       'gallery' => 'home'
     ],
     'join' => [
-      'title' => 'PRZYŁĄCZ SIĘ DO <span>NAS</span>',
+      'title' => 'Przyłącz się do nas',
       'description' => 'Twój wkład może mieć ogromny wpływ na życie innych. Pomagając, stajesz się częścią zmiany i dajesz szansę na lepsze jutro.',
       'cards' => [
         'join' => [

@@ -2,7 +2,7 @@
 
 function getTitleClass($title)
 {
-  $titleLenght = strlen($title);
+  $titleLenght = mb_strlen(strip_tags($title));
   $size = '';
   if ($titleLenght > 30) {
     $size = ' sectionTitle--xl';
