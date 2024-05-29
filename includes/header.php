@@ -17,8 +17,8 @@ foreach ($translations['sections'] as $sectionKey => $sectionDetails) {
   <title><?php echo $title; ?></title>
   <link rel="stylesheet" href="/css/global.css" />
   <link rel="stylesheet" href="/css/sections.css" />
-  <meta name="keywords" content="<?= htmlspecialchars($page['seo']['keywords']); ?>">
-  <meta name="description" content="<?= htmlspecialchars($page['seo']['description']); ?>">
+  <meta name="keywords" content="<?= @htmlspecialchars($page['seo']['keywords']); ?>">
+  <meta name="description" content="<?= @htmlspecialchars($page['seo']['description']); ?>">
 </head>
 
 <body>
