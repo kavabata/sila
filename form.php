@@ -18,12 +18,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $name = htmlspecialchars(trim($_POST["name"]));
   $email = htmlspecialchars(trim($_POST["email"]));
   $message = htmlspecialchars(trim($_POST["message"]));
-  $captcha = htmlspecialchars(trim($_POST["captcha"]));
+  $captcha = htmlspecialchars(trim($_POST["g-recaptcha-response"]));
 
-  // Validate CAPTCHA
-  if ($captcha !== '7') {
+  // Verify CAPTCHA
+  $secret = '6Lc3kuspAAAAABi3VSW0PgORtTM0SZu80laGsFqE';
+  $response = $captcha;
+  $remoteip = $_SERVER['REMOTE_ADDR'];
+
+  $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response&remoteip=$remoteip";
+  $response = file_get_contents($url);
+  $responseKeys = json_decode($response, true);
+
+  if (intval($responseKeys["success"]) !== 1) {
     $errors[] = $page['messages']['captcha'];
-    exit;
   }
 
   // Validate email
@@ -70,9 +77,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <?php endforeach;
         endif; ?>
 
-
-
-
         <label for="name"><?= $page['fields']['name']; ?>:</label>
         <input type="text" id="name" name="name" required value="<?= $name; ?>"><br><br>
 
@@ -82,8 +86,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <label for="message"><?= $page['fields']['message']; ?>:</label><br>
         <textarea id="message" name="message" rows="4" cols="50" required><?= $message; ?></textarea><br><br>
 
-        <label for="captcha">What is 3 + 4?</label>
-        <input type="text" id="captcha" name="captcha" required><br><br>
+
+        <div class="g-recaptcha" data-sitekey="6Lc3kuspAAAAAJ8_7QWZ6q-K1p7bteM2nril3XD8"></div><br><br>
 
         <input type="submit" value="Submit" class="button">
       </form>
