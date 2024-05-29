@@ -92,8 +92,13 @@ return [
     'join' => [
       'title' => 'JOIN <span>US</span>',
       'description' => 'Your contribution can make a huge impact on others\' lives. By helping, you become part of the change and give a chance for a better tomorrow.',
-      'join_button' => 'Sign Up',
-      'donate_button' => 'Donate',
+      'cards' => [
+        'join' => [
+          'title' => 'Contact with us',
+          'description' => 'Contact with us!',
+          'button' => 'Contact us'
+        ],
+      ]
     ],
   ],
   'pages' => [
@@ -248,9 +253,24 @@ return [
       ]
     ],
     'form' => [
-      'title' => 'New',
+      'seo' => [
+        'keywords' => 'contact us, join us',
+        'description' => 'Contact us for inquiries or to join our community.'
+      ],
+      'title' => 'Contact Us',
       'fields' => [
-        'name' => 'Your Name'
+        'name' => 'Your Name',
+        'email' => 'Your Email',
+        'message' => 'Message',
+        'captcha' => 'What is 3 + 4?', // Added captcha label
+        'submit' => 'Submit'
+      ],
+      'messages' => [
+        'captcha' => 'Incorrect CAPTCHA!',
+        'email' => 'Invalid email format.',
+        'fail' => 'Sorry, there was an error sending your message. Please try again later. Or <a href="mailto:silakobietywro@gmail.com" class="button">Write a letter</a>',
+        'success' => 'Thank you for contacting us. We will get back to you shortly.',
+        'home' => 'Back to Home!'
       ]
     ]
   ],

@@ -69,6 +69,13 @@ $site_config = [
         '12' => 'Tytuł 9Zdjęcia'
       ]
     ],
+    'join' => [
+      'cards' => [
+        'join' => [
+          'link' => build_url('form')
+        ]
+      ]
+    ]
   ],
   'pages' => [
     'regulations' => [

@@ -253,9 +253,24 @@ return [
       ]
     ],
     'form' => [
-      'title' => 'Nowy',
+      'seo' => [
+        'keywords' => 'skontaktuj się z nami, dołącz do nas',
+        'description' => 'Skontaktuj się z nami w sprawie zapytań lub dołącz do naszej społeczności.'
+      ],
+      'title' => 'Skontaktuj się z nami',
       'fields' => [
-        'name' => 'Twoje imię'
+        'name' => 'Twoje imię',
+        'email' => 'Twój email',
+        'message' => 'Wiadomość',
+        'captcha' => 'Ile to jest 3 + 4?', // Added captcha label
+        'submit' => 'Wyślij'
+      ],
+      'messages' => [
+        'captcha' => 'Niepoprawna CAPTCHA!',
+        'email' => 'Nieprawidłowy format email.',
+        'fail' => 'Przepraszamy, wystąpił błąd podczas wysyłania wiadomości. Proszę spróbuj ponownie później. Albo <a href="mailto:silakobietywro@gmail.com" class="button">napisz list</a>',
+        'success' => 'Dziękujemy za kontakt. Skontaktujemy się z Tobą wkrótce.',
+        'home' => 'Wróć do strony głównej!'
       ]
     ]
   ],

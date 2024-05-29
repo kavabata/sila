@@ -366,9 +366,53 @@ section {
 }
 /* Gallery Section end */
 
+
+.form {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form label {
+  font-size: var(--font-size-lg);
+  display: block;
+}
+
+.form input {
+  border-radius: 5px;
+  padding: var(--padding-half);
+  border: 1px solid #44444450;
+  width: 100%;
+  line-height: var(--font-size-lg);
+}
+.form textarea {
+  border-radius: 5px;
+  padding: var(--padding-half);
+  border: 1px solid #44444450;
+  width: 100%;
+  line-height: var(--font-size-lg);
+}
+
+.form .formSuccess {
+  padding: var(--padding);
+  margin: var(--padding);
+  border-radius: var(--padding);
+  border: 1px solid green;
+  background: #6be93952;
+}
+.form .formError {
+  padding: var(--padding);
+  margin: var(--padding) 0;
+  border-radius: var(--padding);
+  border: 1px solid rgba(195, 23, 23, 0.735);
+  background: #f10f0f22;
+  width: 100%;
+}
+
+
 .page404 p {
   font-size: var(--font-size-xl);
   text-align: center;
   max-width: 400px;
   margin: var(--padding) auto;
 }
+
