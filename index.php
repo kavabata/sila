@@ -1,9 +1,9 @@
 <?php
-include('includes/config.php');
-include('includes/section.php');
+include('includes/init.php');
 
 $page = $translations; // for seo
-include('includes/header.php');
+include('templates/header.php');
+
 ?>
 <div class="content">
   <div class="homeHead">
@@ -33,4 +33,4 @@ include('includes/header.php');
   endforeach; ?>
 </div>
 
-<?php include('includes/footer.php'); ?>
+<?php include('templates/footer.php'); ?>

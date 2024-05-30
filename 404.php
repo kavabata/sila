@@ -1,7 +1,6 @@
 <?php
-include('includes/config.php');
-include('includes/section.php');
-include('includes/header.php');
+include('includes/init.php');
+include('templates/header.php');
 ?>
 <div class="content">
   <section id="404Page" class="section">
@@ -18,4 +17,4 @@ include('includes/header.php');
   </section>
 </div>
 
-<?php include('includes/footer.php'); ?>
+<?php include('templates/footer.php'); ?>

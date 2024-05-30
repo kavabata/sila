@@ -1,11 +1,10 @@
 <?php
 
-include('includes/config.php');
-include('includes/section.php');
+include('includes/init.php');
 
 $page = $translations['pages'][$pageName];
 
-include('includes/header.php');
+include('templates/header.php');
 
 $errors = [];
 $name = '';
@@ -110,4 +109,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <?php endif; ?>
   </section>
 </div>
-<?php include('includes/footer.php'); ?>
+<?php include('templates/footer.php'); ?>

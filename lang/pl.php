@@ -80,17 +80,7 @@ return [
     'gallery' => [
       'template' => 'gallery',
       'title' => 'Galeria',
-      'images' => [
-        '01' => 'Tytuł 1Zdjęcia',
-        '05' => 'Tytuł 2Zdjęcia',
-        '06' => 'Tytuł 3Zdjęcia',
-        '07' => 'Tytuł 4Zdjęcia',
-        '08' => 'Tytuł 5Zdjęcia',
-        '09' => 'Tytuł 6Zdjęcia',
-        '10' => 'Tytuł 7Zdjęcia',
-        '11' => 'Tytuł 8Zdjęcia',
-        '12' => 'Tytuł 9Zdjęcia'
-      ]
+      'gallery' => 'home'
     ],
     'join' => [
       'title' => 'PRZYŁĄCZ SIĘ DO <span>NAS</span>',
@@ -159,11 +149,6 @@ return [
         'paragraph4' => 'Facylitację spotkań powierzamy osobie z Ukrainy, która ma kilkuletnie doświadczenie w prowadzeniu zajęć z języka polskiego, ale też wieloletnie doświadczenie życia w Polsce, wie w jakich sytuacjach najczęściej znajdują się osoby, które przybywają do Polski i jakiego słownictwa potrzebują, by móc sobie poradzić.',
         'paragraph5' => 'Szkoła językowa działać będzie w formule otwartej, co oznacza, że w każdej chwili można do niej dołączyć.',
         'paragraph6' => 'Zapisy można dokonać telefonicznie.'
-      ],
-      'gallery' => [
-        'jezyk_polski' => 'Tytuł zdjęcia',
-        'jezyk_polski2' => 'Tytuł zdjęcia',
-        'jezyk_polski3' => 'Tytuł zdjęcia'
       ]
     ],
     'art' => [
@@ -181,11 +166,6 @@ return [
         'paragraph5' => 'Celem zajęć jest przede wszystkim integracja grup międzypokoleniowych, ale także wsparcie ich rozwoju i kompetencji międzykulturowej.',
         'paragraph6' => 'Ma to pomóc w radzeniu sobie z emocjami związanymi z wojną w Ukrainie. Warsztaty przeznaczone są dla wszystkich.',
         'paragraph7' => 'Zajęcia będą się odbywały raz w tygodniu.'
-      ],
-      'gallery' => [
-        'art_home' => 'Tytuł zdjęcia',
-        'art_1' => 'Tytuł zdjęcia',
-        'art_2' => 'Tytuł zdjęcia'
       ]
     ],
     'club' => [
@@ -200,9 +180,6 @@ return [
         'paragraph3' => 'Tematyka spotkań dotyczy zdrowia, historii, kultury i literatury. Ponadto osoby starsze mogą podzielić się swoimi poglądami i doświadczeniami, a co najważniejsze, poznać osoby starsze w Polsce i nawiązać z nimi dobre relacje.',
         'paragraph4' => 'Spotkania klubu co czwartek o 17.00.',
         'paragraph5' => 'Spotkania odbywają się także na świeżym powietrzu. Klub jest otwarty dla wszystkich zainteresowanych seniorów.'
-      ],
-      'gallery' => [
-        'klub_literacki' => 'Tytuł zdjęcia'
       ]
     ],
     'concerts' => [
@@ -214,15 +191,6 @@ return [
       'intro' => [
         'paragraph1' => 'Muzyczne spotkania „Mix Friday”',
         'paragraph2' => 'Zapraszamy na koncerty w ramach projektu „Mix Friday”. <br /> Czekamy na wszystkich, którzy chcą u nas odpocząć na ul. Łaciarskiej 32 <br /> w Art-cafe Świetlica o godzinie 18.00 w każdy piątek.'
-      ],
-      'gallery' => [
-        'koncerty_main_foto' => 'Tytuł Zdjęcia',
-        'koncerty1' => 'Tytuł Zdjęcia',
-        'koncerty2' => 'Tytuł Zdjęcia',
-        'koncerty3' => 'Tytuł Zdjęcia',
-        'koncerty4' => 'Tytuł Zdjęcia',
-        'koncerty5' => 'Tytuł Zdjęcia',
-        'koncerty6' => 'Tytuł Zdjęcia'
       ]
     ],
     'military' => [
@@ -246,10 +214,6 @@ return [
           <li>Dystrybucja pomocy humanitarnej w regionach dotkniętych konfliktem.</li>
           <li>Promowanie świadomości społecznej na temat sytuacji na Ukrainie oraz potrzeb jej sił zbrojnych.</li>
         </ul>'
-      ],
-      'gallery' => [
-        'military_1' => 'Hi',
-        'military_2' => 'Hi',
       ]
     ],
     'form' => [

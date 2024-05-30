@@ -19,7 +19,9 @@ foreach ($translations['sections'] as $sectionKey => $sectionDetails) {
   <link rel="stylesheet" href="/css/sections.css" />
   <meta name="keywords" content="<?= @htmlspecialchars($page['seo']['keywords']); ?>">
   <meta name="description" content="<?= @htmlspecialchars($page['seo']['description']); ?>">
-  <script src="https://www.google.com/recaptcha/enterprise.js?render=<?=$_ENV['RECAPTHA_PUBLIC'];?>"></script>
+  <?php if($_ENV['ENV'] !== 'dev'):?>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=<?=$_ENV['RECAPTHA_PUBLIC'];?>"></script>
+  <?php endif;?>
 </head>
 
 <body>

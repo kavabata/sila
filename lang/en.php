@@ -75,19 +75,9 @@ return [
       'button' => 'Learn More',
     ],
     'gallery' => [
+      'template' => 'gallery',
       'title' => 'Gallery',
-      'photo_title' => 'Photo Title',
-      'images' => [
-        '01' => 'Photo Title',
-        '05' => 'Photo Title',
-        '06' => 'Photo Title',
-        '07' => 'Photo Title',
-        '08' => 'Photo Title',
-        '09' => 'Photo Title',
-        '10' => 'Photo Title',
-        '11' => 'Photo Title',
-        '12' => 'Photo Title'
-      ]
+      'gallery' => 'home'
     ],
     'join' => [
       'title' => 'JOIN <span>US</span>',
@@ -161,11 +151,6 @@ return [
         'paragraph4' => 'We entrust the facilitation of meetings to a Ukrainian person who has several years of experience in teaching Polish, as well as many years of experience living in Poland, knowing what situations newcomers to Poland most often find themselves in and what vocabulary they need to cope.',
         'paragraph5' => 'The language school will operate in an open format, which means that anyone can join at any time.',
         'paragraph6' => 'Registration can be done by phone.'
-      ],
-      'gallery' => [
-        'jezyk_polski' => 'Img title',
-        'jezyk_polski2' => 'Img title',
-        'jezyk_polski3' => 'Img title'
       ]
     ],
     'art' => [
@@ -182,11 +167,6 @@ return [
         'paragraph5' => 'The goal of the classes is primarily to integrate intergenerational groups, but also to support their development and intercultural competence.',
         'paragraph6' => 'This aims to help cope with emotions related to the war in Ukraine. The workshops are intended for everyone.',
         'paragraph7' => 'Classes will be held once a week.'
-      ],
-      'gallery' => [
-        'art_home' => 'Image title',
-        'art_1' => 'Image title',
-        'art_2' => 'Image title'
       ]
     ],
     'club' => [
@@ -201,9 +181,6 @@ return [
         'paragraph3' => 'The topics of the meetings include health, history, culture, and literature. Additionally, older people can share their views and experiences, and most importantly, meet seniors in Poland and build good relationships with them.',
         'paragraph4' => 'Club meetings every Thursday at 5:00 PM.',
         'paragraph5' => 'Meetings are also held outdoors. The club is open to all interested seniors.'
-      ],
-      'gallery' => [
-        'klub_literacki' => 'Image title'
       ]
     ],
     'concerts' => [
@@ -215,15 +192,6 @@ return [
       'intro' => [
         'paragraph1' => 'Musical Meetings "Mix Friday"',
         'paragraph2' => 'We invite you to concerts as part of the "Mix Friday" project. <br /> We are waiting for everyone who wants to relax with us at 32 Łaciarska Street <br /> in the Art-cafe Świetlica at 6:00 PM every Friday.'
-      ],
-      'gallery' => [
-        'koncerty_main_foto' => 'Photo Title',
-        'koncerty1' => 'Photo Title',
-        'koncerty2' => 'Photo Title',
-        'koncerty3' => 'Photo Title',
-        'koncerty4' => 'Tytuł Zdjęcia',
-        'koncerty5' => 'Tytuł Zdjęcia',
-        'koncerty6' => 'Tytuł Zdjęcia'
       ]
     ],
     'military' => [
@@ -246,10 +214,6 @@ return [
             <li>Distribution of humanitarian aid in conflict-affected regions.</li>
             <li>Promoting social awareness about the situation in Ukraine and the needs of its armed forces.</li>
         </ul>'
-      ],
-      'gallery' => [
-        'military_1' => 'Hi',
-        'military_2' => 'Hi',
       ]
     ],
     'form' => [
