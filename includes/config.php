@@ -20,19 +20,19 @@ $site_config = [
     'programs' => [
       'cards' => [
         'polish' => [
-          'img' => '/img/gallery/jezyk_polski.webp',
+          'img' => '/img/jezyk_polski.webp',
           'link' => build_url('language')
         ],
         'art' => [
-          'img' => '/img/gallery/art_2.webp',
+          'img' => '/img/art.webp',
           'link' => build_url('art')
         ],
         'club' => [
-          'img' => '/img/gallery/klub_literacki.webp',
+          'img' => '/img/klub_literacki.webp',
           'link' => build_url('club')
         ],
         'concerts' => [
-          'img' => '/img/gallery/koncerty_main_foto.webp',
+          'img' => '/img/koncerty.webp',
           'link' => build_url('concerts')
         ],
       ],
