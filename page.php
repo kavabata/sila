@@ -1,11 +1,10 @@
 <?php
-include('includes/config.php');
-include('includes/section.php');
+include('includes/init.php');
 
 $page = $translations['pages'][$pageName];
 $page['seo']['keywords'] = $page['seo']['keywords'] . ',' . $translations['seo']['generic_keywords'];
 
-include('includes/header.php');
+include('templates/header.php');
 ?>
 <div class="content">
   <section id="<?= $pageName; ?>Page" class="section">
@@ -46,22 +45,12 @@ include('includes/header.php');
           </div>
         <?php endif; ?>
       </div>
-      <div class="pageRight">
-        <?php if (isset($page['gallery'])) : ?>
-          <div class="pageGallery">
-            <?php foreach ($page['gallery'] as $key => $title) : ?>
-              <div class="item">
-                <?php if (!empty($title)) : ?>
-                  <span class="title"><?= $title; ?></span>
-                <?php endif; ?>
-                <img src="/img/gallery/<?= $key; ?>.webp" alt="<?= $title; ?>">
-              </div>
-            <?php endforeach; ?>
-          </div>
-        <?php endif; ?>
-      </div>
+      <?php if (isset($page['gallery'])) : ?>
+        <?= drawGallery($page['gallery']); ?>
+      <?php endif;?>
     </div>
+
   </section>
 </div>
 
-<?php include('includes/footer.php'); ?>
+<?php include('templates/footer.php'); ?>

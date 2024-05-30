@@ -29,19 +29,10 @@ section {
 }
 
 .pageContainer {
-  display: flex;
-  flex-wrap: nowrap;
-}
-.pageLeft {
-  flex-grow: 1;
-  min-width: 50%;
   padding: var(--padding);
 }
-.pageLeft p {
+.pageContainer p {
   margin: var(--padding) 0;
-}
-.pageGallery {
-  padding: var(--padding);
 }
 .pageContainer .links {
   display: flex;
@@ -416,3 +407,113 @@ section {
   margin: var(--padding) auto;
 }
 
+
+.albumModal {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+  cursor: zoom-out;
+}
+.albumModalContent {
+  display: flex;
+  align-items: center;
+  margin: var(--padding) auto;
+}
+
+.albumModalControl {
+  display: flex;
+  width: 3vw;
+  height: 95vh;
+  cursor: pointer;
+}
+.albumModalControl svg{
+  fill: #fff;
+}
+
+.albumModalImage, .albumModalVideo {
+  display: none;
+  max-width: 95vw;
+  max-height: 95vh;
+}
+.albumModalClose {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+}
+.albumModalClose:hover,
+.albumModalClose:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.albumContainer {
+  display: flex;
+  gap: var(--padding);
+  flex-wrap: wrap;
+  max-width: var(--max-width);
+  margin: var(--padding) auto;
+}
+
+.albumContainer .albumItem {
+  position: relative;
+  overflow: hidden;
+  cursor: zoom-in;
+  flex: 1 0 250px;
+  max-width: 100%;
+  
+  margin: auto;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.albumContainer .albumItem:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.albumContainer .albumItem img,
+.albumContainer .albumItem video {
+  width: 100%;
+  display: block;
+  transition: 0.5s;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.albumContainer .albumItem:hover img{
+  transform: scale(1.2);
+}
+
+.albumContainer .albumItemTitle {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.19);
+  color: var(--color-white);
+  top: 0;
+  left: 0;
+  padding: var(--padding);
+  border-radius: 5px;
+  font-size: var(--font-md);
+  font-weight: bold;
+  opacity: 0  ;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.albumContainer .albumItem:hover .albumItemTitle {
+  opacity: 1;
+}

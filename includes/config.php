@@ -1,26 +1,9 @@
 <?php
-include('functions.php');
-loadEnv('.env');
-session_start();
-
-if (isset($_GET['lang'])) {
-  $lang = $_GET['lang'];
-  if (in_array($lang, ['en', 'pl', 'ua'])) {
-    $_SESSION['lang'] = $lang;
-  }
-}
-$lang = $_SESSION['lang'] ?? 'pl';
-$pageName = isset($_GET['page']) ? $_GET['page'] : '';
-
-function build_url($url = '')
-{
-  global $lang;
-  return $lang != 'pl' ? "/{$lang}/{$url}" : "/{$url}";
-}
 
 $title = "Siła Kobiety";
 $site_name = "Siła Kobiety";
 $site_account = "22 1020 5242 0000 2002 0560 3370";
+$image_gallery_path = '/img/gallery/';
 
 $site_config = [
   'sections' => [
@@ -108,13 +91,21 @@ $site_config = [
         ],
       ]
     ],
-    'millitary' => [
-      'gallery' => [
-        'military_1' => 'Hi',
-        'military_2' => 'Hi',
-      ]
+    'military' => [
+      'gallery' => 'wsparcie'
     ],
-    'form' => []
+    'language' => [
+      'gallery' => 'language'
+    ],
+    'art' => [
+      'gallery' => 'art'
+    ],
+    'club' => [
+      'gallery' => 'klubseniora'
+    ],
+    'concerts' => [
+      'gallery' => 'mixfriday'
+    ]
   ],
   'footer' => [
     'address' => 'ul. Łaciarska 32<br> 50-146 Wrocław',
@@ -126,5 +117,4 @@ $site_config = [
   ],
 ];
 
-$translations = include "lang/{$lang}.php";
-$translations = array_replace_recursive($translations, $site_config);
+
