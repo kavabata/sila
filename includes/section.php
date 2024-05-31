@@ -1,9 +1,27 @@
 <?php
 
+function getTitleClass($title)
+{
+  $titleLenght = mb_strlen(strip_tags($title));
+  $size = '';
+  if ($titleLenght > 30) {
+    $size = ' sectionTitle--xl';
+  } else if ($titleLenght > 20) {
+    $size = ' sectionTitle--lg';
+  } else if ($titleLenght > 15) {
+    $size = ' sectionTitle--md';
+  }
+  return 'sectionTitle' . $size;
+}
+
+function getSectionHeading($title, $tag = 'h2') {
+  return '<'.$tag.' class="' . getTitleClass($title) . '">'.$title.'</'.$tag.'>';
+}
+
 function default_section($key, $section, $before = '', $after = '')
 {
-  echo '<section id="' . $key . 'Section" class="section">
-    <h2 class="sectionTitle">' . $section['title'] . '</h2>';
+  echo '<section id="' . $key . 'Section" class="section">';
+  echo getSectionHeading($section['title']);
   echo $before;
   if (isset($section['description'])) :
     if (is_array($section['description'])) :

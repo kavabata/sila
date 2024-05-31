@@ -28,6 +28,18 @@ section {
   border: 3px solid #fff;
 }
 
+.sectionTitle--xl {
+  max-width: 600px;
+}
+
+.sectionTitle--lg {
+  max-width: 500px;
+}
+
+.sectionTitle--md {
+  max-width: 400px;
+}
+
 .pageContainer {
   padding: var(--padding);
 }

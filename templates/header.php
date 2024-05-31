@@ -17,6 +17,7 @@ foreach ($translations['sections'] as $sectionKey => $sectionDetails) {
   <title><?php echo $title; ?></title>
   <link rel="stylesheet" href="/css/global.css" />
   <link rel="stylesheet" href="/css/sections.css" />
+  <link rel="icon" type="image/png" href="img/logo.webp">
   <meta name="keywords" content="<?= @htmlspecialchars($page['seo']['keywords']); ?>">
   <meta name="description" content="<?= @htmlspecialchars($page['seo']['description']); ?>">
   <?php if($_ENV['ENV'] !== 'dev'):?>
@@ -61,12 +62,12 @@ foreach ($translations['sections'] as $sectionKey => $sectionDetails) {
       <nav>
         <ul>
           <?php foreach ($menuItems as $item) : ?>
-            <li>
-              <a href="<?= $item['url']; ?>">
-                <?= !empty($item['icon']) ? '<i class="' . $item['icon'] . '"></i> ' : ''; ?>
-                <?= $item['title']; ?>
-              </a>
-            </li>
+          <li>
+            <a href="<?= $item['url']; ?>">
+              <?= !empty($item['icon']) ? '<i class="' . $item['icon'] . '"></i> ' : ''; ?>
+              <?= $item['title']; ?>
+            </a>
+          </li>
           <?php endforeach; ?>
         </ul>
       </nav>
