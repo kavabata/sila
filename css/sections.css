@@ -129,6 +129,7 @@ section {
 /* AboutSection style start */
 #aboutSection p {
   text-align: center;
+  margin-bottom: 10px;
 }
 
 #aboutSection .aboutCards {
@@ -484,7 +485,7 @@ section {
   cursor: zoom-in;
   flex: 1 0 250px;
   max-width: 100%;
-  
+
   margin: auto;
   background-color: #f0f0f0;
   display: flex;
