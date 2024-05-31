@@ -20,9 +20,20 @@ foreach ($translations['sections'] as $sectionKey => $sectionDetails) {
   <link rel="icon" type="image/png" href="img/logo.webp">
   <meta name="keywords" content="<?= @htmlspecialchars($page['seo']['keywords']); ?>">
   <meta name="description" content="<?= @htmlspecialchars($page['seo']['description']); ?>">
-  <?php if($_ENV['ENV'] !== 'dev'):?>
-    <script src="https://www.google.com/recaptcha/enterprise.js?render=<?=$_ENV['RECAPTHA_PUBLIC'];?>"></script>
-  <?php endif;?>
+  <?php if ($_ENV['ENV'] !== 'dev') : ?>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=<?= $_ENV['RECAPTHA_PUBLIC']; ?>"></script>
+  <?php endif; ?>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XHRV6VZNYN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-XHRV6VZNYN');
+  </script>
 </head>
 
 <body>
@@ -62,12 +73,12 @@ foreach ($translations['sections'] as $sectionKey => $sectionDetails) {
       <nav>
         <ul>
           <?php foreach ($menuItems as $item) : ?>
-          <li>
-            <a href="<?= $item['url']; ?>">
-              <?= !empty($item['icon']) ? '<i class="' . $item['icon'] . '"></i> ' : ''; ?>
-              <?= $item['title']; ?>
-            </a>
-          </li>
+            <li>
+              <a href="<?= $item['url']; ?>">
+                <?= !empty($item['icon']) ? '<i class="' . $item['icon'] . '"></i> ' : ''; ?>
+                <?= $item['title']; ?>
+              </a>
+            </li>
           <?php endforeach; ?>
         </ul>
       </nav>
