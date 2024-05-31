@@ -15,11 +15,10 @@ return [
     'description' => 'Jest to fundusz charytatywny mający na celu wsparcie Ukraińców za granicą',
     'donate_button' => 'Przekaż darowiznę',
   ],
-  'seo' =>
-  [
-    'generic_keywords' => 'Wspieranie kobiet, Fundacja Siła Kobiety',
-    'keywords' => 'Wspieranie kobiet, Fundacja Siła Kobiety, Grupa wsparcia dla seniorów, Klub Literacki dla seniorów, Wydarzenia artystyczne i kulturalne, Koncerty Mix Friday, Wsparcie dla Sił Zbrojnych Ukrainy, Społeczność dla seniorów, Spotkania zdrowotne i literackie, Zbiórka funduszy dla seniorów, Aktywności społeczności seniorów, Integracja społeczna osób starszych, Fundacja charytatywna Siła Kobiety, Programy wellness dla seniorów, Wydarzenia Siła Kobiety',
-    'description' => 'Fundacja „Siła Kobiety” wspiera kobiety i seniorów, oferując różnorodne programy i wydarzenia, takie jak Klub Literacki, koncerty Mix Friday oraz wsparcie dla Sił Zbrojnych Ukrainy. Dołącz do nas, aby wspólnie budować silną i zintegrowaną społeczność.'
+  'seo' => [
+    'generic_keywords' => 'Wspieranie kobiet, Fundacja Siła Kobiety, Pomoc społeczna, Integracja społeczna, Działalność charytatywna, Tradycje narodowe, Integracja cudzoziemców, Wsparcie dla niepełnosprawnych, Równouprawnienie, Seniorzy, Edukacja, Kultura, Sport, Ochrona środowiska, Prawa człowieka, Wolontariat, Współpraca międzynarodowa, Pomoc Polonii, Wsparcie dla Sił Zbrojnych Ukrainy',
+    'keywords' => 'Wspieranie kobiet, Fundacja Siła Kobiety, Pomoc społeczna, Integracja społeczna, Działalność charytatywna, Tradycje narodowe, Integracja cudzoziemców, Wsparcie dla niepełnosprawnych, Seniorzy, Edukacja, Kultura, Sport, Ochrona środowiska, Prawa człowieka, Wolontariat, Współpraca międzynarodowa, Pomoc Polonii, Wsparcie dla Sił Zbrojnych Ukrainy, Międzynarodowy festiwal Wyszywanki, Programy integracyjne, Równouprawnienie płci, Wsparcie dla seniorów, Inicjatywy społeczne, Darowizny',
+    'description' => 'Fundacja „Siła Kobiety” koncentruje się na szerokim spektrum działań społecznych, mających na celu pomoc osobom w trudnej sytuacji życiowej, wspieranie integracji społecznej i zawodowej, działalność charytatywną oraz promowanie tradycji narodowych i kulturowych. Wspiera również integrację cudzoziemców, osoby niepełnosprawne i seniorów, równouprawnienie płci, rozwój edukacji, kultury i sportu, ochronę środowiska oraz prawa człowieka. Fundacja angażuje się w pomoc ofiarom katastrof, promuje wolontariat i współpracę międzynarodową, a także wspiera Polonię za granicą. Dodatkowo oferuje wsparcie dla Sił Zbrojnych Ukrainy. Każda darowizna pomaga nam w realizacji tych celów i w budowaniu silnej, zintegrowanej społeczności.'
   ],
   'sections' => [
     'about' => [

@@ -129,7 +129,7 @@ section {
 /* AboutSection style start */
 #aboutSection p {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: var(--padding);
 }
 
 #aboutSection .aboutCards {
