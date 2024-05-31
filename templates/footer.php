@@ -42,7 +42,7 @@
           <br />
           <a href="mailto:silakobietywro@gmail.com" title="napisz">silakobietywro@gmail.com</a>
           <br />
-          <a href="https://g.co/kgs/gNwMGgi">ul. Łaciarska 32, 50-146 Wrocław</a>
+          <a href="https://g.co/kgs/gNwMGgi" target="_blank">ul. Łaciarska 32, 50-146 Wrocław</a>
         </p>
 
         <p>
