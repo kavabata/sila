@@ -84,11 +84,10 @@ return [
     ],
     'join' => [
       'title' => 'Przyłącz się do nas',
-      'description' => 'Twój wkład może mieć ogromny wpływ na życie innych. Pomagając, stajesz się częścią zmiany i dajesz szansę na lepsze jutro.',
       'cards' => [
         'join' => [
           'title' => '',
-          'description' => '',
+          'description' => 'Twój wkład może mieć ogromny wpływ na życie innych. Pomagając, stajesz się częścią zmiany i dajesz szansę na lepsze jutro.',
           'button' => 'PRZYŁĄCZ SIĘ!'
         ],
       ]
