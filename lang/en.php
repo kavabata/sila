@@ -75,6 +75,18 @@ return [
       ],
       'button' => 'Learn More',
     ],
+    'cafe' => [
+      'title' => 'Art-Café',
+      'description' => [
+        'Nestled within the heart of our event venue lies a charming café offering a delectable array of authentic Ukrainian dishes. From savory pierogi to comforting borscht, our café invites guests to indulge in the rich flavors and culinary traditions of Ukraine.'
+      ],
+      'cards' => [
+        'menu' => [
+          'title' => 'Culinary Delights',
+          'button' => 'Learn More'
+        ],
+      ]
+    ],
     'gallery' => [
       'template' => 'gallery',
       'title' => 'Gallery',
@@ -236,6 +248,19 @@ return [
         'fail' => 'Sorry, there was an error sending your message. Please try again later. Or <a href="mailto:silakobietywro@gmail.com" class="button">Write a letter</a>',
         'success' => 'Thank you for contacting us. We will get back to you shortly.',
         'home' => 'Back to Home!'
+      ]
+    ],
+    'cafe' => [
+      'seo' => [
+        'keywords' => 'contact us, join us, Ukrainian cuisine, art-cafe',
+        'description' => 'Indulge in authentic Ukrainian cuisine at our charming art-café. Join us to savor the flavors of Ukraine while supporting our mission to assist those in need.'
+      ],
+      'title' => 'Art-Café with Authentic Ukrainian Cuisine',
+      'intro' => [
+        'paragraph1' => 'Nestled within the heart of our event venue lies a charming art-café offering a delectable array of authentic Ukrainian dishes. From savory pierogi to comforting borscht, our café invites guests to indulge in the rich flavors and culinary traditions of Ukraine.',
+        'paragraph2' => 'Our art-café provides more than just delicious food; it offers a warm and inviting atmosphere where guests can gather, relax, and enjoy the company of friends and family amidst captivating artworks and cozy ambiance.',
+        'paragraph3' => 'By dining at our art-café, you not only treat your taste buds to authentic Ukrainian flavors but also support our foundation\'s mission to assist those in need. Every purchase contributes directly to our efforts in providing essential aid and support to refugees from Ukraine and other vulnerable communities.',
+        'paragraph4' => 'Join us at our art-café to savor the tastes of Ukraine and make a difference in the lives of those we serve.'
       ]
     ]
   ],

@@ -1,9 +1,8 @@
 RewriteEngine On
 RewriteRule ^(ua|pl|en)\/?$ /index.php?lang=$1 [L,QSA]
 
-RewriteRule ^(ua|pl|en)/(donate|language|art|club|concerts|regulations|military)$ /page.php?page=$2&lang=$1 [L,QSA]
-
-RewriteRule ^(donate|language|art|club|concerts|regulations|military)$ /page.php?page=$1 [L,QSA]
+RewriteRule ^(ua|pl|en)/(donate|language|art|club|concerts|regulations|military|cafe)$ /page.php?page=$2&lang=$1 [L,QSA]
+RewriteRule ^(donate|language|art|club|concerts|regulations|military|cafe)$ /page.php?page=$1 [L,QSA]
 
 RewriteRule ^(ua|pl|en)/(form)$ /form.php?page=$2&lang=$1 [L,QSA]
 RewriteRule ^(form)$ /form.php?page=$1 [L,QSA]
