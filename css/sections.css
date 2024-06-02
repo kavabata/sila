@@ -138,12 +138,13 @@ section {
   justify-content: space-around;
   margin-top: calc(var(--padding) * 3);
   position: relative;
-  height: 245px;
+  height: auto;
 }
 
 #aboutSection .aboutCards .card {
-  width: 400px;
+  width: 350px;
   height: 215px;
+  margin: 5px auto;
   background-color: var(--color-light-gray);
   padding: calc(var(--padding) * 2);
   color: var(--color-dark-gray);
@@ -182,32 +183,21 @@ section {
   box-shadow: var(--box-shadow);
 }
 
-@media (max-width: 425px) {
+@media (min-width: 425px) and (max-width: 425px) {
   #aboutSection .aboutCards {
     height: auto;
   }
-
-  #aboutSection .aboutCards .card {
-    width: 350px;
-    margin: 5px auto;
-  }
-
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   #aboutSection .aboutCards {
     height: auto;
   }
-
-  #aboutSection .aboutCards .card {
-    width: 350px;
-    margin: 5px auto;
-  }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1200px) {
   #aboutSection .aboutCards .card {
-    width: 350px;
+    width: 400px;
   }
 }
 /* AboutSection style end */
