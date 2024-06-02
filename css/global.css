@@ -301,27 +301,3 @@ footer .footerCopyright {
   text-align: center;
   margin: var(--padding);
 }
-
-
-@media screen and (max-width: 768px) {
-  #aboutSection .aboutCards {
-    justify-content: space-evenly;
-  }
-
-  #aboutSection .aboutCards .card {
-    width: 350px;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  #aboutSection .aboutCards {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    background-color: #000;
-  }
-
-  .aboutCards {
-    border: 4px solid black;
-  }
-}
