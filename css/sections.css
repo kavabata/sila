@@ -347,6 +347,7 @@ section {
   background-color: rgba(255, 255, 255, 0.7);
   padding: var(--padding);
   margin: 0 auto;
+  backdrop-filter: blur(4px);
 }
 #joinSection .card p {
   font-size: var(--font-size-xl);
