@@ -39,6 +39,14 @@ section {
 .sectionTitle--md {
   max-width: 400px;
 }
+@media (min-width: 768px) {
+  .sectionTitle {
+    max-width: 350px;
+  }
+  .sectionTitle--md {
+    max-width: 450px;
+  }
+}
 
 .pageContainer {
   padding: var(--padding);
@@ -56,7 +64,7 @@ section {
   width: 220px;
   height: 150px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: var(--border-radius-sm);
   border: 1px solid var(--color-light-gray);
   margin: var(--padding);
   padding: var(--padding);
@@ -67,7 +75,7 @@ section {
 }
 .advice {
   background-color: rgba(228, 58, 71, 0.5);
-  border-radius: var(--padding);
+  border-radius: var(--border-radius-lg);
   padding: var(--padding);
 }
 
@@ -84,7 +92,6 @@ section {
     background-attachment: scroll;
   }
 }
-
 @supports not (-webkit-touch-callout: none) {
   .homeHead {
     background-attachment: fixed;
@@ -97,13 +104,23 @@ section {
 }
 .homeHeadBlock {
   background-color: rgba(255, 255, 255, 0.7);
-  border-radius: var(--padding);
+  border-radius: var(--border-radius-lg);
   padding: var(--padding);
-  max-width: 50%;
+  max-width: 100%;
+}
+@media (min-width: 425px) {
+  .homeHeadBlock {
+    max-width: 75%;
+  }
+}
+@media (min-width: 768px) {
+  .homeHeadBlock {
+    max-width: 50%;
+  }
 }
 .homeHead h1 {
   display: inline-block;
-  font-size: 3.5rem;
+  font-size: var(--font-size-xxl);
   text-shadow: 0 0 2px #000;
   line-height: 4.2rem;
   font-weight: 100;
@@ -114,16 +131,16 @@ section {
   padding: 0 var(--padding);
   white-space: nowrap;
   font-weight: 600;
-  border-radius: 5px;
+  border-radius: var(--border-radius-sm);
 }
 .homeHead p {
   text-shadow: 0 0 2px #000;
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
 }
 .homeHead .button {
   color: var(--color-black);
   text-shadow: none;
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
 }
 
 /* AboutSection style start */
@@ -149,7 +166,7 @@ section {
   padding: calc(var(--padding) * 2);
   color: var(--color-dark-gray);
   text-align: center;
-  border-radius: var(--padding-half);
+  border-radius: var(--border-radius-md);
   border: 1px solid #ccc;
   transition: 1s;
 }
@@ -159,19 +176,19 @@ section {
 }
 
 #aboutSection .aboutCards div.card .title {
-  font-size: var(--font-lg);
+  font-size: var(--font-size-lg);
   font-weight: 600;
   text-transform: uppercase;
 }
 
 #aboutSection .aboutCards div.card p {
-  font-size: var(--font-md);
+  font-size: var(--font-size-md);
   margin-top: var(--padding);
 }
 
 #aboutSection .aboutCards div.card .button {
   border: 1px solid var(--color-red);
-  font-size: var(--font-md);
+  font-size: var(--font-size-md);
 }
 
 #aboutSection .aboutCards div.card:hover .button {
@@ -218,7 +235,7 @@ section {
   background-color: #fff;
   text-align: center;
   padding-bottom: calc(var(--padding) * 2);
-  border-radius: 5px;
+  border-radius: var(--border-radius-sm);
   box-shadow: 0 0 3px 0 #c5c5c5;
   position: relative;
   margin-bottom: var(--padding);
@@ -243,7 +260,7 @@ section {
   background-position: center;
   background-size: cover;
   position: relative;
-  border-radius: 5px 5px 0 0;
+  border-radius: var(--border-radius-sm) var(--border-radius-sm) 0 0;
   max-width: 100%;
   filter: grayscale(100%);
   transition: 0.5s;
@@ -255,7 +272,7 @@ section {
 }
 
 #programsSection .programsCards .card .title {
-  font-size: var(--font-md);
+  font-size: var(--font-size-md);
   margin-top: var(--padding);
   font-weight: 600;
   color: #444;
@@ -281,8 +298,8 @@ section {
 #militarySection {
   padding: 0;
   min-height: 550px;
-  overflow: hidden;
   position: relative;
+  background-color: var(--color-black);
 }
 
 #militarySection .videoPlayer {
@@ -301,19 +318,34 @@ section {
 #militarySection .militaryContainer {
   position: absolute;
   background-color: #00000096;
-  width: 600px;
   color: #fff;
   text-shadow: 0 0 3px #000;
-  padding: 30px;
+  padding: calc(var(--padding) * 2);
+}
+@media (min-width: 425px) {
+  #militarySection .militaryContainer {
+    max-width: 75%;
+  }
+}
+@media (min-width: 768px) {
+  #militarySection .militaryContainer {
+    max-width: 65%;
+  }
+}
+@media (min-width: 1024px) {
+  #militarySection .militaryContainer {
+    max-width: 55%;
+  }
 }
 
+
 #militarySection .militaryContainer h3 {
-  font-size: 35px;
+  font-size: var(--font-size-xl);
   font-weight: 300;
 }
 
 #militarySection .militaryContainer p {
-  font-size: 15px;
+  font-size: var(--font-size-md);
   line-height: 20px;
   margin: 10px 0 30px;
 }
@@ -322,6 +354,42 @@ section {
   background-color: var(--color-red);
   color: #fff;
   transition: 1s;
+}
+
+
+
+#joinSection {
+  background-image: url(/img/heart_in_hands.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: 100vw;
+  width: 100%;
+  height: 50vh;
+  max-height: 600px;
+  margin-bottom: 0;
+  padding: var(--padding);
+}
+#joinSection .sectionTitle {
+  text-shadow:  1px 1px 4px #fff,-1px -1px 4px #fff;
+}
+
+#joinSection .card {
+  
+  max-width: 550px;
+  border-radius: var(--border-radius-lg);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: var(--padding);
+  margin: 0 auto;
+  backdrop-filter: blur(4px);
+  text-align: center;
+}
+#joinSection .card p {
+  font-size: var(--font-size-md);
+}
+#joinSection .card .button {
+  font-size: var(--font-size-lg);
+  display: block;
+  text-align: center;
 }
 
 /* Gallery Section start */
@@ -351,8 +419,8 @@ section {
   background-color: var(--gray);
   padding: 5px;
   margin: 5px;
-  border-radius: 5px;
-  font-size: 13px;
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-sm);
   font-weight: bold;
   opacity: 0;
   z-index: 1;
@@ -382,14 +450,14 @@ section {
 }
 
 .form input {
-  border-radius: 5px;
+  border-radius: var(--border-radius-sm);
   padding: var(--padding-half);
   border: 1px solid #44444450;
   width: 100%;
   line-height: var(--font-size-lg);
 }
 .form textarea {
-  border-radius: 5px;
+  border-radius: var(--border-radius-sm);
   padding: var(--padding-half);
   border: 1px solid #44444450;
   width: 100%;
@@ -399,7 +467,7 @@ section {
 .form .formSuccess {
   padding: var(--padding);
   margin: var(--padding);
-  border-radius: var(--padding);
+  border-radius: var(--border-radius-lg);
   border: 1px solid green;
   background: #6be93952;
   text-align: center;
@@ -407,7 +475,7 @@ section {
 .form .formError {
   padding: var(--padding);
   margin: var(--padding) 0;
-  border-radius: var(--padding);
+  border-radius: var(--border-radius-lg);
   border: 1px solid rgba(195, 23, 23, 0.735);
   background: #f10f0f22;
   width: 100%;
@@ -456,12 +524,12 @@ section {
   max-height: 95vh;
 }
 .albumModalClose {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
 }
 .albumModalClose:hover,
 .albumModalClose:focus {
@@ -492,7 +560,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
+  border-radius: var(--border-radius-sm);
 }
 .albumContainer .albumItem:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
@@ -520,8 +588,8 @@ section {
   top: 0;
   left: 0;
   padding: var(--padding);
-  border-radius: 5px;
-  font-size: var(--font-md);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-md);
   font-weight: bold;
   opacity: 0  ;
   z-index: 1;

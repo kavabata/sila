@@ -81,12 +81,11 @@ return [
       'gallery' => 'home'
     ],
     'join' => [
-      'title' => 'JOIN <span>US</span>',
-      'description' => 'Your contribution can make a huge impact on others\' lives. By helping, you become part of the change and give a chance for a better tomorrow.',
+      'title' => 'Join us',
       'cards' => [
         'join' => [
           'title' => '',
-          'description' => '',
+          'description' => 'Your contribution can make a huge impact on others\' lives. By helping, you become part of the change and give a chance for a better tomorrow.',
           'button' => 'Contact us'
         ],
       ]
