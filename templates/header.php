@@ -18,21 +18,22 @@ foreach ($translations['sections'] as $sectionKey => $sectionDetails) {
   <link rel="stylesheet" href="/css/global.css" />
   <link rel="stylesheet" href="/css/sections.css" />
   <link rel="icon" type="image/png" href="img/logo.webp">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <meta name="keywords" content="<?= @htmlspecialchars($page['seo']['keywords']); ?>">
   <meta name="description" content="<?= @htmlspecialchars($page['seo']['description']); ?>">
   <?php if ($_ENV['ENV'] !== 'dev') : ?>
-    <script src="https://www.google.com/recaptcha/enterprise.js?render=<?= $_ENV['RECAPTHA_PUBLIC']; ?>"></script>
+  <script src="https://www.google.com/recaptcha/enterprise.js?render=<?= $_ENV['RECAPTHA_PUBLIC']; ?>"></script>
   <?php endif; ?>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XHRV6VZNYN"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
+  window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
 
-    gtag('config', 'G-XHRV6VZNYN');
+  gtag('config', 'G-XHRV6VZNYN');
   </script>
 </head>
 
@@ -73,12 +74,12 @@ foreach ($translations['sections'] as $sectionKey => $sectionDetails) {
       <nav>
         <ul>
           <?php foreach ($menuItems as $item) : ?>
-            <li>
-              <a href="<?= $item['url']; ?>">
-                <?= !empty($item['icon']) ? '<i class="' . $item['icon'] . '"></i> ' : ''; ?>
-                <?= $item['title']; ?>
-              </a>
-            </li>
+          <li>
+            <a href="<?= $item['url']; ?>">
+              <?= !empty($item['icon']) ? '<i class="' . $item['icon'] . '"></i> ' : ''; ?>
+              <?= $item['title']; ?>
+            </a>
+          </li>
           <?php endforeach; ?>
         </ul>
       </nav>
