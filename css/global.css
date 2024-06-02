@@ -36,12 +36,12 @@
   --font-size-xl: 22px;
   --font-size-xxl: 35px;
 }
-
 /* Global Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-margin-top: 62px;
 }
 
 html {

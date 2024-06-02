@@ -297,7 +297,6 @@ section {
 #militarySection {
   padding: 0;
   min-height: 550px;
-  overflow: hidden;
   position: relative;
   background-color: var(--color-black);
 }
