@@ -41,6 +41,13 @@ $site_config = [
       'template' => 'zsu',
       'link' => build_url('military')
     ],
+    'cafe' => [
+      'cards' => [
+        'menu' => [
+          'link' => build_url('cafe')
+        ]
+      ]
+    ],
     'gallery' => [
       'images' => [
         '01' => 'Tytuł 1Zdjęcia',
@@ -99,6 +106,9 @@ $site_config = [
     ],
     'concerts' => [
       'gallery' => 'mixfriday'
+    ],
+    'cafe' => [
+      'gallery' => 'cafe'
     ]
   ],
   'footer' => [

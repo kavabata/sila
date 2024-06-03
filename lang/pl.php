@@ -77,6 +77,18 @@ return [
       ],
       'button' => 'Dowiedz się więcej'
     ],
+    'cafe' => [
+      'title' => 'Art-Cafe',
+      'description' => [
+        'Schowane w sercu naszego miejsca wydarzeń znajduje się urocze kawiarnia oferująca wybór autentycznych dań ukraińskich. Od pikantnych pierogów po rozgrzewający barszcz, nasza kawiarnia zaprasza gości do rozkoszowania się bogatymi smakami i kulinarnymi tradycjami Ukrainy.'
+      ],
+      'cards' => [
+        'menu' => [
+          'title' => 'Kulinarna Rozkosz',
+          'button' => 'Dowiedz się więcej'
+        ],
+      ]
+    ],
     'gallery' => [
       'template' => 'gallery',
       'title' => 'Galeria',
@@ -240,8 +252,22 @@ return [
         'success' => 'Dziękujemy za kontakt. Skontaktujemy się z Tobą wkrótce.',
         'home' => 'Wróć do strony głównej!'
       ]
+    ],
+    'cafe' => [
+      'seo' => [
+        'keywords' => 'skontaktuj się z nami, dołącz do nas, kuchnia ukraińska, art-cafe',
+        'description' => 'Rozkoszuj się autentyczną kuchnią ukraińską w naszym uroczym art-cafe. Dołącz do nas, aby smakować smaki Ukrainy, jednocześnie wspierając naszą misję pomocy tym, którzy jej potrzebują.'
+      ],
+      'title' => 'Art-Cafe z Autentyczną Kuchnią Ukrainą',
+      'intro' => [
+        'paragraph1' => 'Zatopione w sercu naszego miejsca wydarzeń znajduje się urocze art-cafe, oferujące wybór autentycznych dań ukraińskich. Od pikantnych pierogów po rozgrzewającą barszcz, nasze kafejka zaprasza gości do relaksu i delektowania się bogatymi smakami i tradycjami kulinarnymi Ukrainy.',
+        'paragraph2' => 'Nasze art-cafe oferuje nie tylko pyszne jedzenie; tworzy ciepłą i przytulną atmosferę, gdzie goście mogą spotkać się, zrelaksować się i cieszyć towarzystwem przyjaciół i rodziny wśród fascynujących dzieł sztuki i przytulnego otoczenia.',
+        'paragraph3' => 'Wybierając nasze art-cafe, nie tylko delektujesz się autentycznymi smakami ukraińskimi, ale również wspierasz misję naszej fundacji w udzielaniu pomocy potrzebującym. Każdy zakup bezpośrednio przyczynia się do naszych wysiłków w zapewnieniu niezbędnej pomocy i wsparcia dla uchodźców z Ukrainy i innych osób wrażliwych.',
+        'paragraph4' => 'Dołącz do nas w naszym art-cafe, aby skosztować smaków Ukrainy i zmienić życie tych, którym pomagamy.'
+      ]
     ]
   ],
+
   'footer' => [
     'quote' => 'Podejmując Wyjątkowe Wyzwania,<br> Tworzymy Wyjątkową Przyszłość',
     'account_number' => 'Numer konta:',
