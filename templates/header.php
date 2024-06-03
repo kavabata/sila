@@ -25,11 +25,11 @@ foreach ($translations['sections'] as $sectionKey => $sectionDetails) {
   <script src="https://www.google.com/recaptcha/enterprise.js?render=<?= $_ENV['RECAPTHA_PUBLIC']; ?>"></script>
   <?php endif; ?>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XHRV6VZNYN"></script>
-  <script>
+  <script src="/js/functions.js"></script>
   window.dataLayer = window.dataLayer || [];
 
   function gtag() {
-    dataLayer.push(arguments);
+  dataLayer.push(arguments);
   }
   gtag('js', new Date());
 

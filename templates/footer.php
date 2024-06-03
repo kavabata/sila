@@ -15,7 +15,7 @@
         <strong class="accountNumber" id="accountNumber">
           <?= $site_account; ?>
         </strong>
-        <button onclick="copyAccountNumber()" class="copy-btn" title="copy">
+        <button onclick="copyBankDetailsToClipboard('accountNumber')" class="button-copy-footer" title="copy">
           <i class="fas fa-copy"></i>
         </button>
       </p>
@@ -61,38 +61,6 @@
   <div class="footerCopyright">
     &copy; 2022-<?=date("Y");?> <?= $site_name; ?>
 </footer>
-
-<script>
-function copyTest() {
-  var account = document.getElementById('accountNumber');
-  if (!account) {
-    console.error('Nie działa');
-  } else {
-    console.log("ok")
-  }
-}
-
-function copyAccountNumber() {
-  const accountNumberElement = document.getElementById('accountNumber');
-  if (!accountNumberElement) {
-    console.error('The element with id "accountNumber" was not found.');
-    return;
-  }
-
-  const accountNumber = accountNumberElement.textContent.trim();
-
-  const tempInput = document.createElement('textarea');
-  tempInput.value = accountNumber;
-  document.body.appendChild(tempInput);
-
-  tempInput.select();
-  tempInput.setSelectionRange(0, 99999); // for mobile
-  document.execCommand('copy');
-
-  document.body.removeChild(tempInput);
-}
-</script>
-
 
 </body>
 

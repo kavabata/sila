@@ -143,6 +143,19 @@ a.button:hover {
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
+.button-copy-section {
+  display: inline-flex;
+  align-items: center;
+  background-color: azure;
+  color: rgb(38, 116, 112);
+  border: 1px solid rgb(43, 36, 36);
+  border-radius: 10px;
+  padding: 4px 6px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
 a {
   text-decoration: none;
   color: brown;
@@ -372,7 +385,7 @@ footer .footerCopyright {
   margin: var(--padding);
 }
 
-footer .copy-btn {
+footer .button-copy-footer {
   display: inline-flex;
   align-items: center;
   background-color: var(--color-dark-gray);
@@ -385,27 +398,6 @@ footer .copy-btn {
   transition: background-color 0.3s;
 }
 
-footer .copy-btn:hover {
+footer .button-copy-footer:hover {
   background-color: #2c2c00;
-}
-
-/* I don't know if this is right place for this styles */
-.bankDetails {
-  background-color: azure;
-  border-radius: 20px;
-  padding: 20px;
-  margin: 0 0 15px 5px;
-}
-
-.copy-bank-btn {
-  display: inline-flex;
-  align-items: center;
-  background-color: azure;
-  color: rgb(38, 116, 112);
-  border: 1px solid rgb(43, 36, 36);
-  border-radius: 10px;
-  padding: 4px 6px;
-  margin-left: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
 }
