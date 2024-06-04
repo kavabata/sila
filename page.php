@@ -33,28 +33,28 @@ include('templates/header.php');
         <div class="bankDetails">
           <div>
             <strong>Bank:</strong> <span id="bank_name"> <?= $page['bank_details']['bank_name']; ?> </span>
-            <button class="button-copy-section" onclick="copyBankDetailsToClipboard('bank_name')" title="copy">
+            <button class="button-copy-bank-name" onclick="copyToClipboard('bank_name')" title="copy">
               <i class="fas fa-copy"></i>
             </button>
           </div>
           <div>
             <strong>Numer konta:</strong> <span
               id="account_number"><?= $page['bank_details']['account_number']; ?></span>
-            <button class="button-copy-section" onclick="copyBankDetailsToClipboard('account_number')" title="copy">
+            <button class="button-copy-account-number" onclick="copyToClipboard('account_number')" title="copy">
               <i class="fas fa-copy"></i>
             </button>
           </div>
           <div>
             <strong>Nazwa fundacji:</strong> <span id="foundation_name">
               <?= $page['bank_details']['foundation_name']; ?> </span>
-            <button class="button-copy-section" onclick="copyBankDetailsToClipboard('foundation_name')" title="copy">
+            <button class="button-copy-foundation-name" onclick="copyToClipboard('foundation_name')" title="copy">
               <i class="fas fa-copy"></i>
             </button>
           </div>
           <div>
             <strong>Tytuł wpłaty:</strong> <span id="payment_title"> <?= $page['bank_details']['payment_title']; ?>
             </span>
-            <button class="button-copy-section" onclick="copyBankDetailsToClipboard('payment_title')" title="copy">
+            <button class="button-copy-payment-title" onclick="copyToClipboard('payment_title')" title="copy">
               <i class="fas fa-copy"></i>
             </button>
           </div>

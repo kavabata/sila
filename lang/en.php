@@ -112,7 +112,13 @@ return [
       ],
       'intro' => [
         0 => 'Every monetary donation made to our foundation\'s account helps us achieve our statutory goals.',
-        1 => 'Throughout the year, you can make a donation directly to the Foundation\'s account at Bank PKO BP<br>account number: <b>' . $site_account . '</b><br>with the title: <b>“Donation for statutory purposes”</b>'
+        1 => 'Throughout the year, you can make a donation directly to the Foundation\'s account at'
+      ],
+      'bank_details' => [
+        'bank_name' => 'PKO Bank Polski S.A.',
+        'account_number' => $site_account,
+        'foundation_name' => 'Fundation "Siła Kobiety"',
+        'payment_title' => '"Donation for statutory purposes"',
       ],
       'advice' => [
         'paragraph1' => 'Did you know that all donations are tax-deductible: for individuals up to 6% of income, for legal entities up to 10% of income.',

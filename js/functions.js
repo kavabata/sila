@@ -1,4 +1,4 @@
-function copyBankDetailsToClipboard(id) {
+function copyToClipboard(id) {
   const element = document.getElementById(id);
   if (!element) {
     console.error('The element with id ' + id + ' was not found.');
