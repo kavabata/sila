@@ -118,7 +118,13 @@ return [
         'bank_name' => 'PKO Bank Polski S.A.',
         'account_number' => $site_account,
         'foundation_name' => 'Fundation "Siła Kobiety"',
-        'payment_title' => '"Donation for statutory purposes"',
+        'payment_title' => 'Donation for statutory purposes',
+      ],
+      'bank_vars' => [
+        'bank_name' => 'Bank',
+        'account_number' => 'Account number',
+        'foundation_name' => 'Foundation name',
+        'payment_title' => 'Payment title'
       ],
       'advice' => [
         'paragraph1' => 'Did you know that all donations are tax-deductible: for individuals up to 6% of income, for legal entities up to 10% of income.',

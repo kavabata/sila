@@ -120,7 +120,13 @@ return [
         'bank_name' => 'PKO Bank Polski S.A.',
         'account_number' => $site_account,
         'foundation_name' => 'Fundacja "Siła Kobiety"',
-        'payment_title' => '"Darowizna na cele statutowe"',
+        'payment_title' => 'Darowizna na cele statutowe',
+      ],
+      'bank_vars' => [
+        'bank_name' => 'Bank',
+        'account_number' => 'Numer konta',
+        'foundation_name' => 'Nazwa fundacji',
+        'payment_title' => 'Tytuł przelewu'
       ],
       'advice' => [
         'paragraph1' => 'Czy wiesz, że wszystkie darowizny podlegają odpisom podatkowym: dla osób fizycznych limit do 6% od dochodu, dla osób prawnych limit do 10% od dochodu.',

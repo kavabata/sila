@@ -143,10 +143,7 @@ a.button:hover {
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-.button-copy-bank-name,
-.button-copy-account-number,
-.button-copy-foundation-name,
-.button-copy-payment-title {
+.button-copy-bank-details {
   display: inline-flex;
   align-items: center;
   background-color: azure;

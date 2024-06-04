@@ -15,7 +15,7 @@
         <strong class="accountNumber" id="accountNumber">
           <?= $site_account; ?>
         </strong>
-        <button onclick="copyToClipboard('accountNumber')" class="button-copy-footer" title="copy">
+        <button onclick="copyToClipboard('accountNumber')" class="button-copy-footer" title="copy account number">
           <i class="fas fa-copy"></i>
         </button>
       </p>

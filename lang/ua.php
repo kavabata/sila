@@ -118,7 +118,13 @@ return [
         'bank_name' => 'PKO Bank Polski S.A.',
         'account_number' => $site_account,
         'foundation_name' => 'Фонд "Siła Kobiety"',
-        'payment_title' => '"Пожертва на статутні цілі"',
+        'payment_title' => 'Пожертва на статутні цілі',
+      ],
+      'bank_vars' => [
+        'bank_name' => 'Банк',
+        'account_number' => 'Номер рахунку',
+        'foundation_name' => 'Назва фонду',
+        'payment_title' => 'Заголовок платежу'
       ],
       'advice' => [
         'paragraph1' => 'Чи знаєте ви, що всі пожертви підлягають податковим відрахуванням: для фізичних осіб ліміт до 6% від доходу, для юридичних осіб ліміт до 10% від доходу.',
