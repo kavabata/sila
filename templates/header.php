@@ -26,14 +26,13 @@ foreach ($translations['sections'] as $sectionKey => $sectionDetails) {
   <?php endif; ?>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XHRV6VZNYN"></script>
   <script src="/js/functions.js"></script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-  dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'G-XHRV6VZNYN');
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+    dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-XHRV6VZNYN');
   </script>
 </head>
 
