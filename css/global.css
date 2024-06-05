@@ -156,6 +156,18 @@ a.button:hover {
   transition: background-color 0.3s;
 }
 
+.button-contact-form {
+  cursor: pointer;
+  color: var(--color-white);
+  font-size: var(--font-size-lg);
+  background-color: var(--color-red);
+  transition: box-shadow 0.3s;
+}
+
+.button-contact-form:hover {
+  box-shadow: var(--box-shadow);
+}
+
 a {
   text-decoration: none;
   color: brown;
