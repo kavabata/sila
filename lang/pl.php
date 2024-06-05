@@ -114,7 +114,19 @@ return [
       ],
       'intro' => [
         'paragraph1' => 'Każda darowizna pieniężna wpłacona na konto naszej fundacji, pomaga nam w realizacji celów statutowych.',
-        'paragraph2' => 'Przez cały rok możesz wpłacić darowiznę bezpośrednio na konto Fundacji w Banku <br>PKO BP nr konta: <b>' . $site_account . '</b><br>tytułem: <b>“Darowizna na cele statutowe”</b>',
+        'paragraph2' => 'Przez cały rok możesz przekazywać darowiznę bezpośrednio na konto Fundacji',
+      ],
+      'bank_details' => [
+        'bank_name' => 'PKO Bank Polski S.A.',
+        'account_number' => $site_account,
+        'foundation_name' => 'Fundacja "Siła Kobiety"',
+        'payment_title' => 'Darowizna na cele statutowe',
+      ],
+      'bank_vars' => [
+        'bank_name' => 'Bank',
+        'account_number' => 'Numer konta',
+        'foundation_name' => 'Nazwa fundacji',
+        'payment_title' => 'Tytuł przelewu'
       ],
       'advice' => [
         'paragraph1' => 'Czy wiesz, że wszystkie darowizny podlegają odpisom podatkowym: dla osób fizycznych limit do 6% od dochodu, dla osób prawnych limit do 10% od dochodu.',

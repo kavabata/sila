@@ -79,6 +79,13 @@ section {
   padding: var(--padding);
 }
 
+.bankDetails {
+  background-color: azure;
+  border-radius: var(--border-radius-lg);
+  padding: var(--padding);
+  margin: 0 0 var(--padding) var(--padding-half);
+}
+
 .homeHead {
   min-height: calc(100vh - var(--menu-height));
   height: calc(100vh - var(--menu-height));
@@ -374,7 +381,7 @@ section {
 }
 
 #joinSection .card {
-  
+
   max-width: 550px;
   border-radius: var(--border-radius-lg);
   background-color: rgba(255, 255, 255, 0.7);
