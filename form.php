@@ -57,54 +57,54 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 <script>
-  function onSubmit(e) {
-    e.preventDefault();
-    grecaptcha.enterprise.ready(async () => {
-      const token = await grecaptcha.enterprise.execute('<?= $_ENV['RECAPTHA_PUBLIC']; ?>', {
-        action: 'SUBMIT'
-      });
-      console.log({
-        token
-      }, document.getElementById('recaptchaToken'));
-      document.getElementById('recaptchaToken').value = token;
-      document.forms[0].submit();
+function onSubmit(e) {
+  e.preventDefault();
+  grecaptcha.enterprise.ready(async () => {
+    const token = await grecaptcha.enterprise.execute('<?= $_ENV['RECAPTHA_PUBLIC']; ?>', {
+      action: 'SUBMIT'
     });
-  }
+    console.log({
+      token
+    }, document.getElementById('recaptchaToken'));
+    document.getElementById('recaptchaToken').value = token;
+    document.forms[0].submit();
+  });
+}
 </script>
 <div class="content">
   <section class="form" id="formSection">
     <?= getSectionHeading($page['title'], 'h1'); ?>
     <?php if ($sent) : ?>
-      <div class="formSuccess">
-        <?= $page['messages']['success']; ?>
-        <br />
-        <br />
-        <a href="<?= build_url(); ?>" class="button">
-          <?= $page['messages']['home']; ?>
-        </a>
-      </div>
+    <div class="formSuccess">
+      <?= $page['messages']['success']; ?>
+      <br />
+      <br />
+      <a href="<?= build_url(); ?>" class="button">
+        <?= $page['messages']['home']; ?>
+      </a>
+    </div>
     <?php else : ?>
 
-      <form action="<?= build_url('form'); ?>" method="POST" onsubmit="onSubmit(event)">
-        <?php if (!empty($errors)) :
+    <form action="<?= build_url('form'); ?>" method="POST" onsubmit="onSubmit(event)">
+      <?php if (!empty($errors)) :
           foreach ($errors as $error) : ?>
-            <div class="formError"><?= $error; ?></div>
-        <?php endforeach;
+      <div class="formError"><?= $error; ?></div>
+      <?php endforeach;
         endif; ?>
 
-        <input type="hidden" name="recaptchaToken" id="recaptchaToken" value="" />
+      <input type="hidden" name="recaptchaToken" id="recaptchaToken" value="" />
 
-        <label for="name"><?= $page['fields']['name']; ?>:</label>
-        <input type="text" id="name" name="name" required value="<?= $name; ?>"><br><br>
+      <label for="name"><?= $page['fields']['name']; ?>:</label>
+      <input type="text" id="name" name="name" required value="<?= $name; ?>"><br><br>
 
-        <label for="email"><?= $page['fields']['email']; ?>:</label>
-        <input type="email" id="email" name="email" required value="<?= $email; ?>"><br><br>
+      <label for="email"><?= $page['fields']['email']; ?>:</label>
+      <input type="email" id="email" name="email" required value="<?= $email; ?>"><br><br>
 
-        <label for="message"><?= $page['fields']['message']; ?>:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50" required><?= $message; ?></textarea><br><br>
+      <label for="message"><?= $page['fields']['message']; ?>:</label><br>
+      <textarea id="message" name="message" rows="4" cols="50" required><?= $message; ?></textarea><br><br>
 
-        <input type="submit" value="Submit" class="button">
-      </form>
+      <input type="submit" value="Submit" class="button-contact-form">
+    </form>
     <?php endif; ?>
   </section>
 </div>
