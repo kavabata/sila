@@ -131,7 +131,7 @@ return [
       'advice' => [
         'paragraph1' => 'Czy wiesz, że wszystkie darowizny podlegają odpisom podatkowym: dla osób fizycznych limit do 6% od dochodu, dla osób prawnych limit do 10% od dochodu.',
         'paragraph2' => 'Dokonanie wpłaty bezpośrednio na konto Fundacji pozwala na skorzystanie z „ulgi za darowizny” przy rozliczaniu PIT. W tytule przelewu należy wpisać „Darowizna na cele statutowe”. Następnie, podczas rozliczania się z urzędem skarbowym, wystarczy wypełnić odpowiednie rubryki w formularzu PIT-37, PIT-36 lub PIT-28 i dodać załącznik PIT/O. Prosimy zachować dowód wpłaty.',
-        'paragraph3' => 'Dziękujemy, że nas wspierasz Zgodnie z założeniami Fundacji “Siła kobiety”, wszystkie darowizny idą na cele statutowe. Chciałbyś dowiedzieć się na jakie konkretne działania Fundacji przeznaczona jest Twoja darowizna? <a class="underConstraction" href="#">Napisz do nas!</a>'
+        'paragraph3' => 'Dziękujemy, że nas wspierasz Zgodnie z założeniami Fundacji “Siła kobiety”, wszystkie darowizny idą na cele statutowe. Chciałbyś dowiedzieć się na jakie konkretne działania Fundacji przeznaczona jest Twoja darowizna? <a class="link-to-join" href="/form">Napisz do nas!</a>'
       ],
       'outro' => [
         'paragraph3' => 'Przekazując darowiznę, przekazujesz nadzieję i wsparcie dla tych, którzy jej najbardziej potrzebują. Razem możemy osiągnąć wiele!'
