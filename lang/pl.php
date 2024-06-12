@@ -225,23 +225,24 @@ return [
       'title' => 'Wsparcie dla Sił Zbrojnych Ukrainy',
       'seo' =>
       [
-        'keywords' => 'wsparcie, Siły Zbrojne Ukrainy, pomoc medyczna, wsparcie wojskowe, wsparcie psychologiczne, pomoc humanitarna, weterani wojenni, konflikt na Ukrainie',
-        'description' => 'Zapoznaj się z możliwościami wsparcia Sił Zbrojnych Ukrainy. Fundacja "Siła Kobiet" oferuje pomoc medyczną, wsparcie wojskowe, psychologiczne i humanitarne dla żołnierzy oraz ich rodzin.'
+        'keywords' => 'wsparcie, Siły Zbrojne Ukrainy, pomoc medyczna, wsparcie wojskowe, wsparcie psychologiczne, pomoc humanitarna, weterani wojenni, konflikt na Ukrainie, darowizny, zbiórki',
+        'description' => 'Oferujemy różnorodne formy wsparcia dla Sił Zbrojnych Ukrainy. Fundacja "Siła Kobiet" zapewnia pomoc medyczną, wojskową, psychologiczną i humanitarną dla żołnierzy oraz ich rodzin. Dołącz do nas i wesprzyj naszą misję!'
       ],
       'intro' => [
-        'paragraph1' => 'Oni nas bronią przed <br><strong>DZIKIMI HORDAMI BARBARZYŃCÓW</strong>',
-        'paragraph2' => 'Siły Zbrojne Ukrainy stoją na pierwszej linii frontu, broniąc wolności ukraińskiego narodu, suwerenności oraz prawa do spokojnej przyszłości. Potrzebują naszego wsparcia bardziej niż kiedykolwiek.',
+        'paragraph1' => 'Siły Zbrojne Ukrainy walczą, aby chronić nas przed zagrażającymi niebezpieczeństwami.',
+        'paragraph2' => 'Stoją na pierwszej linii frontu, broniąc wolności, suwerenności i egzystencji przyszłych pokoleń. Teraz potrzebują naszego wsparcia bardziej niż kiedykolwiek. Twoja pomoc może uratować życie i przywrócić nadzieję.'
       ],
       'advice' => [
-        'paragraph3' => 'Fundacja "Siła Kobiety" zdecydowanie popiera siły zbrojne Ukrainy w ich walce o suwerenność i wolność. Oto kilka sposobów, w jaki nasza fundacja pomaga:',
+        'paragraph3' => 'Fundacja "Siła Kobiety" zdecydowanie wspiera siły zbrojne Ukrainy w ich walce o wolność i suwerenność. Oto, jak możesz pomóc:',
         'paragraph4' => '<ul>
-          <li>Zbiórka funduszy na wsparcie medyczne dla rannych ukraińskich żołnierzy.</li>
-          <li>Zakup i dostarczanie sprzętu wojskowego oraz lekarstw dla jednostek na froncie.</li>
-          <li>Organizacja wydarzeń charytatywnych na rzecz rodzin poległych i rannych żołnierzy.</li>
-          <li>Wsparcie psychologiczne dla weteranów wojennych oraz ich rodzin.</li>
-          <li>Dystrybucja pomocy humanitarnej w regionach dotkniętych konfliktem.</li>
-          <li>Promowanie świadomości społecznej na temat sytuacji na Ukrainie oraz potrzeb jej sił zbrojnych.</li>
-        </ul>'
+          <li><strong>Zbiórka funduszy</strong> na wsparcie medyczne dla rannych ukraińskich żołnierzy. Twoja darowizna może zapewnić niezbędne leczenie i rehabilitację.</li>
+          <li><strong>Zakup i dostarczanie sprzętu ochronnego oraz lekarstw</strong> dla jednostek na froncie. Każda złotówka pomaga w utrzymaniu obrony.</li>
+          <li><strong>Organizacja wydarzeń charytatywnych</strong> na rzecz rodzin poległych i rannych żołnierzy. Twoje wsparcie finansowe pomaga w organizacji tych ważnych inicjatyw.</li>
+          <li><strong>Wsparcie psychologiczne</strong> dla weteranów wojennych oraz ich rodzin. Pomóż nam zapewnić opiekę, której tak bardzo potrzebują.</li>
+          <li><strong>Dystrybucja pomocy humanitarnej</strong> w regionach dotkniętych konfliktem. Twoje darowizny pozwalają nam dostarczać niezbędne artykuły pierwszej potrzeby.</li>
+          <li><strong>Promowanie świadomości społecznej</strong> na temat sytuacji na Ukrainie oraz potrzeb jej sił zbrojnych. Twoje wsparcie finansowe umożliwia nam prowadzenie kampanii informacyjnych.</li>
+        </ul>
+        <p>Każda darowizna ma znaczenie. Razem możemy zrobić różnicę. <a href="/donate">Wesprzyj naszą misję</a> już teraz i pomóż nam pomagać tym, którzy walczą o wolność i pokój.</p>'
       ]
     ],
     'form' => [
