@@ -4,7 +4,9 @@ function getTitleClass($title)
 {
   $titleLenght = mb_strlen(strip_tags($title));
   $size = '';
-  if ($titleLenght > 30) {
+  if ($titleLenght > 32) {
+    $size = ' sectionTitle--xxl';
+  } else if ($titleLenght > 30) {
     $size = ' sectionTitle--xl';
   } else if ($titleLenght > 20) {
     $size = ' sectionTitle--lg';

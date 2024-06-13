@@ -28,6 +28,10 @@ section {
   border: 3px solid #fff;
 }
 
+.sectionTitle--xxl {
+  max-width: 710px;
+}
+
 .sectionTitle--xl {
   max-width: 600px;
 }
@@ -38,14 +42,6 @@ section {
 
 .sectionTitle--md {
   max-width: 400px;
-}
-@media (min-width: 768px) {
-  .sectionTitle {
-    max-width: 350px;
-  }
-  .sectionTitle--md {
-    max-width: 450px;
-  }
 }
 
 .pageContainer {
