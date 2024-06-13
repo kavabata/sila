@@ -287,6 +287,14 @@ return [
     'nip' => 'NIP 8943186703',
     'regon' => 'REGON 522005281',
   ],
+
+  'buttons' => [
+    'account_number' => 'Copy account number',
+    'bank_name' => 'Copy bank name',
+    'foundation_name' => 'Copy foundation name',
+    'payment_title' => 'Copy payment title'
+  ],
+
   '404' => [
     'title' => 'Page Not Found',
     'description' => 'Sorry, but the requested page is unavailable or does not exist. Perhaps you would like to return home?',
