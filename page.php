@@ -35,7 +35,8 @@ include('templates/header.php');
             <strong>
               <?= $page['bank_vars']['bank_name']; ?> :
             </strong> <span id="bank_name"> <?= $page['bank_details']['bank_name']; ?> </span>
-            <button class="button-copy-bank-details" onclick="copyToClipboard('bank_name')" title="copy bank name">
+            <button class="button-copy-bank-details" onclick="copyToClipboard('bank_name')"
+              title="<?= $translations['buttons']['bank_name']; ?>">
               <i class="fas fa-copy"></i>
             </button>
           </div>
@@ -43,7 +44,7 @@ include('templates/header.php');
             <strong><?= $page['bank_vars']['account_number']; ?> :</strong> <span
               id="account_number"><?= $page['bank_details']['account_number']; ?></span>
             <button class="button-copy-bank-details" onclick="copyToClipboard('account_number')"
-              title="copy account number">
+              title="<?= $translations['buttons']['account_number']; ?>">
               <i class="fas fa-copy"></i>
             </button>
           </div>
@@ -51,7 +52,7 @@ include('templates/header.php');
             <strong><?= $page['bank_vars']['foundation_name']; ?> :</strong> <span id="foundation_name">
               <?= $page['bank_details']['foundation_name']; ?> </span>
             <button class="button-copy-bank-details" onclick="copyToClipboard('foundation_name')"
-              title="copy foundation name">
+              title="<?= $translations['buttons']['foundation_name']; ?>">
               <i class="fas fa-copy"></i>
             </button>
           </div>
@@ -60,7 +61,7 @@ include('templates/header.php');
               <?= $page['bank_details']['payment_title']; ?>
             </span>
             <button class="button-copy-bank-details" onclick="copyToClipboard('payment_title')"
-              title="copy payment title">
+              title="<?= $translations['buttons']['payment_title']; ?>">
               <i class="fas fa-copy"></i>
             </button>
           </div>
