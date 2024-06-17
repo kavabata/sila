@@ -268,15 +268,15 @@ return [
     ],
     'cafe' => [
       'seo' => [
-        'keywords' => 'skontaktuj się z nami, dołącz do nas, kuchnia ukraińska, art-cafe',
-        'description' => 'Rozkoszuj się autentyczną kuchnią ukraińską w naszym uroczym art-cafe. Dołącz do nas, aby smakować smaki Ukrainy, jednocześnie wspierając naszą misję pomocy tym, którzy jej potrzebują.'
+        'keywords' => 'autentyczna kuchnia ukraińska, art-cafe Świetlica, skontaktuj się z nami, dołącz do nas, pomoc dla Ukrainy, ukraińskie dania, barszcz, pierogi, lokalna kawiarnia, miejsce spotkań, ukraińska kultura, wsparcie uchodźców, ukraińskie jedzenie Wrocław',
+        'description' => 'Odkryj autentyczne smaki Ukrainy w art-cafe "Świetlica". Nasza kawiarnia oferuje pyszne ukraińskie dania w przytulnym otoczeniu, wspierając jednocześnie misję pomocy potrzebującym. Skontaktuj się z nami i dołącz do naszej społeczności.'
       ],
-      'title' => 'Art-Cafe z Autentyczną Kuchnią Ukrainą',
+      'title' => 'Art-Cafe "Świetlica"',
       'intro' => [
-        'paragraph1' => 'Zatopione w sercu naszego miejsca wydarzeń znajduje się urocze art-cafe, oferujące wybór autentycznych dań ukraińskich. Od pikantnych pierogów po rozgrzewającą barszcz, nasze kafejka zaprasza gości do relaksu i delektowania się bogatymi smakami i tradycjami kulinarnymi Ukrainy.',
-        'paragraph2' => 'Nasze art-cafe oferuje nie tylko pyszne jedzenie; tworzy ciepłą i przytulną atmosferę, gdzie goście mogą spotkać się, zrelaksować się i cieszyć towarzystwem przyjaciół i rodziny wśród fascynujących dzieł sztuki i przytulnego otoczenia.',
-        'paragraph3' => 'Wybierając nasze art-cafe, nie tylko delektujesz się autentycznymi smakami ukraińskimi, ale również wspierasz misję naszej fundacji w udzielaniu pomocy potrzebującym. Każdy zakup bezpośrednio przyczynia się do naszych wysiłków w zapewnieniu niezbędnej pomocy i wsparcia dla uchodźców z Ukrainy i innych osób wrażliwych.',
-        'paragraph4' => 'Dołącz do nas w naszym art-cafe, aby skosztować smaków Ukrainy i zmienić życie tych, którym pomagamy.'
+        'paragraph1' => 'W samym sercu naszego centrum wydarzeń znajduje się urokliwe art-cafe, które serwuje szeroki wybór autentycznych dań ukraińskich. Od pikantnych pierogów po rozgrzewający barszcz, nasza kawiarnia zaprasza gości do relaksu i delektowania się bogactwem smaków oraz kulinarnymi tradycjami Ukrainy.',
+        'paragraph2' => 'Nasze art-cafe to nie tylko pyszne jedzenie; tworzymy ciepłą i przytulną atmosferę, gdzie goście mogą spotkać się, zrelaksować i cieszyć towarzystwem przyjaciół i rodziny wśród fascynujących dzieł sztuki i przytulnego otoczenia.',
+        'paragraph3' => 'Wybierając nasze art-cafe, nie tylko delektujesz się autentycznymi smakami Ukrainy, ale również wspierasz misję naszej fundacji w udzielaniu pomocy potrzebującym. Każdy zakup bezpośrednio przyczynia się do naszych działań na rzecz uchodźców z Ukrainy oraz innych osób znajdujących się w trudnej sytuacji.',
+        'paragraph4' => 'Dołącz do nas w naszym art-cafe, aby skosztować smaków Ukrainy i wspólnie zmieniać życie tych, którym pomagamy.'
       ]
     ]
   ],
