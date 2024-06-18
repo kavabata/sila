@@ -83,10 +83,13 @@ return [
         'Schowane w sercu naszego miejsca wydarzeń znajduje się urocze kawiarnia oferująca wybór autentycznych dań ukraińskich. Od pikantnych pierogów po rozgrzewający barszcz, nasza kawiarnia zaprasza gości do rozkoszowania się bogatymi smakami i kulinarnymi tradycjami Ukrainy.'
       ],
       'cards' => [
-        'menu' => [
+        'cafe' => [
           'title' => 'Kulinarna Rozkosz',
-          'button' => 'Dowiedz się więcej'
+          'button' => 'Dowiedz się więcej',
         ],
+        'menu' => [
+          'button' => 'Menu'
+        ]
       ]
     ],
     'gallery' => [
