@@ -43,8 +43,11 @@ $site_config = [
     ],
     'cafe' => [
       'cards' => [
-        'menu' => [
+        'cafe' => [
           'link' => build_url('cafe')
+        ],
+        'menu' => [
+          'link' => build_url('menu')
         ]
       ]
     ],
@@ -120,5 +123,3 @@ $site_config = [
     'regon' => 'REGON 522005281',
   ],
 ];
-
-
