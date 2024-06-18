@@ -88,6 +88,7 @@ return [
           'button' => 'Dowiedz się więcej',
         ],
         'menu' => [
+          'title' => '',
           'button' => 'Menu'
         ]
       ]
