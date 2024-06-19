@@ -7,6 +7,7 @@ RewriteRule ^(donate|language|art|club|concerts|regulations|military|cafe)$ /pag
 RewriteRule ^(ua|pl|en)/(form)$ /form.php?page=$2&lang=$1 [L,QSA]
 RewriteRule ^(form)$ /form.php?page=$1 [L,QSA]
 
+# Adding /menu.php
 RewriteRule ^(ua|pl|en)/(menu)$ /menu.php?page=$2&lang=$1 [L,QSA]
 RewriteRule ^(menu)$ /menu.php?page=$1 [L,QSA]
 

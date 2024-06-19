@@ -282,6 +282,30 @@ return [
         'paragraph3' => 'Wybierając nasze art-cafe, nie tylko delektujesz się autentycznymi smakami Ukrainy, ale również wspierasz misję naszej fundacji w udzielaniu pomocy potrzebującym. Każdy zakup bezpośrednio przyczynia się do naszych działań na rzecz uchodźców z Ukrainy oraz innych osób znajdujących się w trudnej sytuacji.',
         'paragraph4' => 'Dołącz do nas w naszym art-cafe, aby skosztować smaków Ukrainy i wspólnie zmieniać życie tych, którym pomagamy.'
       ]
+    ],
+    'menu' => [
+      'seo' => [
+        'keywords' => 'autentyczna kuchnia ukraińska, art-cafe Świetlica, skontaktuj się z nami, dołącz do nas, pomoc dla Ukrainy, ukraińskie dania, barszcz, pierogi, lokalna kawiarnia, miejsce spotkań, ukraińska kultura, wsparcie uchodźców, ukraińskie jedzenie Wrocław',
+        'description' => 'Odkryj autentyczne smaki Ukrainy w art-cafe "Świetlica". Nasza kawiarnia oferuje pyszne ukraińskie dania w przytulnym otoczeniu, wspierając jednocześnie misję pomocy potrzebującym. Skontaktuj się z nami i dołącz do naszej społeczności.'
+      ],
+      'title' => 'Nasze Menu',
+      'slogan' => 'Ukraińska gościnność w każdym kęsie – zapraszamy do odkrycia autentycznych smaków, które przeniosą Cię prosto do serca Ukrainy. Nasza kuchnia to połączenie tradycji, pasji i miłości do gotowania, serwowane w atmosferze prawdziwej ukraińskiej gościnności.',
+      'menu_cards' => [
+        'food1' => [
+          'title' => 'Pierogi ze szpinakiem',
+          'price' => '18zł',
+          'img' => 'img/foods/pierogi_szpinak.JPG',
+          'description' => 'Pierogi z mięsem',
+          'order_text' => 'zamów',
+        ],
+        'food2' => [
+          'title' => 'Krokiety',
+          'price' => '20zł',
+          'img' => 'img/krokiety.jpg',
+          'description' => 'Krokiety z mięsem',
+          'order_text' => 'zamów',
+        ]
+      ]
     ]
   ],
 
