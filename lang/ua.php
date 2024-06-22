@@ -273,6 +273,25 @@ return [
         'paragraph3' => 'Оберіть наше мистецьке кафе для того, щоб не лише порадувати свій смак автентичними українськими смаками, але й підтримати місію нашої фундації у допомозі тим, хто потребує. Кожна покупка безпосередньо сприяє нашим зусиллям у наданні необхідної допомоги та підтримки біженцям з України та іншим уразливим громадянам.',
         'paragraph4' => 'Приходьте до нашого мистецького кафе, щоб насолодитися смаками України та зробити різницю в житті тих, кому ми допомагаємо.'
       ]
+      ],
+    'menu' => [
+      'seo' => [
+        'keywords' => '',
+        'description' => ''
+      ],
+      'title' => 'Наше меню',
+      'slogan' => 'Ukraińska gościnność w każdym kęsie – zapraszamy do odkrycia autentycznych smaków, które przeniosą Cię prosto do serca Ukrainy. Nasza kuchnia to połączenie tradycji, pasji i miłości do gotowania, serwowane w atmosferze prawdziwej ukraińskiej gościnności.',
+      'order_button' => 'zamów',
+      'cards' => [
+        'pierogi' => [
+          'title' => 'Вареники',
+          'description' => 'Pierogi z mięsem'
+        ],
+        'krokiety' => [
+          'title' => 'Крокети',
+          'description' => 'Krokiety z mięsem'
+        ]
+      ]
     ]
   ],
 

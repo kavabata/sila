@@ -13,6 +13,7 @@
   --color-light-gray: #efefef;
   --color-dark-gray: #2c2c2c;
   --color-black: #000;
+  --color-wolt: #009de0;
 
   --max-width: 1200px;
   --menu-height: 64px;
@@ -131,7 +132,7 @@ a.button {
   margin-top: var(--padding);
   font-size: var(--font-size-md);
   font-weight: 600;
-  transition: 1.5s;
+  transition: 0.6s;
   cursor: pointer;
   display: inline-block;
   text-decoration: none;

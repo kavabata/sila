@@ -602,3 +602,92 @@ section {
 .albumContainer .albumItem:hover .albumItemTitle {
   opacity: 1;
 }
+
+/* Menu section start here */
+.menuContainer {
+  color: black;
+  min-height: 90vh;
+}
+
+.menuContainer section {
+  margin: 0 auto;
+  padding-top: calc(var(--padding) *6);
+}
+
+.menuPhone {
+  text-align: center;
+  font-size: var(--font-size-xxl);
+  color: var(--color-red);
+  margin: var(--padding);
+}
+.menuCards {
+  display: flex;
+  gap: var(--padding);
+  flex-wrap: wrap;
+  max-width: var(--max-width);
+  margin: var(--padding) auto;
+  justify-content: space-between;
+  
+}
+
+.menuItem {
+  position: relative;
+  overflow: hidden;  
+  max-width: 100%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius-sm);
+  flex: 1 0 350px;
+  border: 2px solid black;
+  padding: var(--padding);
+  text-align: center;
+  position: relative;
+  transform: .6s;
+  margin-bottom: var(--padding);
+  min-height: 380px;
+  border: 2px solid var(--color-red);
+  border-radius: var(--border-radius-md);
+}
+
+.menuItem img {
+  width: 300px;
+  height: auto;
+  border: 3px solid #ddd;
+  padding: 3px;
+  transition: .6s;
+  border-radius: var(--border-radius-sm);
+}
+
+.menuItem:hover img {
+  border-radius: 50%;
+}
+
+.menuItem .menuItemPrice {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-red);
+  padding: var(--padding-half) var(--padding);
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: var(--padding) 0 0 0;
+  color: white;
+  text-shadow: 1px 1px 1px black, -1px -1px 1px black;
+}
+
+.menuItem .menuItemButton {
+  background-color: var(--color-wolt);
+  text-decoration: none;
+}
+
+.menuItem h4 {
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 60px;
+  border-bottom: 1px dashed #ddd;
+  margin: var(--padding) 0;
+  padding-bottom: var(--padding);
+  text-transform: capitalize;
+  font-size: 24px;
+}

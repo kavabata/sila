@@ -112,12 +112,35 @@ $site_config = [
     ],
     'cafe' => [
       'gallery' => 'cafe'
+    ],
+    'menu' => [
+      'cards' => [
+        'barszcz' => [
+          'price' => '18zł',
+          'img' => '/img/gallery/menu/barszcz.jpg',
+          'wolt' => 'https://wolt.com/pl/pol/wroclaw/restaurant/art-cafe-wietlica/barszcz-itemid-65aa85abd9b5b01ee5e0d3ef'
+        ],
+        'golabki' => [
+          'price' => '20zł',
+          'img' => '/img/gallery/menu/golabki.jpg',
+        ],
+        'pierogi' => [
+          'price' => '18zł',
+          'img' => '/img/gallery/menu/pierogi-szpinak.jpg',
+          'wolt' => 'https://wolt.com/pl/pol/wroclaw/restaurant/art-cafe-wietlica/pielmieni-z-wieprzowina-itemid-65aa85abd9b5b01ee5e0d3e8'
+        ],
+        'krokiety' => [
+          'price' => '20zł',
+          'img' => '/img/gallery/menu/krokiety.jpg',
+        ]
+      ]
     ]
   ],
   'footer' => [
     'address' => 'ul. Łaciarska 32<br> 50-146 Wrocław',
     'email' => 'silakobietywro@gmail.com',
     'phone' => '+48 510 345 436',
+    'cafe_phone' => '+48 510 345 436',
     'krs' => 'KRS 0000968925',
     'nip' => 'NIP 8943186703',
     'regon' => 'REGON 522005281',

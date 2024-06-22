@@ -4,31 +4,35 @@ include('includes/init.php');
 $page = $translations['pages'][$pageName];
 $page['seo']['keywords'] = isset($page['seo']['keywords']) ? $page['seo']['keywords'] . ',' . $translations['seo']['generic_keywords'] : $translations['seo']['generic_keywords'];
 
+// echo '<pre>';
+// var_dump($translations);
+// var_dump($site_config);
+
 include('templates/header.php');
 ?>
 
-<div class="content">
-  <section class="menus-area" style="background-image: url('img/foods/barszcze.jpg')">
+<div class="menuContainer">
+  <section>
     <?= getSectionHeading($page['title'], 'h1'); ?>
-
-    <h6><?php echo $page['slogan']; ?></h6>
-
-    <div class="menus">
-      <?php foreach ($page['menu_cards'] as $food) : ?>
-        <div class="menu-items">
-          <i class="single-menu">
-            <span><?php echo $food['price']; ?></span>
-            <img src="<?php echo $food['img']; ?>" alt="<?php echo $food['title'] ?>" />
-            <h4><?php echo $food['title']; ?></h4>
-            <p><?php echo $food['description']; ?></p>
-            <a href="#"><?php echo $food['order_text'] ?></a>
-        </div>
+    <p class="menuTitle"><?php echo $page['slogan']; ?></p>
+    <div class="menuPhone">
+      <a href="tel:<?= $translations['footer']['cafe_phone']; ?>"><?= $translations['footer']['cafe_phone']; ?></a>
     </div>
-
-  <?php endforeach; ?>
+    <div class="menuCards">
+      <?php foreach ($page['cards'] as $food) : ?>
+        <div class="menuItem">
+          <img src="<?php echo $food['img']; ?>" alt="<?php echo $food['title'] ?>" />
+          <h2><?php echo $food['title']; ?></h2>
+          <p><?php echo $food['description']; ?></p>
+          <span class="menuItemPrice"><?php echo $food['price']; ?></span>
+          <?php if (isset($food['wolt'])) : ?>
+            <a href="<?= $food['wolt']; ?>" target="_blank" class="button menuItemButton"><?php echo $page['order_button'] ?></a>
+          <?php endif; ?>
+        </div>
+      <?php endforeach; ?>
+    </div>
+  </section>
 </div>
 
-</section>
-</div>
 
 <?php include('templates/footer.php'); ?>

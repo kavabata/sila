@@ -290,20 +290,23 @@ return [
       ],
       'title' => 'Nasze Menu',
       'slogan' => 'Ukraińska gościnność w każdym kęsie – zapraszamy do odkrycia autentycznych smaków, które przeniosą Cię prosto do serca Ukrainy. Nasza kuchnia to połączenie tradycji, pasji i miłości do gotowania, serwowane w atmosferze prawdziwej ukraińskiej gościnności.',
-      'menu_cards' => [
-        'food1' => [
+      'order_button' => 'zamów',
+      'cards' => [
+        'barszcz' => [
           'title' => 'Pierogi ze szpinakiem',
-          'price' => '18zł',
-          'img' => 'img/foods/pierogi_szpinak.JPG',
-          'description' => 'Pierogi z mięsem',
-          'order_text' => 'zamów',
+          'description' => 'Pierogi z mięsem'
         ],
-        'food2' => [
+        'golabki' => [
           'title' => 'Krokiety',
-          'price' => '20zł',
-          'img' => 'img/krokiety.jpg',
-          'description' => 'Krokiety z mięsem',
-          'order_text' => 'zamów',
+          'description' => 'Krokiety z mięsem'
+        ],
+        'pierogi' => [
+          'title' => 'Pierogi ze szpinakiem',
+          'description' => 'Pierogi z mięsem'
+        ],
+        'krokiety' => [
+          'title' => 'Krokiety',
+          'description' => 'Krokiety z mięsem'
         ]
       ]
     ]
