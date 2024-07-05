@@ -46,12 +46,12 @@ return [
       ]
     ],
     'news' => [
-      'title' => 'Aktualnośći',
+      'title' => 'Aktualności',
       'description' => [],
       'cards' => [
         'subscribe' => [
           'title' => 'Zapisz się na klasy z polskiego',
-          'description' => 'Świetlica ogłasza nowy nabór na kursy języka polskiego na poziomie A-A1, które rozpoczną się 30 lipca. Liczba miejsc jest ograniczona, więc pospiesz się i wypełnij formularz rejestracyjny. Nie przegap okazji, aby poprawić swoje umiejętności językowe i dowiedzieć się więcej o polskiej kulturze!',
+          'description' => 'Fundacja Siła kobiety ogłasza nowy nabór na zajęcia języka polskiego na poziomie A-A1, które rozpoczną się 30 lipca. Liczba miejsc jest ograniczona, więc pospiesz się i wypełnij formularz rejestracyjny. Nie przegap okazji, aby poprawić swoje umiejętności językowe i dowiedzieć się więcej o polskiej kulturze!',
           'button' => 'Zapisz się'
         ]
       ]

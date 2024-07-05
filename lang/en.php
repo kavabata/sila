@@ -51,7 +51,7 @@ return [
       'cards' => [
         'subscribe' => [
           'title' => 'Subscribe to polish classes',
-          'description' => 'The Cultural Center announces new enrollment for Polish language courses at level A-A1, starting on July 30th. The number of spots is limited, so hurry and fill out the registration form. Don\'t miss the chance to improve your language skills and learn more about Polish culture!',
+          'description' => 'The "Women empowerment" announces new enrollment for Polish language courses at level A-A1, starting on July 30th. The number of spots is limited, so hurry and fill out the registration form. Don\'t miss the chance to improve your language skills and learn more about Polish culture!',
           'button' => 'Subscribe'
         ]
       ]
