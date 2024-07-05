@@ -150,6 +150,7 @@ section {
 #aboutSection p {
   text-align: center;
   margin-bottom: var(--padding);
+  text-align: left;
 }
 
 #aboutSection .aboutCards {
@@ -187,6 +188,7 @@ section {
 #aboutSection .aboutCards div.card p {
   font-size: var(--font-size-md);
   margin-top: var(--padding);
+  text-align: center;
 }
 
 #aboutSection .aboutCards div.card .button {
@@ -209,6 +211,26 @@ section {
   }
 }
 /* AboutSection style end */
+
+/* News section */
+#newsSection .newsCards .card {
+  padding: var(--padding);
+  border-top: 3px solid #f1f1f1;
+  border-bottom: 3px solid #f1f1f1;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+#newsSection .newsCards .card .title {
+  font-size: var(--font-size-lg);
+  font-weight: semibold;
+  text-transform: uppercase;
+  margin-bottom: var(--padding);
+}
+
+#newsSection .newsCards .card p {
+  text-align: left;
+}
 
 /* Program Section start */
 

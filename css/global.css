@@ -205,7 +205,12 @@ header {
   height: var(--menu-height);
   margin-left: 13px;
 }
-
+.headerLang {
+  max-width: 110px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 .headerLang a {
   text-decoration: none;
   opacity: 0.5;
@@ -229,6 +234,7 @@ header nav ul li a {
   font-size: var(--font-size-md);
   color: var(--color-white);
   transition: 0.5s;
+  white-space: nowrap;
 }
 
 header nav ul li a:hover {

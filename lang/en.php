@@ -44,7 +44,18 @@ return [
         ],
       ]
     ],
-
+    'news' => [
+      'title' => 'News',
+      'description' => [
+      ],
+      'cards' => [
+        'subscribe' => [
+          'title' => 'Subscribe to polish classes',
+          'description' => 'The Cultural Center announces new enrollment for Polish language courses at level A-A1, starting on July 30th. The number of spots is limited, so hurry and fill out the registration form. Don\'t miss the chance to improve your language skills and learn more about Polish culture!',
+          'button' => 'Subscribe'
+        ]
+      ]
+    ],
     'programs' => [
       'title' => 'Projects',
       'cards' => [
@@ -174,7 +185,7 @@ return [
         'paragraph3' => 'The language school operates in an open format, which means that anyone can join at any time. The language barrier is a significant obstacle in the integration of people from Ukraine with the new environment, but as international organizations dealing with immigrants and refugees report, language support is crucial in the process of integration and assimilation of new citizens. Through the organization of language classes, we aim to support the integration of participants into the Polish community, and we want them to feel that they are taming the surrounding reality and are less lost in a foreign country.',
         'paragraph4' => 'We entrust the facilitation of meetings to a Ukrainian person who has several years of experience in teaching Polish, as well as many years of experience living in Poland, knowing what situations newcomers to Poland most often find themselves in and what vocabulary they need to cope.',
         'paragraph5' => 'The language school will operate in an open format, which means that anyone can join at any time.',
-        'paragraph6' => 'Registration can be done by phone.'
+        'paragraph6' => 'Registration can be done by <a href="' . build_url('subscribe') . '">subscription form</a>.'
       ]
     ],
     'art' => [
@@ -246,9 +257,11 @@ return [
         'description' => 'Contact us for inquiries or to join our community.'
       ],
       'title' => 'Contact Us',
+      'subscribe_title' => 'SIGN UP FOR POLISH CLASSES',
       'fields' => [
         'name' => 'Your Name',
         'email' => 'Your Email',
+        'phone' => 'Your Phone number',
         'message' => 'Message',
         'captcha' => 'What is 3 + 4?', // Added captcha label
         'submit' => 'Submit'
@@ -258,7 +271,8 @@ return [
         'email' => 'Invalid email format.',
         'fail' => 'Sorry, there was an error sending your message. Please try again later. Or <a href="mailto:silakobietywro@gmail.com" class="button">Write a letter</a>',
         'success' => 'Thank you for contacting us. We will get back to you shortly.',
-        'home' => 'Back to Home!'
+        'home' => 'Back to Home!',
+        'subscribe_polish' => 'I would like to request to be enrolled in Polish language classes. I would like to improve my language skills and deepen my knowledge of Polish literature and culture.'
       ]
     ],
     'cafe' => [

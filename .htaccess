@@ -7,6 +7,8 @@ RewriteRule ^(donate|language|art|club|concerts|regulations|military|cafe)$ /pag
 RewriteRule ^(ua|pl|en)/(form)$ /form.php?page=$2&lang=$1 [L,QSA]
 RewriteRule ^(form)$ /form.php?page=$1 [L,QSA]
 
+RewriteRule ^(ua|pl|en)/(subscribe)$ /form.php?subscribe=polish&page=form&lang=$1 [L,QSA]
+RewriteRule ^(subscribe)$ /form.php?subscribe=polish&page=form [L,QSA]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

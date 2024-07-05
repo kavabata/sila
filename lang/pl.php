@@ -5,9 +5,10 @@ return [
     'home' => 'Start',
     'about' => 'O nas',
     'projects' => 'Projekty',
-    'military_support' => 'Pomoc Siłą Zbrojnym',
+    'military' => 'Pomoc SZU',
     'gallery' => 'Galeria',
-    'contact' => 'Kontakt',
+    'cafe' => 'Kafe',
+    'join' => 'Kontakt',
   ],
   'header' => [
     'donate' => 'Przekaż darowiznę',
@@ -42,6 +43,17 @@ return [
           'description' => 'Twój wkład ma znaczenie',
           'button' => 'Szczegóły'
         ],
+      ]
+    ],
+    'news' => [
+      'title' => 'Aktualnośći',
+      'description' => [],
+      'cards' => [
+        'subscribe' => [
+          'title' => 'Zapisz się na klasy z polskiego',
+          'description' => 'Świetlica ogłasza nowy nabór na kursy języka polskiego na poziomie A-A1, które rozpoczną się 30 lipca. Liczba miejsc jest ograniczona, więc pospiesz się i wypełnij formularz rejestracyjny. Nie przegap okazji, aby poprawić swoje umiejętności językowe i dowiedzieć się więcej o polskiej kulturze!',
+          'button' => 'Zapisz się'
+        ]
       ]
     ],
     'programs' => [
@@ -176,7 +188,7 @@ return [
         'paragraph3' => 'Szkoła językowa działa w formule otwartej, co oznacza, że w każdej chwili można do niej dołączyć. Bariera językowa stanowi wysoką poprzeczkę w integracji osób z Ukrainy z nowym środowiskiem, ale jak wynika z raportów międzynarodowych organizacji zajmujących się imigrantami i uchodźcami, wsparcie językowe jest niezwykle ważne w procesie integracji i asymilacji nowych obywateli. Poprzez organizację zajęć językowych chcemy wesprzeć włączanie uczestników w społeczność polską, zależy nam na tym, by poczuli, że oswajają otaczającą ich rzeczywistość i byli jak najmniej zagubieni w obcym kraju.',
         'paragraph4' => 'Facylitację spotkań powierzamy osobie z Ukrainy, która ma kilkuletnie doświadczenie w prowadzeniu zajęć z języka polskiego, ale też wieloletnie doświadczenie życia w Polsce, wie w jakich sytuacjach najczęściej znajdują się osoby, które przybywają do Polski i jakiego słownictwa potrzebują, by móc sobie poradzić.',
         'paragraph5' => 'Szkoła językowa działać będzie w formule otwartej, co oznacza, że w każdej chwili można do niej dołączyć.',
-        'paragraph6' => 'Zapisy można dokonać telefonicznie.'
+        'paragraph6' => 'Zapisy można dokonać przez <a href="'.build_url('subscribe').'">forme</a>.'
       ]
     ],
     'art' => [
@@ -251,9 +263,11 @@ return [
         'description' => 'Skontaktuj się z nami w sprawie zapytań lub dołącz do naszej społeczności.'
       ],
       'title' => 'Skontaktuj się z nami',
+      'subscribe_title' => 'ZAPISZ SIĘ NA KLASY Z POLSKIEGO',
       'fields' => [
         'name' => 'Twoje imię',
         'email' => 'Twój email',
+        'phone' => 'Twój numer telefonu',
         'message' => 'Wiadomość',
         'captcha' => 'Ile to jest 3 + 4?', // Added captcha label
         'submit' => 'Wyślij'
@@ -263,7 +277,8 @@ return [
         'email' => 'Nieprawidłowy format email.',
         'fail' => 'Przepraszamy, wystąpił błąd podczas wysyłania wiadomości. Proszę spróbuj ponownie później. Albo <a href="mailto:silakobietywro@gmail.com" class="button">napisz list</a>',
         'success' => 'Dziękujemy za kontakt. Skontaktujemy się z Tobą wkrótce.',
-        'home' => 'Wróć do strony głównej!'
+        'home' => 'Wróć do strony głównej!',
+        'subscribe_polish' => 'Chciał(a) bym uprzejmie prosić o zapisanie mnie na zajęcia z języka polskiego. Chciał(a)bym poprawić swoje umiejętności językowe oraz pogłębić wiedzę na temat literatury i kultury polskiej.'
       ]
     ],
     'cafe' => [

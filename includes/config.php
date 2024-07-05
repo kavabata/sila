@@ -17,6 +17,13 @@ $site_config = [
         ],
       ]
     ],
+    'news' => [
+      'cards' => [
+        'subscribe' => [
+          'link' => build_url('subscribe')
+        ]
+      ]
+    ],
     'programs' => [
       'cards' => [
         'polish' => [

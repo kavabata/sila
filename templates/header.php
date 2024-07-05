@@ -3,10 +3,12 @@ $sections = $translations['sections'];
 
 $menuItems = [];
 foreach ($translations['sections'] as $sectionKey => $sectionDetails) {
-  $menuItems[] = [
-    'title' => $translations['menu'][$sectionKey] ?? $sectionDetails['title'],
-    'url' => build_url('#' . $sectionKey . 'Section')
-  ];
+  if ($translations['menu'][$sectionKey] ?? $sectionDetails['title']) {
+    $menuItems[] = [
+      'title' => $translations['menu'][$sectionKey] ?? $sectionDetails['title'],
+      'url' => build_url('#' . $sectionKey . 'Section')
+    ];
+  }
 }
 ?>
 <!DOCTYPE html>
