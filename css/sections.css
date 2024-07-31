@@ -70,7 +70,7 @@ section {
   padding: var(--padding);
 }
 .advice {
-  background-color: rgba(228, 58, 71, 0.5);
+  background-color: rgba(228, 58, 71, 0.15);
   border-radius: var(--border-radius-lg);
   padding: var(--padding);
 }
