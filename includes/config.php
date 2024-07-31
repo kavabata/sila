@@ -30,10 +30,6 @@ $site_config = [
           'img' => '/img/jezyk_polski.webp',
           'link' => build_url('language')
         ],
-        'art' => [
-          'img' => '/img/art.webp',
-          'link' => build_url('art')
-        ],
         'club' => [
           'img' => '/img/klub_literacki.webp',
           'link' => build_url('club')
@@ -41,6 +37,10 @@ $site_config = [
         'concerts' => [
           'img' => '/img/koncerty.webp',
           'link' => build_url('concerts')
+        ],
+        'art' => [
+          'img' => '/img/art.webp',
+          'link' => build_url('art')
         ],
       ],
     ],
@@ -97,6 +97,12 @@ $site_config = [
         'summary' => [
           'url' => 'https://drive.google.com/file/d/1rILPhtDQsMu_EC0n43p9_QdYA90qjqDF/view?usp=drive_link'
         ],
+        'razem' => [
+          'url' => 'https://drive.google.com/file/d/1vCUmKCMQxMgVttYRJCKm88UrbKCyYCKF/view'
+        ],
+        'razem_schedule' => [
+          'url' => 'https://drive.google.com/file/d/1dicIpxJB4nXj9Cdu7HWvx-3Y8CxsETuC/view'
+        ]
       ]
     ],
     'military' => [

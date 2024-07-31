@@ -63,16 +63,16 @@ return [
           'title' => "Polish Language",
           'button' => 'Show'
         ],
-        'art' => [
-          'title' => 'Art Therapy for Children and Adults',
-          'button' => 'Show'
-        ],
         'club' => [
           'title' => 'Literary Club',
           'button' => 'Show'
         ],
         'concerts' => [
-          'title' => 'Concerts',
+          'title' => '„Mix-Friday”',
+          'button' => 'Show'
+        ],
+        'art' => [
+          'title' => 'Art Therapy for Children and Adults',
           'button' => 'Show'
         ],
       ],
@@ -170,7 +170,13 @@ return [
         ],
         'summary' => [
           'text' => 'Summary of 2023',
-        ]
+        ],
+        'razem' => [
+          'text' => 'Project "Let\'s Be Together"',
+        ],
+        'razem_schedule' => [
+          'text' => 'Schedule for "Let\'s Be Together"',
+        ],
       ]
     ],
     'language' => [
@@ -186,7 +192,12 @@ return [
         'paragraph4' => 'We entrust the facilitation of meetings to a Ukrainian person who has several years of experience in teaching Polish, as well as many years of experience living in Poland, knowing what situations newcomers to Poland most often find themselves in and what vocabulary they need to cope.',
         'paragraph5' => 'The language school will operate in an open format, which means that anyone can join at any time.',
         'paragraph6' => 'Registration can be done by <a href="' . build_url('subscribe') . '">subscription form</a>.'
-      ]
+      ],
+      'advice' => [
+        'paragraph' => '<h2>Schedule</h2>',
+        'paragraph1' => 'Every Tuesday at 17:00, level B (intermediate) class',
+        'paragraph2' => 'Every Wednesday at 17:00, level A (beginner) class',
+      ],
     ],
     'art' => [
       'title' => 'Art Therapy',
@@ -214,9 +225,21 @@ return [
         'paragraph1' => 'The group is especially aimed at seniors who are in great need of supportive relationships in the face of losing everything they cared about and stood by.',
         'paragraph2' => 'Now often alone, they need a supportive community where they can share their stories, talk about what they miss, integrate, and relax with music.',
         'paragraph3' => 'The topics of the meetings include health, history, culture, and literature. Additionally, older people can share their views and experiences, and most importantly, meet seniors in Poland and build good relationships with them.',
-        'paragraph4' => 'Club meetings every Thursday at 5:00 PM.',
-        'paragraph5' => 'Meetings are also held outdoors. The club is open to all interested seniors.'
-      ]
+        'paragraph5' => 'Meetings are also held outdoors. The club is open to all interested seniors.',
+        'paragraph6' => 'Project <a href="https://drive.google.com/file/d/1vCUmKCMQxMgVttYRJCKm88UrbKCyYCKF/view" target="_blank">"Let\'s Be Together"</a> and <a href="https://drive.google.com/file/d/1dicIpxJB4nXj9Cdu7HWvx-3Y8CxsETuC/view" target="_blank">Schedule</a>.'
+      ],
+      'advice' => [
+        'paragraph' => '<h2>Schedule</h2>',
+        'paragraph4' => 'at 16:00 on August 1, 2024',
+        'paragraph5' => 'at 16:00 on August 8, 2024',
+        'paragraph6' => 'at 16:00 on August 15, 2024',
+        'paragraph7' => 'at 16:00 on August 22, 2024',
+        'paragraph8' => 'at 16:00 on August 29, 2024',
+        'paragraph9' => 'at 16:00 on September 5, 2024',
+        'paragraph10' => 'at 16:00 on September 12, 2024',
+        'paragraph11' => 'at 16:00 on September 19, 2024',
+        'paragraph12' => 'at 16:00 on September 26, 2024',
+      ],
     ],
     'concerts' => [
       'title' => 'Concerts',
@@ -226,8 +249,21 @@ return [
       ],
       'intro' => [
         'paragraph1' => 'Musical Meetings "Mix Friday"',
-        'paragraph2' => 'We invite you to concerts as part of the "Mix Friday" project. <br /> We are waiting for everyone who wants to relax with us at 32 Łaciarska Street <br /> in the Art-cafe Świetlica at 6:00 PM every Friday.'
-      ]
+        'paragraph2' => 'We invite you to concerts as part of the "Mix Friday" project. <br /> We are waiting for everyone who wants to relax with us at 32 Łaciarska Street <br /> in the Art-cafe Świetlica at 6:00 PM every Friday.',
+        'paragraph6' => 'Project <a href="https://drive.google.com/file/d/1vCUmKCMQxMgVttYRJCKm88UrbKCyYCKF/view" target="_blank">"Let\'s Be Together"</a> and <a href="https://drive.google.com/file/d/1dicIpxJB4nXj9Cdu7HWvx-3Y8CxsETuC/view" target="_blank">Schedule</a>.'
+      ],
+      'advice' => [
+        'paragraph' => '<h2>Schedule</h2>',
+        'paragraph5' => 'at 18:00 on August 2, 2024',
+        'paragraph6' => 'at 18:00 on August 9, 2024',
+        'paragraph7' => 'at 18:00 on August 16, 2024',
+        'paragraph8' => 'at 18:00 on August 23, 2024',
+        'paragraph9' => 'at 18:00 on August 30, 2024',
+        'paragraph10' => 'at 18:00 on September 6, 2024',
+        'paragraph11' => 'at 18:00 on September 13, 2024',
+        'paragraph12' => 'at 18:00 on September 20, 2024',
+        'paragraph13' => 'at 18:00 on September 27, 2024',
+      ],
     ],
     'military' => [
       'title' => 'Support for the Ukrainian Armed Forces',

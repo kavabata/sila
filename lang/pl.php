@@ -63,10 +63,6 @@ return [
           'title' => "Język Polski",
           'button' => 'Pokaż'
         ],
-        'art' => [
-          'title' => 'Art-terapia dla dzieci i dorosłych',
-          'button' => 'Pokaż'
-        ],
         'club' => [
           'img' => 'img/klub_literacki.webp',
           'title' => '„Klub Literacki”',
@@ -74,7 +70,11 @@ return [
         ],
         'concerts' => [
           'img' => 'img/koncerty_main_foto.webp',
-          'title' => 'Koncerty',
+          'title' => '„Mix-Friday”',
+          'button' => 'Pokaż'
+        ],
+        'art' => [
+          'title' => 'Art-terapia dla dzieci i dorosłych',
           'button' => 'Pokaż'
         ],
       ],
@@ -173,7 +173,13 @@ return [
         ],
         'summary' => [
           'text' => 'Podsumowanie 2023 roku'
-        ]
+        ],
+        'razem' => [
+          'text' => 'Projekt "Bądźmy Razem"',
+        ],
+        'razem_schedule' => [
+          'text' => 'Harmonogram zajęć "Bądźmy Razem"',
+        ],
       ]
     ],
     'language' => [
@@ -189,7 +195,12 @@ return [
         'paragraph4' => 'Facylitację spotkań powierzamy osobie z Ukrainy, która ma kilkuletnie doświadczenie w prowadzeniu zajęć z języka polskiego, ale też wieloletnie doświadczenie życia w Polsce, wie w jakich sytuacjach najczęściej znajdują się osoby, które przybywają do Polski i jakiego słownictwa potrzebują, by móc sobie poradzić.',
         'paragraph5' => 'Szkoła językowa działać będzie w formule otwartej, co oznacza, że w każdej chwili można do niej dołączyć.',
         'paragraph6' => 'Zapisy można dokonać przez <a href="'.build_url('subscribe').'">forme</a>.'
-      ]
+      ],
+      'advice' => [
+        'paragraph' => '<h2>Harmonogram zajęć</h2>',
+        'paragraph1' => 'Każdy wtorek o 17:00, zajęcia poziomu B (średniozaawansowany)',
+        'paragraph2' => 'Każda środa o 17:00, zajęcia poziomu A (początkujący)',
+      ],
     ],
     'art' => [
       'title' => 'Art-Terapia',
@@ -218,9 +229,22 @@ return [
         'paragraph1' => 'Grupa skierowana jest w szczególności do seniorów, którzy niezwykle potrzebują wspierających relacji w obliczu utraty wszystkiego, na czym im zależało, za czym stali murem.',
         'paragraph2' => 'Teraz często samotni, potrzebują wspierającej społeczności, w ramach której mogą podzielić się swoimi historiami, opowiedzieć o tym, za czym tęsknią, zintegrować i zrelaksować przy muzyce.',
         'paragraph3' => 'Tematyka spotkań dotyczy zdrowia, historii, kultury i literatury. Ponadto osoby starsze mogą podzielić się swoimi poglądami i doświadczeniami, a co najważniejsze, poznać osoby starsze w Polsce i nawiązać z nimi dobre relacje.',
-        'paragraph4' => 'Spotkania klubu co czwartek o 17.00.',
-        'paragraph5' => 'Spotkania odbywają się także na świeżym powietrzu. Klub jest otwarty dla wszystkich zainteresowanych seniorów.'
-      ]
+        'paragraph5' =>
+        'Spotkania odbywają się także na świeżym powietrzu. Klub jest otwarty dla wszystkich zainteresowanych seniorów.',
+        'paragraph6' => 'Projekt <a href="https://drive.google.com/file/d/1vCUmKCMQxMgVttYRJCKm88UrbKCyYCKF/view" target="_blank">"Bądźmy Razem"</a> oraz <a href="https://drive.google.com/file/d/1dicIpxJB4nXj9Cdu7HWvx-3Y8CxsETuC/view" target="_blank">Harmonogram zajęć</a>.'
+      ],
+      'advice' => [
+        'paragraph' => '<h2>Harmonogram zajęć</h2>',
+        'paragraph4' => 'o 16:00 1 sierpnia 2024',
+        'paragraph5' => 'o 16:00 8 sierpnia 2024',
+        'paragraph6' => 'o 16:00 15 sierpnia 2024',
+        'paragraph7' => 'o 16:00 22 sierpnia 2024',
+        'paragraph8' => 'o 16:00 29 sierpnia 2024',
+        'paragraph9' => 'o 16:00 5 września 2024',
+        'paragraph10' => 'o 16:00 12 września 2024',
+        'paragraph11' => 'o 16:00 19 września 2024',
+        'paragraph12' => 'o 16:00 26 września 2024',
+      ],
     ],
     'concerts' => [
       'title' => 'Koncerty',
@@ -230,8 +254,21 @@ return [
       ],
       'intro' => [
         'paragraph1' => 'Muzyczne spotkania „Mix Friday”',
-        'paragraph2' => 'Zapraszamy na koncerty w ramach projektu „Mix Friday”. <br /> Czekamy na wszystkich, którzy chcą u nas odpocząć na ul. Łaciarskiej 32 <br /> w Art-cafe Świetlica o godzinie 18.00 w każdy piątek.'
-      ]
+        'paragraph2' => 'Zapraszamy na koncerty w ramach projektu „Mix Friday”. <br /> Czekamy na wszystkich, którzy chcą u nas odpocząć na ul. Łaciarskiej 32 <br /> w Art-cafe Świetlica o godzinie 18.00 w każdy piątek.',
+        'paragraph6' => 'Projekt <a href="https://drive.google.com/file/d/1vCUmKCMQxMgVttYRJCKm88UrbKCyYCKF/view" target="_blank">"Bądźmy Razem"</a> oraz <a href="https://drive.google.com/file/d/1dicIpxJB4nXj9Cdu7HWvx-3Y8CxsETuC/view" target="_blank">harmonogram koncertów</a>.'
+      ],
+      'advice' => [
+        'paragraph' => '<h2>Harmonogram zajęć</h2>',
+        'paragraph5' => 'o 18:00 2 sierpnia 2024',
+        'paragraph6' => 'o 18:00 9 sierpnia 2024',
+        'paragraph7' => 'o 18:00 16 sierpnia 2024',
+        'paragraph8' => 'o 18:00 23 sierpnia 2024',
+        'paragraph9' => 'o 18:00 30 sierpnia 2024',
+        'paragraph10' => 'o 18:00 6 września 2024',
+        'paragraph11' => 'o 18:00 13 września 2024',
+        'paragraph12' => 'o 18:00 20 września 2024',
+        'paragraph13' => 'o 18:00 27 września 2024',
+      ],
     ],
     'military' => [
       'title' => 'Wsparcie dla Sił Zbrojnych Ukrainy',
